@@ -1,0 +1,123 @@
+
+.img {
+    border: 10px solid #a6a6a6;
+    border-radius: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 20px;
+    
+}
+
+.start {
+    width: 100%;
+    background-color: #a6a6a6;
+    text-align: center;
+    }
+
+.start > h1 {
+    background-color: #a6a6a6;;
+}
+
+body {  
+    background-color: #f8f9ec;
+      }
+
+
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    border:5px solid #3b4149;
+    background-color: #8080a0;
+    align-items: center;
+    justify-content: center;
+}       
+
+.flex-price {
+    display:flex;
+}
+.bronze {
+    background-color:#d2a071;
+    padding: 20px;
+    width: 50%;
+}
+.silver {
+    background-color:#bababc; 
+    padding: 20px;
+    width: 50%;
+}
+.gold {
+    background-color:#e1b868;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-family: "Sedan", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #8ca4c2;
+    }
+
+ h2 {
+        
+        color: #141922;
+        font-family: "Sedan", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+
+    li {
+    list-style:square ;
+}
+.consultation {
+        background-color:#c4a668;
+        text-align: center;
+        padding: 20px;
+        } 
+
+
+.address {
+        background-color:#c1e1e1;
+        text-align: center;
+        border: 10px solid rgb(156, 183, 193);
+        flex: 2;
+        }
+
+.blue-text {
+    color: #25384f;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    
+}
+.textcolor {
+    color: #00ffff;
+    }
+
+
+
+
+
+
+#main {
+    border-radius: 12px;
+    height: 100px;
+    width: 250px;
+    padding: 40px;
+    margin: 10px;
+    background-color:#c4a668;
+    font-family: "caption", sans-serif;
+    
+}
+
+footer {
+    background-color: #a6a6a6;
+    clear: both;
+    text-align: center;
+    padding: 10px;
+}
