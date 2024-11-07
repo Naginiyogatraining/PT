@@ -1,0 +1,130 @@
+.mobile-menu-button {
+    background-color:#c4a668;
+    height: 40px;
+    width: 60px; 
+    margin-top: 50px;
+    display: flex;
+    line-height: 0;
+    position: relative;
+    padding: 0 36px;
+    cursor: pointer;
+    z-index: 0;  
+    float:right;
+    }
+.lines-button {
+    background-color:#00ffff;
+    height: 40px;
+    width: 60px; 
+    align-items:center;
+    display: flex;
+    position:absolute; 
+    transition: .3s;
+    justify-content: space-evenly;
+}
+.lines-button .lines {
+    position: relative;
+    vertical-align: middle;
+}
+.lines-button .lines:before {
+    top: 6px; 
+    /* px a kozepso folott */
+}
+.lines-button .lines:after {
+    top: -6px;
+    /* 5px a kozepso alatt */
+}
+.lines-button .lines:before, .lines-button .lines:after, .lines-button .lines>span {
+    content: '';
+    left: 0;
+    position: absolute;
+    transition: top .3s .6s ease-in-out,transform .3s ease-in-out;
+    transform-origin: 10px center;
+    background-color: black;
+}
+.lines-button .lines, .lines-button .lines:before, .lines-button .lines:after, .lines-button .lines>span {
+    border-radius: 5px;
+    /* background-clip: padding-box; */
+    display: inline-block;
+    height: 3px;
+    width: 20px;
+}
+.lines-button .lines, .lines-button .lines:before, .lines-button .lines:after, .lines-button .lines>span {
+    border-radius: 5px;
+    background-clip: padding-box;
+    display: inline-block;
+    height: 2px;
+    width: 20px;
+}
+.lines-button.toggle .lines>span {
+    transform: translateY(-50%);
+    top: 50%;
+    display: none;
+}
+.lines-button.toggle .lines:before {
+    transform: rotate3d(0,0,1,45deg);
+}
+.lines-button.toggle .lines:after {
+    transform: rotate3d(0,0,1,-45deg);
+}
+.lines-button.toggle .lines:before, .lines-button.toggle .lines:after {
+    transition: top .3s ease-in-out,transform .3s .5s ease-in-out;
+    top: 0;
+}
+ 
+   
+.lines-button.toggle #menu {
+    display: block;
+}
+   
+#menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color:  rgba(255,255,255,0.5);
+}
+    
+.menu-list {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    /* justify-content:space-evenly;*/
+    
+}  
+
+.menu-list > * {
+    display: flex;
+    flex-basis: 100px; /**/
+    
+    padding: 10px;
+    width:400px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+a {
+    flex: 1;
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    line-height: 3;
+    color: black;
+  }
+
+a:link,
+a:visited,
+a:focus {
+  background:rgb(146, 185, 210);
+  color: black;
+}
+  a:hover {
+    text-decoration: none;
+    background: rgb(208, 206, 185);
+  }
+  a:active {
+    background: rgb(42, 81, 139);
+    color: white;
+  }

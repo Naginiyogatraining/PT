@@ -7,38 +7,115 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Rozha+One&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
     </head>
+
     
+
 <body>
+   <div >
+       <div class="mobile-menu-button">
+           <div class="lines-button" onclick="buttonToggle(this)">
+               <span class="lines">
+                       <span></span>
+                   </span>
+                   <div id="menu">
+                       <div class="menu-list">
+                           <div>
+                               <a href="./classes.html">Classes</a>
+                           </div>
+                           <div>
+                               <a href="./price1.html">Price</a>
+                           </div>
+                           <div>
+                               <a href="./retreats.html">Retrearts</a>
+                           </div>
+                           <div>
+                               <a href="recipes.html">Recipes</a>
+                           </div>
+                           <div>
+                               <a href="./contact.html">Contact</a>
+                           </div>
+                       </div>
+                   </div>
+           </div>
+       </div>
 
-<div class="flex-container">
-    <li><a href="./classes.html">Classes</a></li>
-    <li><a href="./price1.html">Price</a></li>
-    <li><a href="./retreats.html">Retrearts</a></li>
-    <li><a href="recipes.html">Recipes</a></li>
-    <li><a href="./contact.html">Contact</a></li>
-</div>
+   </div> 
+ 
+   <div class="logo-frame">
+        <div class="logo">
+         <p>LOGO</p>
+        </div> 
+    </div>   
 
-
-
-<h1>Meet your coach</h1>
-<img  class="img" src="./pic/pose.jpg" alt="image from instructor"/> 
-    <p>
-        Hi evryone.....its me.<br />
-        Passion....<br />
-        Mission....<br />
-        Let's embark on this journey together<br />
-        ....<br />
-        I can't wait to welcome you to my new training program and help you achieve the perfect shape of you! I look forward to seeing you soon!        
-    </p>
-  
-    <p><span class="nagini">Take your fitness to the next level!</span>
-        
-        <div class="consultation">
-            <p><span class="blue-text">GET YOUR <span class="textcolor">FREE</span> CONSULTATION</span>
-            <p>Let's meet and discuss your fitness goals and develop a customized plan to meet your needs.</p>
-            <a href start here>Get Started</a>
+    <div class="space">
+        <div class="box">
+            <div class="container1">
+                <div class="card1">
+                    <h1>Meet your coach</h1>
+                    <p>Hi evryone.....its me.<br />
+                    Passion....<br />
+                    Mission....<br />
+                    Let's embark on this journey together<br />
+                    ....<br />
+                    I can't wait to welcome you to my new training program and help you achieve the perfect shape of you! I look forward to seeing you soon!        
+                    </p>
+                </div>
         </div>
+        </div>
+        
+    </div>
+    <!-- </div> -->
+    
 
+<div class="heading-text">
+    <h3 class="fontsize50">
+        <span>Take your fitness to the next level!</span>
+    </h3>
+</div>
+            
+        
+    
+    
+    <div class="consultation-container">
+        <div>
+            <p>GET YOUR <span class="highliht">FREE</span> CONSULTATION</p>
+        </div>
+        <div class="consultation-text">
+            <p>Let's meet and discuss your fitness goals and develop a customized plan to meet your needs.</p>
+        </div>
+        <div>
+            <button class="getstarted-button" href start here>Get Started</a>
+        </div>
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div>
+        <div>
+            <h4 class="fontsize50">
+                <span>Legal</span>
+            </h4>
+        </div>
+            <div>
+                <p>
+                <a href="https://xy.com/legal/privacy/" class="cursor-init">Privacy Policy</a>
+                <br>
+                <a href="https://xy.com/legal/cookie-policy/" class="cursor-init">Cookie Policy</a>
+                <br>
+                <a href="https://xy.com/legal/terms-of-service/" class="cursor-init">Terms of Service</a>
+                <br>
+                <a href="https://xy.com/legal/disclaimer/" class="cursor-init">Disclaimer</a>
+                </p>
+            </div>
+    </div>
+
+    <div class="footercontainer">
+        <footer>@2024 by Nagini Yoga Training, Reading, UK</footer>
+    </div>
 </body>
-<footer>@2024 by Nagini Yoga Training, Reading, UK</footer>
+<script>
+    function buttonToggle(x) {
+      x.classList.toggle("toggle");
+    }
+</script>
 </html>
