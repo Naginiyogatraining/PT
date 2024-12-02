@@ -1,13 +1,70 @@
 @import url("./menu.css"); 
+.fontsize40 {
+    color: black;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+} 
+.fontsize40white {
+    color: white;
+    font-family: sans-serif;
+}
+.contacticonlinks {
+    display: flex;
+    
+}  
+.contacticonlinks div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: white;
+}
+.contacticonlinks img{
+    width: 50px;
+    height: 50px;
 
+}
+.fontsize50 {
+    color: white;
+    font-size: 50px;
+    font-family: "Sedan", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    /*font-family: HelveticaNowDisplayExtraBold;*/
+    }
+.fontsize50line {
+    min-width: 300px;
+        color: white;
+        font-size: 50px;
+        font-family: "Sedan", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: underline;
+        text-decoration: solid underline white 1.5px;
+        text-underline-offset: 30px;
+        /*font-family: HelveticaNowDisplayExtraBold;*/
+        }
+body {  
+    background-size: cover;
+    background-image: url("./pic/blueback.jpg") ;
+    background-repeat: no-repeat;
+      }
 .welcome-page {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    align-items: center;
     justify-content: center;
     position: relative;
 }
-
+.welcomeimg{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    
+}
 .img {
     border: 10px solid #a6a6a6;
     border-radius: 50px;
@@ -17,83 +74,197 @@
     margin: 20px;
     
 }
+.retreat-menu-image1 {
+    position: relative;
+    
+    
+}
+.retreat-menu-image2 {
+    position: absolute;
+    padding-top: 15%;
+    padding-left: 20%;
+    
+
+}
+.menuimg1 {
+    
+    width: 500px;
+    height: 310px;
+    border-radius: 30px;
+    filter: drop-shadow(white 1rem 1rem 10px);
+    padding: 20px;
+}
+.menuimg2 {
+    
+    width: 500px;
+    height: 310px;
+    border-radius: 30px;
+    filter: drop-shadow(white 1rem 1rem 10px);
+    padding: 20px;
+    
+}
 .logo-frame {
-    display: block;
-    border: 2px solid black;
-    background-image: url("./pic/pose.jpg");
-    background-repeat: no-repeat;
-    height: 100px;
-    padding: 10px;
+    /* border: 2px solid black; */
+    background-image: url("./pic/mixbackground1366_150.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    min-height: 150px;
+    
+    
 }
 .logo {
-    display: block;
     border: 1px solid black;
-    padding: 10px;
     width: 150px;
-    height: 80px;
+    height: 100px;
     float: left;
+    margin: 20px;
 }
-.space {
-    padding-top: 20px;
-}
-.box { 
-    /* display: flex; */
+
+.coach-img {
     width: 100%;
-    height: 768px;
-    background-color: white;
-    
+    height: fit-content;
 }
-.container1 {
-    background-image: url("./pic/coach1366_768_72.jpg");
-    width: 1366px;
-    height: 768px;
-    border: 2px solid black;
-    float: right;
-      
+.meet-your-coach-frame { 
+    display: flex;
+    width: 100%;
+    border: 10px solid #4ecc81;
 }
-.card1 {
-    margin: 40px;
-    margin-top: 40px;
-    width: 400px;
-    height: 250px;
-    padding: 10px;
+.meet-your-coach-card {
+    position: absolute;
     border: 10px solid #a36e6e;
-   
-    }
-
-
-@media (max-width: 600px) {
-    .card1 {
-        font-size: 15px;
-    }
-}    
-.heading-text { 
-    box-sizing: border-box;
-    padding: 30px;
-    text-align: center;
+    width: 600px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight:300;
 }
-    
-.fontsize50 {
-    color: white;
-    font-size: 50px;
+@media (max-width: 600px) {
+    .meet-your-coach-card {
+        font-size: 15px;
+        width: 300px;
+    } 
+}   
+.consultation-container {
+    min-height: 250px;
+    background-color:#c4a668;
+    /* border:5px solid #3b4149; */
+    padding: 20px;
     text-align: center;
-    font-family: "Sedan", system-ui;
-    font-weight: 400;
+    font-weight: 900;
+    font-size: 25px;
+    color: #25384f;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
     font-style: normal;
-    /*font-family: HelveticaNowDisplayExtraBold;*/
+    justify-content: center;
+} 
+@media (max-width: 600px) {
+    .consultation-container {
+        font-size: 20px;
+    } 
+}  
+.oblique-text {
+    color:#222d39;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+    font-style: oblique;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+.highliht {
+    color: #76fbf0;
     }
 
-
-body {  
+.getstarted-button {
     
-    background-size: cover;
-    background-image: url("./pic/blueback.jpg") ;
-    background-repeat: no-repeat;
-      }
+    justify-content: center;
+    text-align: center;
+    padding: 10px 30px;
+    background-color:#25384f; 
+    border-radius: 50px;
+    border: none;
+    font-size: 25px;
+    box-shadow: 3px 3px gray;  
+    width: 200px; 
+    
+}
+.getstarted-button:hover {
+    background-color:#a6a6a6;
+}
+.getstarted-button:active {
+    background-color:black;
+}
+.getstarted-button a {
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    color: white;
+  }
+.retreat-container {
+    display: flex;
+    background-image: url("./pic/mandala.jpg");
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+
+}
+.legal-conact-container {
+    /* border: 10px solid #bb9431; */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    width: 100%;
+    
+}
+.legalcard {
+    flex: 1;
+    /* border: 10px solid #a36e6e; */
+    width: 200px;
+    min-height: 400px;
+    padding: 10px;
+
+}
+.legalcard a {
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.legalcard a:active {
+    color: grey;
+}
+
+
+.contactcard {
+    flex: 2;
+    /* border: 10px solid #4a9f73; */
+    width: 400px;
+    min-height: 400px;
+    padding: 10px;
+}
+.contactinfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    gap: 100px;
+}
+
+.heading-text { 
+    display: flex;
+    justify-content: center;
+    min-height: 250px;
+}
+
+
+
+
+
 
 
 .flex-container {
-    display:inline-flex;
+    display: flex;
     flex-wrap: wrap;
     border:5px solid #3b4149;
     background-color: #8080a0;
@@ -140,40 +311,11 @@ body {
     max-width: 400px;
 }
 
- h2 {
-        
-        color: #141922;
-        font-family: "Sedan", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        text-align: center;
-    }
-
-    
+   
 li {
     list-style:square ;
 }
-.consultation-container {
-    height: 250px;
-    background-color:#c4a668;
-    border:5px solid #3b4149;
-    padding: 20px;
-    text-align: center;
-    font-weight: 900;
-    font-size: 25px;
-    color: #25384f;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-} 
-.consultation-text {
-    color:#222d39;
-    font-weight: 500;
-    text-align: center;
-    margin: 10px;
-    font-style: oblique;
 
-        }
 .address {
         background-color:#c1e1e1;
         text-align: center;
@@ -182,18 +324,7 @@ li {
         }
 
 
-.highliht {
-    color: #76fbf0;
-    }
 
-.getstarted-button {
-    padding: 20px;
-    background-color:#25384f; 
-    color: white;
-    border-radius: 5px;
-    border: none;
-    font-size: 17px;
-}
 
 
 

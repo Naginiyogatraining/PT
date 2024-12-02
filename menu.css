@@ -105,7 +105,7 @@
     justify-content: center;
     font-size: 60px;
 }
-a {
+.menu-list a {
     flex: 1;
     text-decoration: none;
     outline-color: transparent;
@@ -114,17 +114,17 @@ a {
     color: black;
   }
 
-a:link,
-a:visited,
-a:focus {
+.menu-list a:link,
+.menu-list a:visited,
+.menu-list a:focus {
   background:rgb(146, 185, 210);
   color: black;
 }
-  a:hover {
+.menu-list a:hover {
     text-decoration: none;
     background: rgb(208, 206, 185);
   }
-  a:active {
+.menu-list a:active {
     background: rgb(42, 81, 139);
     color: white;
   }
