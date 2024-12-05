@@ -77,7 +77,7 @@ body {
 
 .logo-frame {
     /* border: 2px solid black; */
-    background-image: url("./pic/mixbackground1366_150.jpg");
+    background-image: url("./pic/background1366_150.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
     min-height: 150px;
@@ -85,37 +85,40 @@ body {
     
 }
 .logo {
-    border: 1px solid black;
+    background-image: url("./pic/lotus.png");
     width: 150px;
     height: 100px;
     float: left;
     margin: 20px;
 }
 
-.coach-img {
-    width: 100%;
-    height: fit-content;
-}
-.meet-your-coach-frame { 
+
+.coachframe { 
     display: flex;
-    width: 100%;
-    border: 10px solid #4ecc81;
+    background-color: #f9f7ea;
 }
-.meet-your-coach-card {
-    position: absolute;
-    border: 10px solid #a36e6e;
-    width: 600px;
-    padding: 20px;
+.coachcardtext {
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+.coachtext {
     font-family: sans-serif;
     font-size: 20px;
     font-weight:300;
 }
 @media (max-width: 600px) {
-    .meet-your-coach-card {
+    .coachtext {
         font-size: 15px;
         width: 300px;
     } 
-}   
+}
+.coachcardimg {
+   
+} 
+.coachimg {
+    
+}  
 .consultation-container {
     background-color:#c4a668;
     padding: 20px;
@@ -145,7 +148,7 @@ body {
     }
 
 .getstartedbuttonbody {
-display: flex;
+    display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
@@ -176,41 +179,45 @@ display: flex;
     flex: 1 1;
     gap: 100px;
     background-image: url("./pic/mandala.jpg");
-    height: 700px;
     margin-bottom: 20px;
 }
 .retreatimigebox {
     display: flex;
-    height: 700px;
+    height: 650px;
     width: 770px;    
 }
 .retreatimagebox1 {
     position: relative;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-left: 30px;
 
 }
 .retreatimagebox2 {
     position: absolute;
-    padding-top: 20%;
-    padding-left: 15%;
+    padding-top: 310px;
+    padding-left: 240px;
 }
 .retreatimg1 {
-    width: 500px;
+    width: 480px;
     height: 310px;
     border-radius: 30px;
     filter: drop-shadow(white 1rem 1rem 10px);
 }
 .retreatimg2 {
-    width: 500px;
+    width: 480px;
     height: 310px;
     border-radius: 30px;
     filter: drop-shadow(white 1rem 1rem 10px);
 }
 .retreattextbox {
-    background-color: rgba(246, 251, 252, 0.1);
-    height: 400px;
-    width: 400px;
+    background-color: rgba(246, 251, 252, 0.526);
+    border-radius: 30px;
+    height: 390px;
+    width: 590px;
+    padding-top: 190px;
+    padding-left: 15px;
+    margin-top: 40px;
+    
     
 }
 .legal-conact-container {
