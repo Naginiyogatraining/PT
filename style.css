@@ -76,13 +76,10 @@ body {
 }
 
 .logo-frame {
-    /* border: 2px solid black; */
     background-image: url("./pic/background1366_150.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
-    min-height: 150px;
-    
-    
+    height: 150px;
 }
 .logo {
     background-image: url("./pic/lotus.png");
@@ -92,33 +89,53 @@ body {
     margin: 20px;
 }
 
-
-.coachframe { 
+/* /////Meet your coach///// */
+.coach-wrapper { 
     display: flex;
     background-color: #f9f7ea;
 }
-.coachcardtext {
+.coachtextcard {
     padding-top: 100px;
     padding-left: 50px;
+    position: relative;
+    margin-right: -220px;
+}
+.coachcardimg {
+    display: block;
+    background-color: #f9f7ea;
+    height: 600px;
+    
+    
+}
+.coachimg {
+    height: 600px;
+    
 }
 
-.coachtext {
+@media (max-width: 1000px) {
+    .coach-wrapper{
+        display: block;
+    }
+    .coachtextcard {
+        position: relative;
+        margin-right: -200px;
+        padding: 50px;
+        margin-right: 0;
+
+    }
+    .coachimg {
+        float: right;
+            }
+}
+
+.coach-text {
     font-family: sans-serif;
     font-size: 20px;
     font-weight:300;
 }
-@media (max-width: 600px) {
-    .coachtext {
-        font-size: 15px;
-        width: 300px;
-    } 
-}
-.coachcardimg {
-   
-} 
-.coachimg {
-    
-}  
+
+/* /////////////// consultation-container ////////////////// */
+ 
 .consultation-container {
     background-color:#c4a668;
     padding: 20px;
