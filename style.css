@@ -1,4 +1,5 @@
 @import url("./menu.css"); 
+@import url("./formcarry-container.css");
 .fontsize40 {
     color: black;
     font-size: 40px;
@@ -189,7 +190,8 @@ body {
     background-color:black;
     border-radius: 50px;
 }
-
+/* /////////////// consultation-container end ////////////////// */
+/* /////////////// yoga-container ////////////////// */
 .retreat-container {
     display: flex;
     flex-wrap: wrap;
@@ -237,8 +239,8 @@ body {
     
     
 }
+/* /////////////// yoga-container end ////////////////// */
 .legal-conact-container {
-    /* border: 10px solid #bb9431; */
     display: flex;
     flex-wrap: wrap;
     flex: 1 1;
@@ -247,7 +249,6 @@ body {
 }
 .legalcard {
     flex: 1;
-    /* border: 10px solid #a36e6e; */
     width: 200px;
     min-height: 400px;
     padding: 10px;
@@ -267,7 +268,6 @@ body {
 
 .contactcard {
     flex: 2;
-    /* border: 10px solid #4a9f73; */
     width: 400px;
     min-height: 400px;
     padding: 10px;
@@ -280,9 +280,9 @@ body {
 }
 
 .heading-text { 
-    display: flex;
-    justify-content: center;
-    min-height: 250px;
+    text-align: center;
+    padding: 40px;
+    
 }
 
 
@@ -350,10 +350,6 @@ li {
         border: 10px solid rgb(156, 183, 193);
         flex: 2;
         }
-
-
-
-
 
 
 
