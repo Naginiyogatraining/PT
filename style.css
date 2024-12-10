@@ -76,7 +76,8 @@ body {
     
 }
 
-.logo-frame {
+.logo-wrapper {
+
     background-image: url("./pic/background1366_150.jpg");
     background-repeat: no-repeat; 
     background-size: cover;
@@ -254,8 +255,10 @@ body {
     padding: 10px;
 
 }
+
 .legalcard a {
     text-decoration: none;
+    
     outline-color: transparent;
     text-align: center;
     color: white;
@@ -363,6 +366,37 @@ li {
     font-family: "caption", sans-serif;
     
 }
+.yogaholiday-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.yogaholiday-card1 {
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+.yogaholidaytext1 {
+    padding: 20px;
+}
+.yogaholiday-card2 {
+    display: flex;
+    justify-content: center;
+}
+   
+
+.yogaholidaytext2 {
+    position: relative;         
+    top: 50px;
+    left: 100px;
+    padding: 20px;
+    background-color: #a6a6a6;
+    margin-left: -30px;
+    height: 450px;
+}
+/* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
+/* modify the element's position? You need to use the top, bottom, left, and right properties */
+
 .footercontainer {
     display: flex;
     background-color: #25384f;
