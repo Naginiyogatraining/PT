@@ -66,13 +66,18 @@ body {
     width: 70%;
     
 }
-.img {
-    border: 10px solid #a6a6a6;
-    border-radius: 50px;
+.recipies-wrapper {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+.recipies-wrapper img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin: 20px;
+   
     
 }
 
@@ -102,6 +107,12 @@ body {
     position: relative;
     margin-right: -220px;
 }
+.coach-text {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight:300;
+    text-align: justify;
+}
 .coachcardimg {
     display: block;
     background-color: #f9f7ea;
@@ -130,11 +141,7 @@ body {
             }
 }
 
-.coach-text {
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight:300;
-}
+
 
 /* /////////////// consultation-container ////////////////// */
  
@@ -174,16 +181,16 @@ body {
 }
 .getstarted-button a {
     padding: 10px 30px;
-    background-color:#25384f;
+    background-color:#0c1f36;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 25px;
-    box-shadow: 3px 3px gray;  
+    box-shadow: 3px 3px rgb(65, 97, 127);  
     border-radius: 50px;
     border: none;
 }
 .getstarted-button a:hover {
-    background-color:#a6a6a6;
+    background-color:#848484;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -198,8 +205,10 @@ body {
     flex-wrap: wrap;
     flex: 1 1;
     gap: 100px;
-    background-image: url("./pic/mandala.jpg");
+    background-image: url("./pic/mandala-1.jpg");
     margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .retreatimigebox {
     display: flex;
@@ -221,44 +230,40 @@ body {
     width: 480px;
     height: 310px;
     border-radius: 30px;
-    filter: drop-shadow(white 1rem 1rem 10px);
+    filter: drop-shadow(white 2rem 2rem 15px);
 }
 .retreatimg2 {
     width: 480px;
     height: 310px;
     border-radius: 30px;
-    filter: drop-shadow(white 1rem 1rem 10px);
+    filter: drop-shadow(white 2rem 2rem 15px);
 }
 .retreattextbox {
-    background-color: rgba(246, 251, 252, 0.526);
+    background-color: rgba(246, 251, 252, 0.864);
     border-radius: 30px;
-    height: 390px;
-    width: 590px;
-    padding-top: 190px;
-    padding-left: 15px;
-    margin-top: 40px;
-    
-    
+    width: 30%;
+    text-align: justify;
+    padding: 60px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 300;
 }
 /* /////////////// yoga-container end ////////////////// */
 .legal-conact-container {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1;
-    width: 100%;
-    
+       
 }
 .legalcard {
     flex: 1;
-    width: 200px;
-    min-height: 400px;
     padding: 10px;
 
 }
 
 .legalcard a {
     text-decoration: none;
-    
+    font-size: 20px;
     outline-color: transparent;
     text-align: center;
     color: white;
@@ -271,8 +276,6 @@ body {
 
 .contactcard {
     flex: 2;
-    width: 400px;
-    min-height: 400px;
     padding: 10px;
 }
 .contactinfo {
@@ -344,7 +347,7 @@ body {
 
    
 li {
-    list-style:square ;
+    list-style: square ;
 }
 
 .address {
@@ -366,33 +369,39 @@ li {
     font-family: "caption", sans-serif;
     
 }
+
 .yogaholiday-wrapper {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
+.yogaholidayimg {
+    width: 800px;
+}
 .yogaholiday-card1 {
     display: flex;
-    gap:20px;
-    justify-content: center;
-}
+        gap:60px;
+    margin-left: 100px;
+    }
 .yogaholidaytext1 {
-    padding: 20px;
-}
+    padding: 100px 20px;
+    text-align: justify;
+        }
 .yogaholiday-card2 {
     display: flex;
     justify-content: center;
-}
+    margin-right: 100px;
+    }
    
 
 .yogaholidaytext2 {
-    position: relative;         
-    top: 50px;
-    left: 100px;
-    padding: 20px;
     background-color: #a6a6a6;
-    margin-left: -30px;
-    height: 450px;
+    position: relative; 
+    padding: 20px;
+    margin: 60px -150px 60px 100px;
+    text-align: justify;
+     
+       
 }
 /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
 /* modify the element's position? You need to use the top, bottom, left, and right properties */
