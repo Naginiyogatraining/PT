@@ -27,7 +27,7 @@ h4 {
     align-items: center;
     justify-content: center; 
 }
-.welcomeimg{
+.welcome-page img{
     border-radius: 50%;
     display: block;
     margin-left: auto;
@@ -63,35 +63,32 @@ h4 {
 /* /////Meet your coach///// */
 .coach-wrapper { 
     background-color: #f9f7ea;
-    display: flex;
-    margin: 0 auto;
-    }
+    display: flex;   
+       }
+       .coach-wrapper img {
+           width: auto;
+           height: 600px;
+       }
 .coachtextcard {
-   color: black;
-    position: relative; 
-    padding: 20px;
-    margin: 60px -150px 60px 100px;
-    text-align: justify;
+    color: black;
+    padding: 40px;
     }
-.coach-wrapper img {
-    height: 700px;
-    
-}
+.coachimgcard {
+  display: flex;
+ }
 
 @media (max-width: 1000px) {
     .coach-wrapper{
         display: block;
     }
-    .coachtextcard {
+    /* .coachtextcard {
         position: relative;
         margin-right: -200px;
         padding: 50px;
         margin-right: 0;
 
-    }
-    .coachimg {
-        float: right;
-            }
+    } */
+   
 }
 
 
@@ -156,10 +153,15 @@ h4 {
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
     display: flex;
-    background-image: url("./pic/mandala-1.jpg");
-   background-repeat: no-repeat;
+       background-image: url("./pic/mandala-1.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     color: black;
+} 
+@media (max-width: 1000px) {
+    .yogabio-wrapper{
+        flex-direction: column;
+    }
 }
 .yogabio-wrapper img {
     width: 480px;
@@ -169,7 +171,7 @@ h4 {
 }
 .yogabio-wrapper >div {
     display: flex;
-    margin: 40px;   
+        margin: 40px;   
 }
 .floating-img {
     z-index: 1;
@@ -177,10 +179,12 @@ h4 {
     margin-left: -240px;
 }
 .yogabio-textcard {
-    background-color: rgba(246, 251, 252, 0.864);
+        background-color: rgba(246, 251, 252, 0.864);
     border-radius: 30px;
     text-align: justify;
-        padding: 60px;
+    padding: 60px;
+    width: fit-content;
+    height: auto;
     }
 /* /////////////// yogabio-container end ////////////////// */
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
@@ -190,14 +194,15 @@ h4 {
     padding: 40px; 
     text-align: left;
     color: white;
+    font-size: 15px;
 }
 .legal-conact-wrapper li {
     list-style: none;
-}
+    }
 .legalcard a {
     text-decoration: none;
     color: white;
-}
+    }
 .legalcard a:active {
     color: grey;
 }
