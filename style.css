@@ -38,14 +38,14 @@ h4 {
     display: flex;
     gap: 10px;
     padding: 40px;
-    }
+            }
     .recipies-wrapper img {
     border:5px solid #3b4149;
     width: 300px;
     height: 300px;
     object-fit: cover;
     padding: 10px;
-}
+    }
 .logo-wrapper {
     background-image: url("./pic/background1366_150.jpg");
     background-repeat: no-repeat; 
@@ -190,6 +190,8 @@ h4 {
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 .legal-conact-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    flex: 1 2;
     gap: 150px;
     padding: 40px; 
     text-align: left;
@@ -198,6 +200,8 @@ h4 {
 }
 .legal-conact-wrapper li {
     list-style: none;
+    margin-bottom: 10px;
+    margin-left: -40px;
     }
 .legalcard a {
     text-decoration: none;
@@ -284,7 +288,6 @@ h4 {
     font-family: "caption", sans-serif;
     
 }
-
 .yogaholiday-wrapper {
     display: flex;
     flex-direction: column;
@@ -298,28 +301,42 @@ h4 {
     gap:60px;
     margin-left: 100px;
     }
-.yogaholidaytext1 {
-    padding: 100px 20px;
-    text-align: justify;
-        }
-.yogaholiday-card2 {
-    display: flex;
-    justify-content: center;
-    margin-right: 100px;
+    .yogaholidaytext1 {
+        padding: 100px 20px;
+        text-align: justify;
+        align-self: center;
     }
-   
-
-.yogaholidaytext2 {
-    background-color: #a6a6a6;
-    position: relative; 
-    padding: 20px;
-    margin: 60px -150px 60px 100px;
-    text-align: justify;
-}
-/* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
-/* modify the element's position? You need to use the top, bottom, left, and right properties */
-
-.footercontainer {
+    .yogaholiday-card2 {
+        display: flex;
+        justify-content: center;
+        margin-right: 100px;
+    }
+    
+    
+    .yogaholidaytext2 {
+        background-color: #a6a6a6;
+        position: relative; 
+        padding: 20px;
+        margin: 60px -150px 60px 100px;
+        text-align: justify;
+    }
+    /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
+    /* modify the element's position? You need to use the top, bottom, left, and right properties */
+    @media (max-width: 1000px) {
+        .yogaholiday-card1{
+                flex-direction: column;
+            }
+            .yogaholiday-card2{
+                flex-direction: column;
+            }
+            .yogaholidaytext2{
+                width: 100%;
+                margin: 0;
+                align-self: center;
+            }
+        }
+    
+    .footercontainer {
     display: flex;
     background-color: #25384f;
     text-align: center;
@@ -327,7 +344,6 @@ h4 {
     justify-content: center;
     justify-items: end;
     color:white;
-    
     clear: both;
 }
 
