@@ -18,6 +18,8 @@
    transition: .3s;
     z-index: 2;
     position: fixed;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
 }
 .lines-button .lines {
     position: relative;
