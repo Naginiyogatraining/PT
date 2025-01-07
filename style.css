@@ -6,8 +6,7 @@ body {
     background-repeat: repeat;
     font-size: 20px;
     font-family: "caption", sans-serif;
-    width: 100%;
-    height: 100%;
+    margin: 0;
 }
 h2 {
     font-family: "Sedan", system-ui;
@@ -303,8 +302,7 @@ a:active {
 .yogaholiday-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-}
+    }
 .yogaholiday-wrapper img {
     width: 800px;
 }
@@ -347,7 +345,22 @@ a:active {
                 align-self: center;
             }
         }
-    
+.pt-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./pic/b&w.jpg");
+    }   
+.card {
+    display: flex;
+    gap:50px;
+    margin-left: 100px;
+    background-image: url("./pic/b&w.jpg");
+}
+.pt-text {
+    width: 700px;
+    text-align: justify;
+    align-self: center;
+}
     footer {
     background-color: #25384f;
     text-align: center;
