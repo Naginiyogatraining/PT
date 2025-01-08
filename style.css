@@ -48,32 +48,58 @@ h4 {
     
 
 }
-.recipies-wrapper {
+.eb {
+    color: white;
+    
+    padding: 20px;
+}
+
+.wrapper {
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+.wrapper div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: fit-content;
+    height: auto;
+    
+}
+.wrapper img {
+    width: 400px;
+    height: 400px;
+
+}
+.recipie-wrapper {
     display: flex;
     gap: 10px;
     padding: 40px;
     text-align: center;
+    
  }
 
-    .recipies-wrapper img {
+    .recipie-wrapper img {
     border:5px solid #3b4149;
     width: 300px;
     height: 300px;
     object-fit: cover;
-    padding: 10px;
+    
     }
 .logo-wrapper {
-    background-image: url("./pic/background1366_150.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    height: 150px;
-}
-.logo {
-    background-image: url("./pic/lotus.png");
-    width: 150px;
-    height: 100px;
-    float: left;
-    margin: 20px;
+   background-color: #0651a19d;
+
+    /* background-image: url("./pic/blueback.jpg") ; */
+   
+    
+
+    }
+.logo-wrapper img {
+    height: 200px;
+    background-color: #0651a19d;
+    padding: 20px;
 }
 
 /* /////Meet your coach///// */
@@ -82,8 +108,7 @@ h4 {
     display: flex;   
        }
        .coach-wrapper img {
-            width: auto;
-           height: 600px;
+            height: 600px;
            float: left;
        }
 .coachtextcard {
@@ -211,7 +236,7 @@ h4 {
     gap: 10px;
     flex-wrap: wrap;
     justify-content: space-evenly;
-        padding: 0px 20px 20px 20px;
+    padding: 0px 20px 20px 20px;
        
 }
 a {
@@ -222,10 +247,11 @@ a:active {
     color: grey;
 }
 .classicon-wrapper img {
-    width: 300px;
+    /* width: 300px; */
     height: 300px;
     border-radius: 30px;
-    object-fit: fill;
+    /* object-fit: fill; */
+    object-fit: contain;
 }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 .legal-conact-wrapper {
