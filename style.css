@@ -106,15 +106,17 @@ h4 {
        .coach-wrapper img {
             height: 600px;
               }
+.coachimgcard {
+    display: flex;
+}
 
-
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .coach-wrapper{
         display: block;
     }
 
    
-} */
+}
 
 /* /////////////// consultation-container ////////////////// */
  
@@ -199,6 +201,9 @@ h4 {
     border-radius: 30px;
     text-align: justify;
     padding: 60px;
+    width: fit-content;
+    height: auto;
+
        
     }
 
