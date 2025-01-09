@@ -90,11 +90,6 @@ h4 {
     }
 .logo-wrapper {
    background-color: #0651a19d;
-
-    /* background-image: url("./pic/blueback.jpg") ; */
-   
-    
-
     }
 .logo-wrapper img {
     height: 200px;
@@ -102,36 +97,24 @@ h4 {
     padding: 20px;
 }
 
-/* /////Meet your coach///// */
+/* //////////////Meet your coach///////////////// */
 .coach-wrapper { 
     background-color: #f9f7ea;
-    display: flex;   
+    display: flex; 
+    padding: 40px 0px 0px 40px;  
        }
        .coach-wrapper img {
             height: 600px;
-           float: left;
-       }
-.coachtextcard {
-    color: black;
-    padding: 40px;
-    }
-.coachimgcard {
-  display: flex;
- }
+              }
 
-@media (max-width: 1000px) {
+
+/* @media (max-width: 1000px) {
     .coach-wrapper{
         display: block;
     }
-    /* .coachtextcard {
-        position: relative;
-        margin-right: -200px;
-        padding: 50px;
-        margin-right: 0;
 
-    } */
    
-}
+} */
 
 /* /////////////// consultation-container ////////////////// */
  
@@ -182,17 +165,17 @@ h4 {
     background-color:black;
     border-radius: 50px;
 }
-
-/* /////////////// consultation-container end ////////////////// */
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
     display: flex;
-       background-image: url("./pic/mandala-1.jpg");
+    gap:40px;
+    background-image: url("./pic/mandala-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px;
     } 
 @media (max-width: 1000px) {
-    .yogabio-wrapper{
+    .coach-wrapper .yogabio-wrapper{
         flex-direction: column;
     }
 }
@@ -204,7 +187,7 @@ h4 {
 }
 .yogabio-wrapper >div {
     display: flex;
-        margin: 40px;   
+       
 }
 .floating-img {
     z-index: 1;
@@ -216,10 +199,9 @@ h4 {
     border-radius: 30px;
     text-align: justify;
     padding: 60px;
-    width: fit-content;
-    height: auto;
+       
     }
-/* /////////////// yogabio-container end ////////////////// */
+
 /* ////////////////////////////////////////CLASS-container//////// */
 
 .class-wrapper {
@@ -233,11 +215,9 @@ h4 {
 }
 .classicon-wrapper {
     display: flex;
-    gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0px 20px 20px 20px;
-       
+    gap: 20px;
+    justify-content: space-evenly;      
 }
 a {
     text-decoration: none;
@@ -283,15 +263,12 @@ a:active {
 
 
 .flex-price {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
-.flex-price ul li {
-    text-align: left;
-    list-style: square;
-}
+
 .plan-price {
     font-size: 23px;
     font-weight: bold; 
@@ -372,25 +349,32 @@ a:active {
             }
         }
 .pt-wrapper {
-    display: flex;
-    flex-direction: column;
+    
     background-image: url("./pic/b&w.jpg");
+    
     }   
 .card {
     display: flex;
-    gap:50px;
-    margin-left: 100px;
-    background-image: url("./pic/b&w.jpg");
+    flex-wrap: wrap;
+    flex: 1 1;
+    gap:  20px;
+    justify-content: space-evenly;
+    
+    
+}
+.pt-img-wrapper {
+    height: 800px;
+    overflow: hidden;
 }
 .pt-text {
     width: 700px;
     text-align: justify;
-    align-self: center;
+    margin: 20px;
 }
     footer {
     background-color: #25384f;
     text-align: center;
     padding: 10px;
-        font-size: 15px;
+    font-size: 15px;
     }
 
