@@ -12,16 +12,13 @@ h2 {
     font-family: "Sedan", system-ui;
     font-optical-sizing: auto;
     font-size: 50px;
-    
-
-}
+    }
 h3 {
     font-family: "Sedan", system-ui;
     font-optical-sizing: auto;
     font-size: 50px;
     color: white;
     text-align: center;
-
 }
 h4 {
         font-size: 50px;
@@ -32,7 +29,6 @@ h4 {
         text-decoration: solid underline white 1.5px;
         text-underline-offset: 30px;
          }
-
 .index-wrapper {
     display: flex;
     flex-direction: column;
@@ -45,15 +41,11 @@ h4 {
     height: 500px;
     margin: 40px;
     object-fit: contain;
-    
-
 }
 .eb {
-    color: white;
-    
+    color: white;   
     padding: 20px;
 }
-
 .wrapper {
     display: flex;
     color: white;
@@ -66,12 +58,10 @@ h4 {
     justify-content: space-evenly;
     width: fit-content;
     height: auto;
-    
-}
+    }
 .wrapper img {
     width: 400px;
     height: 400px;
-
 }
 .recipie-wrapper {
     display: flex;
@@ -101,25 +91,21 @@ h4 {
 .coach-wrapper { 
     background-color: #f9f7ea;
     display: flex; 
+    
     padding: 40px 0px 0px 40px;  
        }
-       .coach-wrapper img {
+.coach-wrapper img {
             height: 600px;
               }
 .coachimgcard {
     display: flex;
 }
-
 @media (max-width: 1000px) {
     .coach-wrapper{
         display: block;
-    }
-
-   
+    }  
 }
-
-/* /////////////// consultation-container ////////////////// */
- 
+/* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
     background-color:#c4a668;
     padding: 20px;
@@ -176,39 +162,30 @@ h4 {
     background-size: cover;
     padding: 40px;
     } 
-@media (max-width: 1000px) {
-    .coach-wrapper .yogabio-wrapper{
-        flex-direction: column;
-    }
-}
-.yogabio-wrapper img {
-    width: 480px;
-    height: 310px;
-    border-radius: 30px;
-    filter: drop-shadow(white 2rem 2rem 15px);
-}
 .yogabio-wrapper >div {
-    display: flex;
-       
-}
-.floating-img {
-    z-index: 1;
-    margin-top: 260px;
-    margin-left: -240px;
-}
-.yogabio-textcard {
-    background-color: rgba(246, 251, 252, 0.864);
-    border-radius: 30px;
-    text-align: justify;
-    padding: 60px;
-    width: fit-content;
-    height: auto;
-
-       
+        display: flex;   
     }
-
+    .yogabio-wrapper img {
+        width: 480px;
+        height: 310px;
+        border-radius: 30px;
+        filter: drop-shadow(white 2rem 2rem 15px);
+    }
+    .floating-img {
+        z-index: 1;
+        margin-top: 260px;
+        margin-left: -240px;
+    }
+    .yogabio-textcard {
+        background-color: rgba(246, 251, 252, 0.864);
+        border-radius: 30px;
+        text-align: justify;
+        padding: 60px;
+        /* width: fit-content;
+        height: auto; */
+     
+    }
 /* ////////////////////////////////////////CLASS-container//////// */
-
 .class-wrapper {
     background-color: black;
     display: block;
@@ -238,7 +215,82 @@ a:active {
     /* object-fit: fill; */
     object-fit: contain;
 }
+/* /////////////////////////////////////////Prsonal training in the gym */
+.pt-wrapper {
+        background-image: url("./pic/b&w.jpg");
+        } 
+.ptinthegym {
+    display: flex;
+    flex-wrap: wrap;
+justify-items: center;
+    gap: 70px;
+}  
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.pt-img-wrapper {
+    height: 900px;
+    overflow: hidden;
+}
+.textcard {
+        text-align: justify;
+    padding: 40px;
+    width: 700px;
+}
+/* ///////////////////YogaHoliday */
+.yogaholiday-wrapper {
+    display: flex;
+    flex-direction: column;
+    }
+.yogaholiday-wrapper img {
+    width: 800px;
+}
+.yogaholiday-card1 {
+    display: flex;
+    gap: 60px;
+    margin-left: 100px;
+    }
+    .yogaholidaytext1 {
+        padding: 100px 20px;
+        text-align: justify;
+        align-self: center;
+    }
+    .yogaholiday-card2 {
+        display: flex;
+        justify-content: center;
+        margin-right: 100px;
+    }
+.yogaholidaytext2 {
+        background-color: #a6a6a6;
+        position: relative; 
+        padding: 20px;
+        margin: 60px -150px 60px 100px;
+        text-align: justify;
+    }
+    /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
+    /* modify the element's position? You need to use the top, bottom, left, and right properties */
+    @media (max-width: 1000px) {
+        .yogaholiday-card1{
+                flex-direction: column;
+                color: white;
+            }
+            .yogaholiday-card2{
+                flex-direction: column;
+            }
+            .yogaholidaytext2{
+                width: 100%;
+                margin: 0;
+                align-self: center;
+            }
+            .coach-wrapper, .yogabio-wrapper{
+                flex-direction: column;
+            }
+        }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
+
 .legal-conact-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -248,6 +300,9 @@ a:active {
     text-align: left;
     color: white;
     font-size: 15px;
+}
+.legalcard {
+    width: 310px;
 }
 .legal-conact-wrapper li {
     list-style: none;
@@ -263,7 +318,14 @@ a:active {
     height: 50px;
 }
 
-/* ////////////////////////////////////////legal-conact-wrapper rnd/////////////////// */
+/* ////////////////////////////////////////FOOTER/////////////////// */
+footer {
+    background-color: #25384f;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    }
+
 
 
 
@@ -307,79 +369,4 @@ a:active {
     font-family: "caption", sans-serif;
     
 }
-.yogaholiday-wrapper {
-    display: flex;
-    flex-direction: column;
-    }
-.yogaholiday-wrapper img {
-    width: 800px;
-}
-.yogaholiday-card1 {
-    display: flex;
-    gap:60px;
-    margin-left: 100px;
-    }
-    .yogaholidaytext1 {
-        padding: 100px 20px;
-        text-align: justify;
-        align-self: center;
-    }
-    .yogaholiday-card2 {
-        display: flex;
-        justify-content: center;
-        margin-right: 100px;
-    }
-    
-    
-    .yogaholidaytext2 {
-        background-color: #a6a6a6;
-        position: relative; 
-        padding: 20px;
-        margin: 60px -150px 60px 100px;
-        text-align: justify;
-    }
-    /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
-    /* modify the element's position? You need to use the top, bottom, left, and right properties */
-    @media (max-width: 1000px) {
-        .yogaholiday-card1{
-                flex-direction: column;
-            }
-            .yogaholiday-card2{
-                flex-direction: column;
-            }
-            .yogaholidaytext2{
-                width: 100%;
-                margin: 0;
-                align-self: center;
-            }
-        }
-.pt-wrapper {
-    
-    background-image: url("./pic/b&w.jpg");
-    
-    }   
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 1;
-    gap:  20px;
-    justify-content: space-evenly;
-    
-    
-}
-.pt-img-wrapper {
-    height: 800px;
-    overflow: hidden;
-}
-.pt-text {
-    width: 700px;
-    text-align: justify;
-    margin: 20px;
-}
-    footer {
-    background-color: #25384f;
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-    }
 
