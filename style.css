@@ -90,33 +90,32 @@ h4 {
        }
 .coach-content {
     display: flex;
-    flex-wrap: wrap;
+    padding-top: 50px;
     }
 .coach-text {
-    width: 900px;
-    height: 400px;
+    padding: 50px;
     text-align: justify;
     z-index: 1;
-    margin-right: -21px;
-    padding-top: 50px;
-}
+    margin-right: -60px;
+    }
+.coachimg-div {
+    /* height: 500px; */
+}    
 .coach-wrapper img {
-    height: 600px;
+    height: 500px;
+    justify-content: end;
 }
 
 @media (max-width: 1000px) {
-    .coach-wrapper {
-        
-           /* flex-direction: column;  */
-                } 
+    .coach-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: end;
+    }
     .coach-wrapper img {
        height: 300px;
-       padding-top: 50px;
-        
-        }
+              }
     .coach-text {
-        width: 550px;
-        height: 400px;
        margin-right: 0;
        padding-top: 0;
             }
@@ -179,7 +178,7 @@ h4 {
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
     display: flex;
-    gap:40px;
+    gap: 50px;
     background-image: url("./pic/mandala-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,7 +206,7 @@ h4 {
         background-color: rgba(246, 251, 252, 0.864);
         border-radius: 30px;
         text-align: justify;
-        padding: 60px;
+        padding: 50px;
            }
 /* ////////////////////////////////////////CLASS-container//////// */
 .class-wrapper {
@@ -292,42 +291,36 @@ justify-items: center;
 .yogaholidaytext2 {
         background-color: #a6a6a6;
         position: relative; 
-        padding: 20px;
+        padding: 40px;
         margin: 60px -150px 60px 100px;
         text-align: justify;
     }
     /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
     /* modify the element's position? You need to use the top, bottom, left, and right properties */
     @media (max-width: 1000px) {
-        .yogaholiday-card1{
-                flex-direction: column;
+           .yogaholiday-card1{
+            flex-wrap: wrap;
                 color: white;
             }
             .yogaholiday-card2{
-                flex-direction: column;
+                flex-wrap: wrap;
             }
             .yogaholidaytext2{
-                width: 100%;
                 margin: 0;
-                align-self: center;
-            }
-            .yogabio-wrapper{
-                flex-direction: column;
-            }
+                            }
         }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    flex: 1 2;
+    flex-grow: 2;
     gap: 50px;
     padding: 40px; 
     text-align: left;
     color: white;
 }
 .legalcard {
-    /* width: 300px; */
+    width: 300px;
 }
 .legal-conact-wrapper li {
     list-style: none;
