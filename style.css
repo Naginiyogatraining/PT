@@ -86,8 +86,7 @@ h4 {
 .coach-wrapper { 
     display: flex; 
     background-color: #f9f7ea;
-    padding-left: 40px;  
-       }
+           }
 .coach-content {
     display: flex;
     padding-top: 50px;
@@ -103,6 +102,9 @@ h4 {
 }    
 .coach-wrapper img {
     height: 500px;
+}
+.coachimg-div {
+    display: flex;
     justify-content: end;
 }
 
@@ -178,7 +180,7 @@ h4 {
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     background-image: url("./pic/mandala-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -207,7 +209,14 @@ h4 {
         border-radius: 30px;
         text-align: justify;
         padding: 50px;
+        width: fit-content;
+        height: auto;
            }
+@media (max-width: 1000px) {
+    .yogabio-wrapper {
+        flex-direction: column;
+    }
+}
 /* ////////////////////////////////////////CLASS-container//////// */
 .class-wrapper {
     background-color: black;
