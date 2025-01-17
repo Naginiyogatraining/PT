@@ -8,9 +8,9 @@ body {
     font-family: "caption", sans-serif;
     margin: 0;
 }
-p, a, li, footer {
+/* p, a, li, footer {
     font-size: 20px;
-}
+} */
 h2 {
     font-family: "Sedan", system-ui;
     font-size: 50px;
@@ -92,16 +92,19 @@ h4 {
            }
 .coach-content {
     display: flex;
-    padding-top: 50px;
-    }
+}
 .coach-text {
-    padding: 50px;
-    text-align: justify;
     z-index: 1;
     margin-right: -60px;
+    padding: 50px;
+    text-align: justify;
+    }
+    .coach-text > div {
+        margin: 0px;
     }
 .coachimg-div {
-    /* height: 500px; */
+    display: flex;
+        /* height: 500px; */
 }    
 .coach-wrapper img {
     height: 500px;
@@ -122,28 +125,28 @@ h4 {
               }
     .coach-text {
        margin-right: 0;
-       padding-top: 0;
+       margin-bottom: -240px;
+       padding: 0px 100px;
+            }
+            .coach-text > div {
+                padding-right: 150px;
             }
 }
 .background {
     background-image: url("./pic/background1366_150.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
-    /* align-self: center; */
     padding: 1em;  
 }
 /* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
     background-color:#c4a668;
-    padding: 20px;
+    padding: 50px 100px;
     text-align: center;
     font-weight: 900;
-    font-size: 25px;
     color: #25384f;
-    
-} 
+    } 
 .oblique-text {
-    /* color:#222d39; */
     font-weight: 500;
     text-align: center;
     margin: 10px;
@@ -151,11 +154,11 @@ h4 {
     font-family: "Roboto Condensed", sans-serif;
     }
 .highliht {
-    color: #76fbf0;
+    color: rgb(82, 222, 253);
     }
 
 .getstartedbuttonbody {
-    display: flex;
+display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
@@ -186,7 +189,7 @@ h4 {
     background-image: url("./pic/mandala-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 40px;
+    padding: 50px;
     } 
 .yogabio-wrapper >div {
         display: flex;   
@@ -211,9 +214,9 @@ h4 {
         border-radius: 30px;
         text-align: justify;
         padding: 50px;
-        width: fit-content;
-        height: auto;
-           }
+        /* width: fit-content; */
+        /* height: auto; */
+         }
 @media (max-width: 1000px) {
     .yogabio-wrapper {
         flex-direction: column;
@@ -232,7 +235,7 @@ h4 {
 .classicon-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    /* gap: 20px; */
     justify-content: space-evenly;      
 }
 a {
@@ -274,53 +277,59 @@ a:active {
 }
 @media (max-width: 1000px) {
     .pt-content {
-        justify-content: space-around;
         flex-direction: column;
         color: white;
+    }
+    .pt-content > div {
+        text-align: center;
     }
 }
 /* ///////////////////YogaHoliday */
 .yogaholiday-wrapper {
     display: flex;
     flex-direction: column;
+    padding: 0px 50px;
     }
 .yogaholiday-wrapper img {
     width: 800px;
 }
 .yogaholiday-card1 {
     display: flex;
-    gap: 60px;
-    margin-left: 100px;
-    }
+        }
     .yogaholidaytext1 {
-        padding: 100px 20px;
-        text-align: justify;
-        align-self: center;
-    }
+        padding: 50px;
+        margin-top: 100px;
+            }
     .yogaholiday-card2 {
         display: flex;
-        justify-content: center;
-        margin-right: 100px;
-    }
+            }
 .yogaholidaytext2 {
         background-color: #a6a6a6;
-        position: relative; 
-        padding: 40px;
-        margin: 60px -150px 60px 100px;
-        text-align: justify;
-    }
+        z-index: 1;
+        padding: 50px 20px;
+        margin: 100px -280px 100px 0px;
+            }
     /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
     /* modify the element's position? You need to use the top, bottom, left, and right properties */
     @media (max-width: 1000px) {
            .yogaholiday-card1{
-            flex-wrap: wrap;
-                color: white;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            }
+            .yogaholidaytext1 {
+                padding: 0px;
+                margin-top: 0px;
             }
             .yogaholiday-card2{
-                flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
             }
             .yogaholidaytext2{
-                margin: 0;
+                color: white;
+                background-color:#0651a100;
+                padding: 0px;
+                margin: 20px 20px;
                             }
         }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
@@ -329,10 +338,10 @@ a:active {
     display: flex;
     flex-grow: 2;
     gap: 50px;
-    padding: 40px; 
+    padding: 50px; 
     text-align: left;
     color: white;
-}
+    }
 .legalcard {
     width: 300px;
 }
@@ -340,6 +349,7 @@ a:active {
     list-style: none;
     margin-bottom: 10px;
     margin-left: -40px;
+    font-size: 20px;
     }
 .contacticonlinks {
     display: flex;
