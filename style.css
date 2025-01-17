@@ -30,6 +30,12 @@ h4 {
         text-decoration: solid underline white 1.5px;
         text-underline-offset: 30px;
          }
+li {
+            list-style: none;
+            margin-bottom: 10px;
+            margin-left: -40px;
+            font-size: 20px;
+            }
 .index-wrapper {
     display: flex;
     flex-direction: column;
@@ -43,31 +49,36 @@ h4 {
     margin: 40px;
     object-fit: contain;
 }
-.eb {
+.food-wrapper {
     color: white;   
-    padding: 20px;
+    padding: 50px;
+    font-size: 20px;
 }
-.wrapper {
-    display: flex;
-    color: white;
-    gap: 10px;
+.food-wrapper li{
+    list-style: square; 
+    margin-left: 0px;
 }
-.wrapper div {
+.food-card {
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: fit-content;
-    height: auto;
+    gap: 50px;
+    text-align: left;
+}
+@media (max-width: 1000px) {
+    .food-card{
+        flex-direction: column;
     }
-.wrapper img {
+}
+.food-card img {
     width: 400px;
     height: 400px;
+}
+.ingredients {
+    margin-top: -50px;
 }
 .recipie-wrapper {
     display: flex;
     gap: 10px;
-    padding: 40px;
+    padding: 50px;
     text-align: center;
 }
 .recipie-wrapper img {
@@ -345,12 +356,6 @@ a:active {
 .legalcard {
     width: 300px;
 }
-.legal-conact-wrapper li {
-    list-style: none;
-    margin-bottom: 10px;
-    margin-left: -40px;
-    font-size: 20px;
-    }
 .contacticonlinks {
     display: flex;
     gap: 10px;
