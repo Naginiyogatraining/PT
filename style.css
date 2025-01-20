@@ -52,7 +52,7 @@ li {
 .food-wrapper {
     color: white;   
     padding: 50px;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 .food-wrapper li{
     list-style: square; 
@@ -137,7 +137,7 @@ li {
     .coach-text {
        margin-right: 0;
        margin-bottom: -240px;
-       padding: 0px 100px;
+       padding: 20px 100px;
             }
             .coach-text > div {
                 padding-right: 150px;
@@ -147,7 +147,7 @@ li {
     background-image: url("./pic/background1366_150.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 1em;  
+    padding: 50px 100px;  
 }
 /* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
@@ -169,17 +169,18 @@ li {
     }
 
 .getstartedbuttonbody {
-display: flex;
+    display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
+  font-size: 25px;
 }
 .getstarted-button a {
     padding: 10px 30px;
     background-color:#0c1f36;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 25px;
+    
     box-shadow: 3px 3px rgb(65, 97, 127);  
     border-radius: 50px;
     border: none;
@@ -196,11 +197,11 @@ display: flex;
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
     display: flex;
-    gap: 40px;
     background-image: url("./pic/mandala-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px;
+    gap: 50px;
     } 
 .yogabio-wrapper >div {
         display: flex;   
@@ -208,9 +209,9 @@ display: flex;
 .ybioimg-wrapper {
     justify-content: center;
     align-self: center;
-}
+    }
     .yogabio-wrapper img {
-        width: 480px;
+        width: 500px;
         height: 310px;
         border-radius: 30px;
         filter: drop-shadow(white 2rem 2rem 15px);
@@ -221,17 +222,23 @@ display: flex;
         margin-left: -240px;
     }
     .yogabio-textcard {
-        background-color: rgba(246, 251, 252, 0.864);
+        background-color: rgba(246, 251, 252, 0.811);
         border-radius: 30px;
         text-align: justify;
         padding: 50px;
-        /* width: fit-content; */
-        /* height: auto; */
-         }
+                         }
 @media (max-width: 1000px) {
     .yogabio-wrapper {
         flex-direction: column;
+        padding: 0px;
     }
+    .ybioimg-wrapper {
+        padding-top: 50px;
+    }
+    .yogabio-textcard {
+        border-radius: 0px; 
+        padding: 50px 100px;
+            }
 }
 /* ////////////////////////////////////////CLASS-container//////// */
 .class-wrapper {
