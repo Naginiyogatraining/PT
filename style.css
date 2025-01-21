@@ -30,15 +30,10 @@ h4 {
         text-decoration: solid underline white 1.5px;
         text-underline-offset: 30px;
          }
-li {
-            list-style: none;
-            margin-bottom: 10px;
-            margin-left: -40px;
-            font-size: 20px;
-            }
+
 .index-wrapper {
     display: flex;
-    flex-direction: column;
+        flex-direction: column;
     align-items: center;
     color: white;
     padding: 50px;
@@ -49,31 +44,36 @@ li {
     margin: 40px;
     object-fit: contain;
 }
+
+
 .food-wrapper {
-    color: white;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white; 
+    text-align: left;
     padding: 50px;
-    /* font-size: 20px; */
+    
 }
+.eb-img {
+    padding-top: 200px;          
+    }
 .food-wrapper li{
     list-style: square; 
     margin-left: 0px;
+    padding: 5px;
 }
-.food-card {
-    display: flex;
-    gap: 50px;
-    text-align: left;
+.eb-text {
+    padding: 50px;
 }
 @media (max-width: 1000px) {
-    .food-card{
-        flex-direction: column;
+    .eb-img {
+    padding-top: 350px;          
     }
 }
-.food-card img {
+.food-wrapper img {
     width: 400px;
     height: 400px;
-}
-.ingredients {
-    margin-top: -50px;
 }
 .recipie-wrapper {
     display: flex;
@@ -203,10 +203,9 @@ li {
     padding: 50px;
     gap: 50px;
     } 
-.yogabio-wrapper >div {
-        display: flex;   
-    }
+
 .ybioimg-wrapper {
+    display: flex; 
     justify-content: center;
     align-self: center;
     }
@@ -221,11 +220,12 @@ li {
         margin-top: 260px;
         margin-left: -240px;
     }
-    .yogabio-textcard {
+    .yogabio-text {
         background-color: rgba(246, 251, 252, 0.811);
         border-radius: 30px;
         text-align: justify;
         padding: 50px;
+        margin: 50px 0px;
                          }
 @media (max-width: 1000px) {
     .yogabio-wrapper {
@@ -235,9 +235,10 @@ li {
     .ybioimg-wrapper {
         padding-top: 50px;
     }
-    .yogabio-textcard {
+    .yogabio-text {
         border-radius: 0px; 
         padding: 50px 100px;
+        margin: 0;
             }
 }
 /* ////////////////////////////////////////CLASS-container//////// */
@@ -249,6 +250,7 @@ li {
 }
 .class-textcard {
     padding: 50px 100px;
+    text-align: center;
 }
 .classicon-wrapper {
     display: flex;
@@ -259,7 +261,7 @@ li {
 a {
     text-decoration: none;
     color: white;
-    }
+        }
 a:active {
     color: grey;
 }
@@ -363,6 +365,12 @@ a:active {
 .legalcard {
     width: 300px;
 }
+.legalcard li {
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: -40px;
+    font-size: 20px;
+    }
 .contacticonlinks {
     display: flex;
     gap: 10px;

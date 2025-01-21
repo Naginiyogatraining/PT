@@ -57,44 +57,46 @@
 .lines-button.toggle .lines:before {
     transform: rotate3d(0,0,1,45deg);
     z-index: 2;
+    background-color: white;
 }
 .lines-button.toggle .lines:after {
     transform: rotate3d(0,0,1,-45deg);
     z-index: 2;
+    background-color: white;
+    
 }
 .lines-button.toggle .lines:before, .lines-button.toggle .lines:after {
     transition: top .3s ease-in-out,transform .3s .5s ease-in-out;
     top: 0;
+    
 }
 .lines-button.toggle #menu {
     display: flex;
 }  
 #menu {
     display: none;
+    text-align: center;
     justify-content: center;
     position: absolute;
-    padding-top: 160px;
-    padding-bottom: 200px;
-    right: -43px;
-    top: -63px;
+    padding: 200px 0px;
+    right: -35px;
+    top: -55px;
     background-color: rgb(25 31 52 / 96%);
     font-weight: 300;
     width: 100vw;
-       
+    
 }
 .menu-list li {
     list-style: none;
-    }    
+    padding: 40px;
+}    
 .menu-list ul {
-        padding: 0;
-        }    
+    /* margin: 50px;     */
+}    
 .menu-list a {
     text-decoration: none;
     line-height: normal;
     font-size: 50px;
-    
-    /* display: block; */
-    padding: 5px 150px 5px 150px;
     cursor: pointer;
   }
 
@@ -103,6 +105,7 @@
 .menu-list a:focus {
   /* background:rgb(146, 185, 210); */
   color: white;
+  padding: 40px 150px;
 }
 .menu-list a:hover {
     /* background: rgb(208, 206, 185); */
