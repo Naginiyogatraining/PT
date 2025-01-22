@@ -33,16 +33,15 @@ h4 {
 
 .index-wrapper {
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     align-items: center;
     color: white;
     padding: 50px;
 }
 .index-wrapper img {
-    border-radius: 50%;
-    height: 500px;
+    border-radius: 5%;
+    width: 500px;
     margin: 40px;
-    object-fit: contain;
 }
 
 
@@ -88,12 +87,15 @@ h4 {
     object-fit: cover;
 }
 .logo-wrapper {
-   background-color: #0651a19d;
+    display: block;
+text-align: center;
+   background-color: #f9f7ea;
     }
 .logo-wrapper img {
     height: 200px;
-    background-color: #0651a19d;
-    padding: 20px;
+    padding-top: 20px;
+
+    
 }
 
 /* //////////////Meet your coach///////////////// */
@@ -151,21 +153,21 @@ h4 {
 }
 /* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
-    background-color:#c4a668;
+    background-color:#C79E52;
     padding: 50px 100px;
     text-align: center;
     font-weight: 900;
-    color: #25384f;
+    color: #0c1f36;
     } 
 .oblique-text {
     font-weight: 500;
     text-align: center;
-    margin: 10px;
-    font-style: oblique;
+        font-style: oblique;
     font-family: "Roboto Condensed", sans-serif;
     }
 .highliht {
-    color: rgb(82, 222, 253);
+    color: #06f4e4;
+    text-shadow: #FC0 1px 0 10px;
     }
 
 .getstartedbuttonbody {
@@ -173,20 +175,20 @@ h4 {
   justify-content: center;
   align-items: center;
   height: 80px;
-  font-size: 25px;
-}
+  }
 .getstarted-button a {
     padding: 10px 30px;
     background-color:#0c1f36;
-    color: rgb(255, 255, 255);
+    color: #50A5C7;
     text-decoration: none;
     
-    box-shadow: 3px 3px rgb(65, 97, 127);  
+    box-shadow: 3px 3px #556272;  
     border-radius: 50px;
     border: none;
 }
 .getstarted-button a:hover {
-    background-color:#848484;
+    background-color:#50A5C7;
+    color: #0c1f36;
     cursor: pointer;
     border-radius: 50px;
 }
