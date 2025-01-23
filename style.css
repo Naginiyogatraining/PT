@@ -3,34 +3,36 @@
 body {  
     background-size: cover;
     background-image: url("./pic/blueback.jpg") ;
-    /* background-repeat: repeat; */
-    /* font-size: 20px; */
-    font-family: "caption", sans-serif;
     margin: 0;
+    background-repeat: no-repeatrepeat;
+        /* font-family: "caption", sans-serif; */
 }
 /* p, a, li, footer {
     font-size: 20px;
 } */
 h2 {
-    font-family: "Sedan", system-ui;
-    font-size: 50px;
+    font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+    font-size: 2rem;
     }
 h3 {
-    font-family: "Sedan", system-ui;
-    font-size: 50px;
-    color: white;
-    text-align: center;
-}
+    font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 2rem; 
+      }
+      
+
 h4 {
     font-family: "Sedan", system-ui;
-        font-size: 50px;
+        font-size: 2rem;
         font-weight: 400;
-        font-style: normal;
         text-decoration: underline;
         text-decoration: solid underline white 1.5px;
         text-underline-offset: 30px;
          }
-
+    
 .index-wrapper {
     display: flex;
     flex-direction: column;
@@ -43,16 +45,13 @@ h4 {
     width: 500px;
     margin: 40px;
 }
-
-
 .food-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     color: white; 
     text-align: left;
-    padding: 50px;
-    
+    padding: 50px; 
 }
 .eb-img {
     padding-top: 200px;          
@@ -81,7 +80,7 @@ h4 {
     text-align: center;
 }
 .recipie-wrapper img {
-    border:5px solid #3b4149;
+    border: 5px solid #3b4149;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -148,8 +147,9 @@ text-align: center;
 .background {
     background-image: url("./pic/background1366_150.jpg") ;
     background-size: cover;
-    background-repeat: no-repeat;
-    padding: 50px 100px;  
+    padding: 50px 100px; 
+    text-align: center; 
+    color: white;
 }
 /* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
@@ -162,32 +162,38 @@ text-align: center;
 .oblique-text {
     font-weight: 500;
     text-align: center;
-        font-style: oblique;
+    font-style: oblique;
     font-family: "Roboto Condensed", sans-serif;
     }
 .highliht {
-    color: #06f4e4;
-    text-shadow: #FC0 1px 0 10px;
-    }
+    color: white;
+    background-color: #0c1f36;
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: oblique;
+    padding: 5px;
+        }
 
 .getstartedbuttonbody {
     display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  padding-top: 10px;
+  font-family: "Hanuman", serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 2rem; 
   }
 .getstarted-button a {
     padding: 10px 30px;
     background-color:#0c1f36;
-    color: #50A5C7;
+    color: white;
     text-decoration: none;
     
-    box-shadow: 3px 3px #556272;  
-    border-radius: 50px;
-    border: none;
-}
+    /* box-shadow: 3px 3px #556272;   */
+    border-radius: 30px;
+    }
 .getstarted-button a:hover {
-    background-color:#50A5C7;
+    background-color:#eddeba;
     color: #0c1f36;
     cursor: pointer;
     border-radius: 50px;
@@ -249,7 +255,7 @@ text-align: center;
     display: block;
     color: white;
     text-align: center;
-}
+    }
 .class-textcard {
     padding: 50px 100px;
     text-align: center;
@@ -257,7 +263,6 @@ text-align: center;
 .classicon-wrapper {
     display: flex;
     flex-wrap: wrap;
-    /* gap: 20px; */
     justify-content: space-evenly;      
 }
 a {
