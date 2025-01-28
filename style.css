@@ -1,12 +1,11 @@
 @import url("./menu.css"); 
 @import url("./formcarry-container.css");
 body {  
-    background-size: cover;
+    /* background-size: cover;
     background-image: url("./pic/blueback.jpg") ;
+    background-repeat:no-repeat; */
     margin: 0;
-    background-repeat: no-repeatrepeat;
-        /* font-family: "caption", sans-serif; */
-}
+       }
 /* p, a, li, footer {
     font-size: 20px;
 } */
@@ -22,8 +21,6 @@ h3 {
     font-style: normal;  
     font-size: 2rem; 
       }
-      
-
 h4 {
     font-family: "Sedan", system-ui;
         font-size: 2rem;
@@ -32,8 +29,14 @@ h4 {
         text-decoration: solid underline white 1.5px;
         text-underline-offset: 30px;
          }
-    
+p, li { 
+    font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal; 
+
+}   
 .index-wrapper {
+    background-image: url("./pic/blueback.jpg") ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,6 +316,7 @@ a:active {
 }
 /* ///////////////////YogaHoliday */
 .yogaholiday-wrapper {
+    background-image: url("./pic/blueback.jpg") ;
     display: flex;
     flex-direction: column;
     padding: 0px 50px;
@@ -359,9 +363,47 @@ a:active {
                 margin: 20px 20px;
                             }
         }
+
+.training-wrapper {
+    display: flex;
+    background-color: #65a2ec;
+    padding: 50px;
+}
+/* .training-wrapper img {
+    width: 500px;
+    height: 400px;
+} */
+.cardio {
+    background-color: #8bbcf7;
+    }
+.weight {
+    background-color: #65a2ec;
+}
+.weight-img {
+    background-image: url("./pic/training4.jpg") ;
+    background-size: cover;
+    }
+.cardio-img {
+    background-image: url("./pic/training3.jpg") ;
+    background-size: cover;
+    height: 400px;
+}
+.flex-img {
+    background-image: url("./pic/training2.jpg") ;
+    background-size: cover;
+    height: 400px;
+}
+.flex {
+    background-color: #bad6f8;
+}
+    .training-text {
+        padding: 20px;
+        text-align: justify;
+    }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
+    background-image: url("./pic/darkblueback.jpg");
     display: flex;
     flex-grow: 2;
     gap: 50px;
@@ -385,6 +427,11 @@ a:active {
 .contacticonlinks img {
     width: 50px;
     height: 50px;
+}
+.contactinfo {
+    font-weight: 500;
+        font-style: oblique;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 /* ////////////////////////////////////////FOOTER/////////////////// */
