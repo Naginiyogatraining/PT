@@ -9,6 +9,9 @@ body {
 /* p, a, li, footer {
     font-size: 20px;
 } */
+.blue-bg {
+    background-image: url("./pic/blueback.jpg") ;
+    }
 h2 {
     font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -77,10 +80,7 @@ p, li {
     width: 400px;
     height: 400px;
 }
-.recipes-bg {
-    background-image: url("./pic/blueback.jpg") ;
 
-}
 .recipie-wrapper {
     display: flex;
     gap: 10px;
