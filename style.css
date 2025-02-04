@@ -244,7 +244,8 @@ text-align: center;
         border-radius: 30px;
         text-align: justify;
         padding: 50px;
-        margin: 50px 0px;
+        margin: 200px 50px;
+        height: 200px;
                          }
 @media (max-width: 1000px) {
     .yogabio-wrapper {
@@ -375,42 +376,37 @@ a:active {
                             }
         }
 
+.treiningmethods {
+    background-color: #65a2ec;
+    padding: 40px;
+    text-align: center;
+}
 .training-wrapper {
+    background-color: #65a2ec;
     display: flex;
-    background-color: #65a2ec;
-    padding: 50px;
+    text-align: center;
+    padding: 20px;
 }
-/* .training-wrapper img {
-    width: 500px;
-    height: 400px;
-} */
-.cardio {
+.training-wrapper img {
+    width: 494px;
+}
+.training-card {
+    display: flex;
+    flex-direction: column;
+}
+#backgroundcolor {
     background-color: #8bbcf7;
-    }
-.weight {
-    background-color: #65a2ec;
 }
-.weight-img {
-    background-image: url("./pic/training4.jpg") ;
-    background-size: cover;
-    }
-.cardio-img {
-    background-image: url("./pic/training3.jpg") ;
-    background-size: cover;
-    height: 400px;
-}
-.flex-img {
-    background-image: url("./pic/training2.jpg") ;
-    background-size: cover;
-    height: 400px;
-}
-.flex {
-    background-color: #bad6f8;
-}
-    .training-text {
+.training-text {
         padding: 20px;
         text-align: justify;
-    }
+            }
+@media (max-width: 1000px) {
+                .training-wrapper {
+                 flex-direction: column;
+                 text-align: center;
+                }
+            }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
