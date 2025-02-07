@@ -6,9 +6,6 @@ body {
     background-repeat:no-repeat; */
     margin: 0;
        }
-/* p, a, li, footer {
-    font-size: 20px;
-} */
 .blue-bg {
     background-image: url("./pic/blueback.jpg") ;
     }
@@ -37,9 +34,12 @@ p, li {
     font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal; 
-  font-size: 1rem;
+  font-size: 14px;
 
-}   
+} 
+footer {
+    font-size: 28px;
+}  
 .index-wrapper {
     background-image: url("./pic/blueback.jpg") ;
     display: flex;
@@ -59,23 +59,27 @@ p, li {
     justify-content: space-around;
     color: white; 
     text-align: left;
-    padding: 50px; 
+    padding: 20px; 
     background-image: url("./pic/blueback.jpg") ;
+    background-repeat: no-repeat;
+}
+.food-wrapper >div {
+    flex-grow: 0.3;
 }
 .eb-img {
-    padding-top: 50px;          
+    padding-top: 30px;          
     }
 .food-wrapper li{
     list-style: square; 
-    margin-left: 0px;
-    padding: 5px;
+    /* margin-left: 0px;
+    padding: 5px; */
 }
 .eb-text {
     padding: 50px;
 }
 @media (max-width: 1000px) {
     .eb-img {
-    padding-top: 350px;          
+    padding-top: 210px;          
     }
 }
 .food-wrapper img {
