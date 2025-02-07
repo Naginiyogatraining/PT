@@ -16,6 +16,7 @@ h2 {
     font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: italic;
+  margin: 30px;
     font-size: 2rem;
     }
 h3 {
@@ -36,6 +37,7 @@ p, li {
     font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal; 
+  font-size: 1rem;
 
 }   
 .index-wrapper {
@@ -155,14 +157,14 @@ text-align: center;
 .background {
     background-image: url("./pic/background1366_150.jpg") ;
     background-size: cover;
-    padding: 50px 100px; 
+    padding: 100px 20px;
     text-align: center; 
     color: white;
 }
 /* /////////////// consultation-container ////////////////// */ 
 .consultation-container {
     background-color:#C79E52;
-    padding: 100px;
+    padding: 100px 20px;
     text-align: center;
     color: #0c1f36;
     } 
@@ -245,8 +247,7 @@ text-align: center;
         text-align: justify;
         padding: 50px;
         margin: 200px 50px;
-        height: 200px;
-                         }
+                                 }
 @media (max-width: 1000px) {
     .yogabio-wrapper {
         flex-direction: column;
@@ -380,6 +381,7 @@ a:active {
     background-color: #65a2ec;
     padding: 40px;
     text-align: center;
+    font-size: 2rem;
 }
 .training-wrapper {
     background-color: #65a2ec;
@@ -389,6 +391,7 @@ a:active {
 }
 .training-wrapper img {
     width: 494px;
+    height: 100%;
 }
 .training-card {
     display: flex;
@@ -396,6 +399,7 @@ a:active {
 }
 #backgroundcolor {
     background-color: #8bbcf7;
+    height: 1300px;
 }
 .training-text {
         padding: 20px;
@@ -405,6 +409,10 @@ a:active {
                 .training-wrapper {
                  flex-direction: column;
                  text-align: center;
+                 padding: 0px;
+                }
+                .training-wrapper img {
+                    padding-top: 50px;
                 }
             }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
