@@ -7,7 +7,7 @@ body {
     text-size-adjust: 180%;
     margin: 0;
     min-height: 100vh;
-    
+
        }
 .blue-bg {
     background-image: url("./pic/blueback.jpg") ;
@@ -150,11 +150,11 @@ text-align: center;
         justify-content: end;
     }
     .coach-wrapper img {
-       height: 300px;
+       height: 350px;
               }
     .coach-text {
        margin-right: 0;
-       margin-bottom: -240px;
+       margin-bottom: -100px;
        padding: 20px 100px;
             }
             .coach-text > div {
@@ -193,7 +193,7 @@ text-align: center;
 .getstartedbuttonbody {
     font-family: "Hanuman", serif;
     font-size: 25px; 
-    padding: 20px;
+    padding: 40px;
 
     /* display: flex;
   justify-content: center;
@@ -404,8 +404,7 @@ a:active {
 }
 #backgroundcolor {
     background-color: #8bbcf7;
-    height: 1300px;
-}
+    }
 .training-text {
         padding: 20px;
         text-align: justify;
