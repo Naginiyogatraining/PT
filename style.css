@@ -309,7 +309,7 @@ a:active {
     background-image: url("./pic/b&w.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-        } 
+           } 
 .pt-wrapper img {
             height: 600px;
         }
@@ -318,7 +318,7 @@ a:active {
 }  
 .pt-text {
     text-align: justify;
-    padding: 0px 50px;
+    padding: 20px 150px;
 }
 .pt-buttons {
     display: flex;
