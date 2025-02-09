@@ -310,6 +310,13 @@ a:active {
     background-size: cover;
     background-repeat: no-repeat;
            } 
+.pt-wrapper1 {
+            display: flex;
+            background-image: url("./pic/b&w.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+                   } 
 .pt-wrapper img {
             height: 600px;
         }
@@ -317,8 +324,9 @@ a:active {
     display: flex;
 }  
 .pt-text {
+    color: white;
     text-align: justify;
-    padding: 20px 150px;
+    padding: 50px;
 }
 .pt-buttons {
     display: flex;
@@ -327,7 +335,7 @@ a:active {
 @media (max-width: 1000px) {
     .pt-content {
         flex-direction: column;
-        color: white;
+        
     }
     .pt-content > div {
         text-align: center;
