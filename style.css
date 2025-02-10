@@ -1,509 +1,507 @@
-@import url("./menu.css"); 
+@import url("./menu.css");
 @import url("./formcarry-container.css");
-body {  
-    /* background-size: cover;
+body {
+  /* background-size: cover;
     background-image: url("./pic/blueback.jpg") ;
     background-repeat:no-repeat; */
-    text-size-adjust: 180%;
-    margin: 0;
-    min-height: 100vh;
-
-       }
+  text-size-adjust: 180%;
+  margin: 0;
+  min-height: 100vh;
+}
 .blue-bg {
-    background-image: url("./pic/blueback.jpg") ;
-    }
+  background-image: url("./pic/blueback.jpg");
+}
 h2 {
-    font-family: "Libre Baskerville", serif;
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
   font-style: italic;
   margin: 30px;
-    font-size: 25px;
-    }
+  font-size: 25px;
+}
 h3 {
-    font-family: "Hanuman", serif;
-    font-weight: 400;
-    font-style: normal;  
-    font-size: 25px; 
-      }
+  font-family: "Hanuman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
 h4 {
-    font-family: "Sedan", system-ui;
-        font-size: 25px;
-        font-weight: 400;
-        text-decoration: underline;
-        text-decoration: solid underline white 1.5px;
-        text-underline-offset: 30px;
-         }
-p, li { 
-    font-family: "Poppins", serif;
+  font-family: "Sedan", system-ui;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration: solid underline white 1.5px;
+  text-underline-offset: 30px;
+}
+p,
+li {
+  font-family: "Poppins", serif;
   font-weight: 300;
-  font-style: normal; 
+  font-style: normal;
   font-size: 16px;
-
-} 
+}
 footer {
-    font-size: 16px;
-}  
+  font-size: 16px;
+}
 .index-wrapper {
-    background-image: url("./pic/blueback.jpg") ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding: 50px;
+  background-image: url("./pic/blueback.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 50px;
 }
 .index-wrapper img {
-    border-radius: 5%;
-    width: 500px;
-    margin: 40px;
+  border-radius: 5%;
+  width: 500px;
+  margin: 40px;
 }
 .food-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    color: white; 
-    text-align: left;
-    padding: 20px; 
-    background-image: url("./pic/blueback.jpg") ;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  background-image: url("./pic/blueback.jpg");
+  background-repeat: no-repeat;
 }
-.food-wrapper >div {
-    flex-grow: 0.3;
+.food-wrapper > div {
+  flex-grow: 0.3;
 }
 .eb-img {
-    padding-top: 30px;          
-    }
-.food-wrapper li{
-    list-style: square; 
-    /* margin-left: 0px;
+  padding-top: 30px;
+}
+.food-wrapper li {
+  list-style: square;
+  /* margin-left: 0px;
     padding: 5px; */
 }
 .eb-text {
-    padding: 50px;
+  padding: 50px;
 }
 @media (max-width: 1000px) {
-    .eb-img {
-    padding-top: 210px;          
-    }
+  .eb-img {
+    padding-top: 210px;
+  }
 }
 .food-wrapper img {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 .recipie-wrapper {
-    display: flex;
-    gap: 10px;
-    padding: 50px;
-    text-align: center;
+  display: flex;
+  gap: 10px;
+  padding: 50px;
+  text-align: center;
 }
 .recipie-wrapper img {
-    border: 5px solid #3b4149;
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+  border: 5px solid #3b4149;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 .logo-wrapper {
-    display: block;
-text-align: center;
-   background-color: #f9f7ea;
-    }
+  display: block;
+  text-align: center;
+  background-color: #f9f7ea;
+}
 .logo-wrapper img {
-    height: 200px;
-    padding-top: 20px;
-
-    
+  height: 200px;
+  padding-top: 20px;
 }
 
 /* //////////////Meet your coach///////////////// */
-.coach-wrapper { 
-    display: flex; 
-    background-color: #f9f7ea;
-           }
+.coach-wrapper {
+  display: flex;
+  background-color: #f9f7ea;
+}
 .coach-content {
-    display: flex;
+  display: flex;
 }
 .coach-text {
-    z-index: 1;
-    margin-right: -60px;
-    padding: 50px;
-    text-align: justify;
-    }
-    .coach-text > div {
-        margin: 0px;
-    }
-.coachimg-div {
-    display: flex;
-        /* height: 500px; */
-}    
-.coach-wrapper img {
-    height: 500px;
+  z-index: 1;
+  margin-right: -60px;
+  padding: 50px;
+  text-align: justify;
+}
+.coach-text > div {
+  margin: 0px;
 }
 .coachimg-div {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  /* height: 500px; */
+}
+.coach-wrapper img {
+  height: 500px;
+}
+.coachimg-div {
+  display: flex;
+  justify-content: end;
 }
 
 @media (max-width: 1000px) {
-    .coach-content {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: end;
-    }
-    .coach-wrapper img {
-       height: 350px;
-              }
-    .coach-text {
-       margin-right: 0;
-       margin-bottom: -100px;
-       padding: 20px 100px;
-            }
-            .coach-text > div {
-                padding-right: 150px;
-            }
+  .coach-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+  }
+  .coach-wrapper img {
+    height: 350px;
+  }
+  .coach-text {
+    margin-right: 0;
+    margin-bottom: -100px;
+    padding: 20px 100px;
+  }
+  .coach-text > div {
+    padding-right: 150px;
+  }
 }
 .background {
-    background-image: url("./pic/background1366_150.jpg") ;
-    background-size: cover;
-    padding: 100px 20px;
-    text-align: center; 
-    color: white;
+  background-image: url("./pic/background1366_150.jpg");
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
 }
-/* /////////////// consultation-container ////////////////// */ 
+/* /////////////// consultation-container ////////////////// */
 .consultation-container {
-    background-color:#C79E52;
-    padding: 20px;
-    text-align: center;
-    color: #0c1f36;
-    } 
+  background-color: #c79e52;
+  padding: 20px;
+  text-align: center;
+  color: #0c1f36;
+}
 .oblique-text {
-    font-weight: 500;
-    text-align: center;
-    font-style: oblique;
-    font-family: "Roboto Condensed", sans-serif;
-    }
+  font-weight: 500;
+  text-align: center;
+  font-style: oblique;
+  font-family: "Roboto Condensed", sans-serif;
+}
 .highliht {
-    color: white;
-    background-color: #0c1f36;
-        font-family: "Roboto Condensed", sans-serif;
-            font-style: oblique;
-            border-radius: 30px;
-            padding: 5px 20px;
-        }
+  color: white;
+  background-color: #0c1f36;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: oblique;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
 
 .getstartedbuttonbody {
-    font-family: "Hanuman", serif;
-    font-size: 25px; 
-    padding: 40px;
+  font-family: "Hanuman", serif;
+  font-size: 25px;
+  padding: 20px;
 
-    /* display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
     font-weight: 400;
     font-style: normal;   */
-  }
+}
 .getstarted-button a {
-    padding: 5px 20px;
-    background-color:#0c1f36;
-    color: white;
-    text-decoration: none;
-    border: 2px solid white; 
-        /* box-shadow: 3px 3px #556272;   */
-    border-radius: 30px;
-    }
+  padding: 5px 20px;
+  background-color: #0c1f36;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  /* box-shadow: 3px 3px #556272;   */
+  border-radius: 30px;
+}
 .getstarted-button a:hover {
-    background-color:#000000;
-    color: white;
-    cursor: pointer;
-    border-radius: 50px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
 }
 .getstarted-button a:active {
-    background-color:black;
-    border-radius: 50px;
+  background-color: black;
+  border-radius: 50px;
 }
 /* /////////////// yogabio-container /////javitva///////////// */
 .yogabio-wrapper {
-    display: flex;
-    background-image: url("./pic/mandala-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
-    gap: 50px;
-    } 
+  display: flex;
+  background-image: url("./pic/mandala-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  gap: 50px;
+}
 
 .ybioimg-wrapper {
-    display: flex; 
-    justify-content: center;
-    align-self: center;
-    margin-top: 50px;
-    }
-    .yogabio-wrapper img {
-        width: 500px;
-        height: 310px;
-        border-radius: 30px;
-        filter: drop-shadow(white 2rem 2rem 15px);
-    }
-    .floating-img {
-        z-index: 1;
-        margin-top: 260px;
-        margin-left: -240px;
-        margin-bottom: 50px;
-    }
-    .yogabio-text {
-        background-color: rgba(246, 251, 252, 0.811);
-        border-radius: 30px;
-        text-align: justify;
-        padding: 50px;
-        margin: 200px 50px;
-                                 }
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+}
+.yogabio-wrapper img {
+  width: 500px;
+  height: 310px;
+  border-radius: 30px;
+  filter: drop-shadow(white 2rem 2rem 15px);
+}
+.floating-img {
+  z-index: 1;
+  margin-top: 260px;
+  margin-left: -240px;
+  margin-bottom: 50px;
+}
+.yogabio-text {
+  background-color: rgba(246, 251, 252, 0.811);
+  border-radius: 30px;
+  text-align: justify;
+  padding: 50px;
+  margin: 200px 50px;
+}
 @media (max-width: 1000px) {
-    .yogabio-wrapper {
-        flex-direction: column;
-        padding: 0px;
-    }
-    .ybioimg-wrapper {
-        padding-top: 50px;
-    }
-    .yogabio-text {
-        border-radius: 0px; 
-        padding: 50px 100px;
-        margin: 0;
-            }
+  .yogabio-wrapper {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .ybioimg-wrapper {
+    padding-top: 50px;
+  }
+  .yogabio-text {
+    border-radius: 0px;
+    padding: 50px 100px;
+    margin: 0;
+  }
 }
 /* ////////////////////////////////////////CLASS-container//////// */
 .class-wrapper {
-    background-color: black;
-    display: block;
-    color: white;
-    text-align: center;
-    }
+  background-color: black;
+  display: block;
+  color: white;
+  text-align: center;
+}
 .class-textcard {
-    padding: 50px 100px;
-    text-align: center;
+  padding: 50px 100px;
+  text-align: center;
 }
 .classicon-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 50px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 100px;
 }
 a {
-    text-decoration: none;
-    color: white;
-        }
+  text-decoration: none;
+  color: white;
+}
 a:active {
-    color: grey;
+  color: grey;
 }
 .classicon-wrapper img {
-    /* width: 300px; */
-    height: 300px;
-    border-radius: 30px;
-    /* object-fit: fill; */
-    /* object-fit: contain; */
-    }
+  /* width: 300px; */
+  height: 300px;
+  border-radius: 30px;
+  /* object-fit: fill; */
+  /* object-fit: contain; */
+}
 .classicon-wrapper img:hover {
-    transform: scale(1.2);
-      }
+  transform: scale(1.2);
+}
 /* /////////////////////////////////////////Prsonal training in the gym */
 .pt-wrapper {
-    display: flex;
-    background-image: url("./pic/b&w.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-           } 
+  display: flex;
+  background-color: #000000;
+ }
 .pt-wrapper1 {
-            display: flex;
-            background-image: url("./pic/b&w.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            
-                   } 
-.pt-wrapper img {
-            height: 600px;
-        }
+  display: flex;
+  background-color: #000000;
+  padding-left: 20px;
+  }
 .pt-content {
-    display: flex;
-}  
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  }
 .pt-text {
-    color: white;
-    text-align: justify;
-    padding: 50px;
-}
+  text-align: justify;
+  padding: 20px;
+  background-image: url("./pic/b&w.jpg");
+  background-size: cover;
+  margin-bottom: 20px;
+  }
 .pt-buttons {
-    display: flex;
-    justify-content: space-evenly;
-    }
+  display: flex;
+  justify-content: space-evenly;
+}
+.pt-wrapper img,
+.pt-wrapper1 img {
+  height: 650px;
+  }
 @media (max-width: 1000px) {
-    .pt-content {
-        flex-direction: column;
-        
+  .pt-content {
+    flex-direction: column;
+    margin-top: 0;
+  margin-right: 0;
+  }
+  .pt-wrapper1 {
+        padding-left: 0;
     }
-    .pt-content > div {
-        text-align: center;
+    .pt-wrapper1 img {
+        float: right;
     }
+.pt-text {
+    margin-bottom: 0;
 }
 /* ///////////////////YogaHoliday */
 .yogaholiday-wrapper {
-    background-image: url("./pic/blueback.jpg") ;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    }
+  background-image: url("./pic/blueback.jpg");
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
 .yogaholiday-wrapper img {
-    width: 800px;
+  width: 800px;
 }
 .yogaholiday-card1 {
-    display: flex;
-        }
-    .yogaholidaytext1 {
-        padding: 50px;
-        margin-top: 100px;
-            }
-    .yogaholiday-card2 {
-        display: flex;
-            }
+  display: flex;
+}
+.yogaholidaytext1 {
+  padding: 50px;
+  margin-top: 100px;
+}
+.yogaholiday-card2 {
+  display: flex;
+}
 .yogaholidaytext2 {
-        background-color: #a6a6a6;
-        z-index: 1;
-        padding: 50px 20px;
-        margin: 100px -280px 100px 0px;
-            }
-    /* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
-    /* modify the element's position? You need to use the top, bottom, left, and right properties */
-    @media (max-width: 1000px) {
-           .yogaholiday-card1{
-            flex-direction: column;
-            text-align: center;
-            color: white;
-            }
-            .yogaholidaytext1 {
-                padding: 0px;
-                margin-top: 0px;
-            }
-            .yogaholiday-card2{
-                flex-direction: column;
-                text-align: center;
-            }
-            .yogaholidaytext2{
-                color: white;
-                background-color:#0651a100;
-                padding: 0px;
-                margin: 20px 20px;
-                            }
-        }
+  background-color: #a6a6a6;
+  z-index: 1;
+  padding: 50px 20px;
+  margin: 100px -280px 100px 0px;
+}
+/* Relative positioning: This is very similar to static positioning, except that once the positioned element has taken its place in the normal flow, you can then modify its final position, including making it overlap other elements on the page. */
+/* modify the element's position? You need to use the top, bottom, left, and right properties */
+@media (max-width: 1000px) {
+  .yogaholiday-card1 {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+  }
+  .yogaholidaytext1 {
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .yogaholiday-card2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .yogaholidaytext2 {
+    color: white;
+    background-color: #0651a100;
+    padding: 0px;
+    margin: 20px 20px;
+  }
+}
 
 .treiningmethods {
-    background-color: #65a2ec;
-    padding: 40px;
-    text-align: center;
+  background-color: #65a2ec;
+  padding: 40px;
+  text-align: center;
 }
 .training-wrapper {
-    background-color: #65a2ec;
-    display: flex;
-    text-align: center;
-    padding: 20px;
+  background-color: #65a2ec;
+  display: flex;
+  text-align: center;
+  padding: 20px;
 }
 .training-wrapper img {
-    width: 494px;
-    height: 100%;
+  width: 494px;
+  height: 100%;
 }
 .training-card {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 #backgroundcolor {
-    background-color: #8bbcf7;
-    }
+  background-color: #8bbcf7;
+}
 .training-text {
-        padding: 20px;
-        text-align: justify;
-            }
+  padding: 20px;
+  text-align: justify;
+}
 @media (max-width: 1000px) {
-                .training-wrapper {
-                 flex-direction: column;
-                 text-align: center;
-                 padding: 0px;
-                }
-                .training-wrapper img {
-                    padding-top: 50px;
-                }
-            }
+  .training-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+  }
+  .training-wrapper img {
+    padding-top: 50px;
+  }
+}
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
-    background-image: url("./pic/darkblueback.jpg");
-    display: flex;
-    flex-grow: 2;
-    gap: 50px;
-    padding: 50px; 
-    text-align: left;
-    color: white;
-    }
+  background-image: url("./pic/darkblueback.jpg");
+  display: flex;
+  flex-grow: 2;
+  gap: 50px;
+  padding: 50px;
+  text-align: left;
+  color: white;
+}
 .legalcard {
-    width: 300px;
+  width: 300px;
 }
 .legalcard li {
-    list-style: none;
-    margin-bottom: 10px;
-    margin-left: -40px;
-        }
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: -40px;
+}
 .contacticonlinks {
-    display: flex;
-    gap: 10px;
-    } 
+  display: flex;
+  gap: 10px;
+}
 .contacticonlinks img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .contactinfo {
-    font-weight: 500;
-        font-style: oblique;
-    font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500;
+  font-style: oblique;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* ////////////////////////////////////////FOOTER/////////////////// */
 footer {
-    background-color: #25384f;
-    text-align: center;
-    padding: 10px;
-
-    }
-
-
-
+  background-color: #25384f;
+  text-align: center;
+  padding: 10px;
+}
 
 .flex-price {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 .bronze {
-    flex: 1;
-    background-color:#d2a071;
-    padding: 20px;
-    max-width: 400px;
+  flex: 1;
+  background-color: #d2a071;
+  padding: 20px;
+  max-width: 400px;
 }
 .silver {
-    flex: 1;
-    background-color:#bababc; 
-    padding: 20px;
-    max-width: 400px;
+  flex: 1;
+  background-color: #bababc;
+  padding: 20px;
+  max-width: 400px;
 }
 .gold {
-    flex: 1;
-    background-color:#e1b868;
-    padding: 20px;
-    max-width: 400px;
+  flex: 1;
+  background-color: #e1b868;
+  padding: 20px;
+  max-width: 400px;
 }
 
-   #main {
-    border-radius: 12px;
-    height: 100px;
-    width: 250px;
-    padding: 40px;
-    margin: 10px;
-    background-color:#c4a668;
-    font-family: "caption", sans-serif;
-    
+#main {
+  border-radius: 12px;
+  height: 100px;
+  width: 250px;
+  padding: 40px;
+  margin: 10px;
+  background-color: #c4a668;
+  font-family: "caption", sans-serif;
 }
-
