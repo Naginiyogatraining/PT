@@ -223,15 +223,15 @@ footer {
   background-image: url("./pic/mandala-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px;
-  gap: 50px;
+  padding: 40px;
+  gap: 40px;
 }
 
 .ybioimg-wrapper {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .yogabio-wrapper img {
   width: 500px;
@@ -243,13 +243,13 @@ footer {
   z-index: 1;
   margin-top: 260px;
   margin-left: -240px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .yogabio-text {
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 30px;
   text-align: justify;
-  padding: 50px;
+  padding: 20px;
   margin: 200px 50px;
 }
 @media (max-width: 1000px) {
@@ -314,11 +314,15 @@ a:active {
   }
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
-  margin: 32px 50px 32px 0px;
-}
+  /* margin: 32px 50px 32px 0px; */
+  margin-bottom: 120px;
+  margin-right: 50px;
+  }
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
-  margin: 40px 0px 40px 50px;
+  /* margin: 40px 0px 40px 50px; */
+  margin-bottom: 200px;
+  margin-left: 50px;
 }
 .pt-text {
   text-align: justify;
@@ -333,6 +337,9 @@ a:active {
 .pt-wrapper img,
 .pt-wrapper1 img {
   height: 650px;
+  }
+  .media-pttext {
+    display: none;
   }
 @media (max-width: 1000px) {
   .pt-content, .pt-content1 {
@@ -349,6 +356,7 @@ a:active {
     display: flex;
   }
   .media-pttext {
+    display: block;
     padding-top: 300px;
         text-align: center;
         color: white;
@@ -439,6 +447,27 @@ a:active {
   .training-wrapper img {
     padding-top: 50px;
   }
+}
+
+/* --------------YOGA CLASS-------------- */
+.yoga-wrapper {
+  display: flex;
+}
+.yogaclass-text {
+  text-align: justify;
+  padding: 20px;
+}
+.yogabio-wrapper img {
+  
+}
+.xl-text {
+  text-align: justify;
+  font-size: 4.3vw;
+}
+.xl-text h2{
+  position: absolute;
+  z-index: 1;
+  font-size: 15vw;
 }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
