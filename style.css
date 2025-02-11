@@ -305,22 +305,26 @@ a:active {
   display: flex;
   background-color: #000000;
  }
-.pt-wrapper1 {
-  display: flex;
-  background-color: #000000;
-  padding-left: 20px;
+  .pt-content {
+     display: flex;
   }
-.pt-content {
-  display: flex;
-  margin-top: 20px;
-  margin-right: 20px;
+  .pt-content1 {
+    display: flex;
+    flex-direction: row-reverse;
   }
+.pt-text-background {
+  background-image: url("./pic/b&w.jpg");
+  margin: 32px 50px 32px 0px;
+}
+.pt-text-background1 {
+  background-image: url("./pic/b&w.jpg");
+  margin: 40px 0px 40px 50px;
+}
 .pt-text {
   text-align: justify;
   padding: 20px;
-  background-image: url("./pic/b&w.jpg");
   background-size: cover;
-  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.51);
   }
 .pt-buttons {
   display: flex;
@@ -331,19 +335,24 @@ a:active {
   height: 650px;
   }
 @media (max-width: 1000px) {
-  .pt-content {
+  .pt-content, .pt-content1 {
     flex-direction: column;
-    margin-top: 0;
-  margin-right: 0;
   }
-  .pt-wrapper1 {
-        padding-left: 0;
-    }
-    .pt-wrapper1 img {
-        float: right;
-    }
-.pt-text {
-    margin-bottom: 0;
+  .pt-content1 img {
+    float: right;
+
+  }
+  .pt-text-background, .pt-text-background1 {
+    margin: 0;
+  }
+  .pt-img-wrapper {
+    display: flex;
+  }
+  .media-pttext {
+    padding-top: 300px;
+        text-align: center;
+        color: white;
+      }
 }
 /* ///////////////////YogaHoliday */
 .yogaholiday-wrapper {
