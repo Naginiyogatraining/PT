@@ -161,14 +161,14 @@ footer {
 .background {
   background-image: url("./pic/background1366_150.jpg");
   background-size: cover;
-  padding: 100px 20px;
+  padding: 50px 20px;
   text-align: center;
   color: white;
 }
 /* /////////////// consultation-container ////////////////// */
 .consultation-container {
   background-color: #c79e52;
-  padding: 20px;
+  padding: 50px 20px;
   text-align: center;
   color: #0c1f36;
 }
@@ -226,7 +226,6 @@ footer {
   padding: 40px;
   gap: 40px;
 }
-
 .ybioimg-wrapper {
   display: flex;
   justify-content: center;
@@ -249,6 +248,7 @@ footer {
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 30px;
   text-align: justify;
+  text-wrap: pretty;
   padding: 20px;
   margin: 200px 50px;
 }
@@ -276,7 +276,7 @@ footer {
 .class-textcard {
   padding: 50px 100px;
   text-align: center;
-}
+  }
 .classicon-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -326,7 +326,7 @@ a:active {
 }
 .pt-text {
   text-align: justify;
-  padding: 20px;
+  padding: 50px 20px;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.51);
   }
@@ -357,7 +357,7 @@ a:active {
   }
   .media-pttext {
     display: block;
-    padding-top: 300px;
+    padding-top: 200px;
         text-align: center;
         color: white;
       }
@@ -413,12 +413,12 @@ a:active {
 }
 
 .treiningmethods {
-  background-color: #65a2ec;
+  background-color: #1081aa;
   padding: 40px;
   text-align: center;
 }
 .training-wrapper {
-  background-color: #65a2ec;
+  background-color: #1081aa;
   display: flex;
   text-align: center;
   padding: 20px;
@@ -451,23 +451,30 @@ a:active {
 
 /* --------------YOGA CLASS-------------- */
 .yoga-wrapper {
+  width: fit-content;
+  }
+.yogaclass-card {
   display: flex;
-}
+    }
 .yogaclass-text {
   text-align: justify;
-  padding: 20px;
+  padding: 350px 100px;
 }
-.yogabio-wrapper img {
+.yoga-wrapper img {
   
 }
 .xl-text {
+  justify-items: center;
   text-align: justify;
   font-size: 4.3vw;
+  color: #1081aa;
+  text-shadow: 3px 3px 4px rgb(250, 107, 131);
 }
 .xl-text h2{
   position: absolute;
   z-index: 1;
   font-size: 15vw;
+  justify-self: anchor-center;
 }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
