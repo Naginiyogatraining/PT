@@ -413,29 +413,31 @@ a:active {
 }
 
 .treiningmethods {
-  background-color: #1081aa;
-  padding: 40px;
-  text-align: center;
+  background-color: #3174AA;
+  padding: 50px;
+  justify-items: center;
+  text-align: justify;
 }
 .training-wrapper {
-  background-color: #1081aa;
+  background-color: #3174AA;
   display: flex;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
 }
 .training-wrapper img {
-  width: 494px;
+  width: 473px;
   height: 100%;
 }
 .training-card {
   display: flex;
   flex-direction: column;
+  
 }
 #backgroundcolor {
-  background-color: #8bbcf7;
+  background-color: #3A89C9;
 }
 .training-text {
-  padding: 20px;
+  padding: 50px;
   text-align: justify;
 }
 @media (max-width: 1000px) {
@@ -455,19 +457,21 @@ a:active {
   }
 .yogaclass-card {
   display: flex;
-    }
+  margin: 5px;
+      }
 .yogaclass-text {
   text-align: justify;
-  padding: 350px 100px;
+  padding: 50px;
+  margin-top: 300px;
 }
 .yoga-wrapper img {
-  
+  height: 600px;
 }
 .xl-text {
   justify-items: center;
   text-align: justify;
   font-size: 4.3vw;
-  color: #1081aa;
+  color: #3174AA;
   text-shadow: 3px 3px 4px rgb(250, 107, 131);
 }
 .xl-text h2{
@@ -475,6 +479,24 @@ a:active {
   z-index: 1;
   font-size: 15vw;
   justify-self: anchor-center;
+}
+.yogacard-wrapper {
+  background-color: #3174AA;
+}
+.yogainthegym {
+  text-align: justify;
+  padding: 50px;
+}
+@media (max-width: 1000px) {
+  .yogaclass-card {
+    flex-direction: column;
+  }
+  .xl-text h2{
+    position: relative;
+  }
+  .yogaclass-text {
+    margin-top: 0;
+  }
 }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
@@ -511,7 +533,7 @@ a:active {
 
 /* ////////////////////////////////////////FOOTER/////////////////// */
 footer {
-  background-color: #25384f;
+  background-color: #1B405E;
   text-align: center;
   padding: 10px;
 }
