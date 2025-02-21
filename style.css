@@ -453,7 +453,9 @@ a:active {
 
 /* --------------YOGA CLASS-------------- */
 .yoga-wrapper {
-  width: fit-content;
+  display: flex;
+    flex-direction: column;
+  /* width: fit-content; */
   }
 .yogaclass-card {
   display: flex;
@@ -461,7 +463,7 @@ a:active {
       }
 .yogaclass-text {
   text-align: justify;
-  padding: 50px;
+  padding: 45px;
   margin-top: 300px;
 }
 .yoga-wrapper img {
@@ -491,14 +493,11 @@ a:active {
 .yogacard-wrapper {
   background-color: #5a94ba;
 }
-.yogainthegym {
+.card-text {
   text-align: justify;
   padding: 50px;
 }
-.yogafitness4women {
-  text-align: justify;
-  padding: 50px;
-}
+
 .yogaclassoffer-wrapper {
   background-image: url("./pic/blue_mat.jpg");
   background-repeat: no-repeat;
