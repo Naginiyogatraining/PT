@@ -476,9 +476,15 @@ a:active {
   padding: 50px;
   padding-top: 0;
 }
-.xl-text h2{
+.xl-text > div{
   position: absolute;
   z-index: 1;
+  /* font-size: 15vw; */
+  justify-self: anchor-center;
+}
+.xl-text h2{
+  /* position: absolute;
+  z-index: 1; */
   font-size: 15vw;
   justify-self: anchor-center;
 }
@@ -506,7 +512,7 @@ a:active {
   .yogaclass-card {
     flex-direction: column;
   }
-  .xl-text h2{
+  .xl-text > div{
     position: relative;
   }
   .yogaclass-text {
