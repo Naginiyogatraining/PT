@@ -413,13 +413,13 @@ a:active {
 }
 
 .treiningmethods {
-  background-color: #3174AA;
+  background-color: #5a94ba;
   padding: 50px;
   justify-items: center;
   text-align: justify;
 }
 .training-wrapper {
-  background-color: #3174AA;
+  background-color: #5a94ba;
   display: flex;
   text-align: center;
   padding: 50px;
@@ -434,7 +434,7 @@ a:active {
   
 }
 #backgroundcolor {
-  background-color: #3A89C9;
+  background-color: #67ABD7;
 }
 .training-text {
   padding: 50px;
@@ -471,8 +471,10 @@ a:active {
   justify-items: center;
   text-align: justify;
   font-size: 4.3vw;
-  color: #3174AA;
-  text-shadow: 3px 3px 4px rgb(250, 107, 131);
+  color: #5a94ba;
+  text-shadow: 3px 3px 4px rgb(5, 5, 5);
+  padding: 50px;
+  padding-top: 0;
 }
 .xl-text h2{
   position: absolute;
@@ -481,12 +483,25 @@ a:active {
   justify-self: anchor-center;
 }
 .yogacard-wrapper {
-  background-color: #3174AA;
+  background-color: #5a94ba;
 }
 .yogainthegym {
   text-align: justify;
   padding: 50px;
 }
+.yogafittness4women {
+  text-align: justify;
+  padding: 50px;
+}
+.yogaclassoffer-wrapper {
+  background-image: url("./pic/blue_mat.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  height: 600px;
+
+}
+
 @media (max-width: 1000px) {
   .yogaclass-card {
     flex-direction: column;
