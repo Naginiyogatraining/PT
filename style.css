@@ -8,6 +8,13 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+.flex {
+  display: flex;
+  }
+.offer {
+  justify-content: end;
+  z-index: 1;
+}
 .blue-bg {
   background-image: url("./pic/blueback.jpg");
 }
@@ -128,10 +135,9 @@ footer {
 .coach-text > div {
   margin: 0px;
 }
-.coachimg-div {
+/* .coachimg-div {
   display: flex;
-  /* height: 500px; */
-}
+} */
 .coach-wrapper img {
   height: 500px;
 }
@@ -459,12 +465,12 @@ a:active {
   }
 .yogaclass-card {
   display: flex;
-  margin: 5px;
+  /* margin: 5px; */
       }
 .yogaclass-text {
   text-align: justify;
   padding: 45px;
-  margin-top: 300px;
+  margin-top: 250px;
 }
 .yoga-wrapper img {
   height: 600px;
@@ -505,7 +511,6 @@ a:active {
   background-size:cover;
   display: flex;
   height: 600px;
-
 }
 
 @media (max-width: 1000px) {
