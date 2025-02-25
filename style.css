@@ -438,7 +438,7 @@ a:active {
   
 }
 #backgroundcolor {
-  background-color: #67ABD7;
+  background-color: #64A4D0;
 }
 .training-text {
   padding: 50px;
@@ -465,6 +465,10 @@ a:active {
   display: flex;
   /* margin: 5px; */
       }
+.f4w-wrapper {
+  display: flex;
+  background-color: #64A4D0;
+}
 .yogaclass-text {
   text-align: justify;
   padding: 45px;
@@ -493,9 +497,9 @@ a:active {
   font-size: 13vw;
   /* justify-self: anchor-center; */
 }
-.yogacard-wrapper {
+/* .yogacard-wrapper {
   background-color: #5a94ba;
-}
+} */
 .card-text {
   text-align: justify;
   padding: 0px 40px;
@@ -511,6 +515,9 @@ a:active {
 
 @media (max-width: 1000px) {
   .yogaclass-card {
+    flex-direction: column;
+  }
+  .f4w-wrapper{
     flex-direction: column;
   }
   .xl-text > div {
