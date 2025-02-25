@@ -8,8 +8,9 @@ body {
   margin: 0;
   min-height: 100vh;
 }
-.flex {
+.dates-button-wrapper {
   display: flex;
+  gap: 50px;
   }
 .offer {
   justify-content: end;
@@ -313,6 +314,7 @@ a:active {
  }
   .pt-content {
      display: flex;
+     padding-bottom: 50px;
   }
   .pt-content1 {
     display: flex;
@@ -320,19 +322,16 @@ a:active {
   }
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
-  /* margin: 32px 50px 32px 0px; */
-  margin-bottom: 120px;
   margin-right: 50px;
   }
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
-  /* margin: 40px 0px 40px 50px; */
   margin-bottom: 200px;
   margin-left: 50px;
 }
 .pt-text {
   text-align: justify;
-  padding: 50px 20px;
+  padding: 20px 40px;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.51);
   }
@@ -353,7 +352,6 @@ a:active {
   }
   .pt-content1 img {
     float: right;
-
   }
   .pt-text-background, .pt-text-background1 {
     margin: 0;
@@ -473,36 +471,34 @@ a:active {
   margin-top: 250px;
 }
 .yoga-wrapper img {
-  height: 600px;
+  height: 650px;
 }
 .xl-text {
-  justify-items: center;
-  text-align: justify;
-  /* font-size: 4.3vw; */
+  /* justify-items: center;
+  text-align: justify; */
   color: #5a94ba;
   text-shadow: 3px 3px 4px rgb(5, 5, 5);
-  padding: 50px;
-  padding-top: 0;
+  /* padding: 50px; */
+  /* padding-top: 0; */
 }
 .xl-text > div{
   position: absolute;
   z-index: 1;
-  /* font-size: 15vw; */
   justify-self: anchor-center;
 }
 .xl-text h2{
   /* position: absolute;
   z-index: 1; */
-  padding: 25px;
+  /* padding: 25px; */
   font-size: 13vw;
-  justify-self: anchor-center;
+  /* justify-self: anchor-center; */
 }
 .yogacard-wrapper {
   background-color: #5a94ba;
 }
 .card-text {
   text-align: justify;
-  padding: 50px;
+  padding: 0px 40px;
 }
 
 .yogaclassoffer-wrapper {
