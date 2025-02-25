@@ -100,14 +100,27 @@ footer {
 .recipie-wrapper {
   display: flex;
   gap: 10px;
-  padding: 50px;
-  text-align: center;
+  padding: 50px; 
 }
 .recipie-wrapper img {
-  border: 5px solid #3b4149;
   width: 300px;
-  height: 300px;
+  height: 300px; 
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
   object-fit: cover;
+}
+.recipeitem-card {
+  background-color: #c79e52;
+    border-radius: 20px;
+       overflow: hidden;
+    border: 2px solid transparent;
+    text-align: center;   
+}
+.recipeitem-card a {
+text-decoration: none;
+color: #0c1f36;
 }
 .logo-wrapper {
   display: block;
@@ -198,12 +211,6 @@ footer {
   font-family: "Hanuman", serif;
   font-size: 25px;
   padding: 20px;
-
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-    font-weight: 400;
-    font-style: normal;   */
 }
 .getstarted-button a {
   padding: 5px 20px;
@@ -290,11 +297,11 @@ footer {
   justify-content: space-evenly;
   padding: 50px 100px;
 }
-a {
+.classicon-wrapper a {
   text-decoration: none;
   color: white;
 }
-a:active {
+.classicon-wrapper a:active {
   color: grey;
 }
 .classicon-wrapper img {
@@ -319,6 +326,7 @@ a:active {
   .pt-content1 {
     display: flex;
     flex-direction: row-reverse;
+    padding-bottom: 50px;
   }
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
@@ -326,12 +334,11 @@ a:active {
   }
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
-  margin-bottom: 200px;
   margin-left: 50px;
 }
 .pt-text {
   text-align: justify;
-  padding: 20px 40px;
+  padding: 43px;
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.51);
   }
@@ -425,8 +432,8 @@ a:active {
 .training-wrapper {
   background-color: #5a94ba;
   display: flex;
-  text-align: center;
-  padding: 50px;
+  /* text-align: center;
+  padding: 50px; */
 }
 .training-wrapper img {
   width: 473px;
@@ -540,6 +547,10 @@ a:active {
 }
 .legalcard {
   width: 300px;
+}
+.legalcard a {
+  color: white;
+  text-decoration: none;
 }
 .legalcard li {
   list-style: none;
