@@ -10,7 +10,7 @@ body {
 }
 .dates-button-wrapper {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   }
 .offer {
   justify-content: end;
@@ -97,28 +97,26 @@ footer {
   height: 400px;
 }
 
-.recipie-wrapper {
+.golditem-card-wrapper {
   display: flex;
   gap: 10px;
   padding: 50px; 
 }
-.recipie-wrapper img {
-  width: 300px;
-  height: 300px; 
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  max-height: 100%;
+.golditem-card-wrapper img {
+  width: 450px;
+  height: 400px; 
   object-fit: cover;
+  text-align: center;
 }
-.recipeitem-card {
+.golditem-card {
   background-color: #c79e52;
     border-radius: 20px;
        overflow: hidden;
     border: 2px solid transparent;
-    text-align: center;   
+    text-align: center; 
+    width: min-content;  
 }
-.recipeitem-card a {
+.golditem-card a {
 text-decoration: none;
 color: #0c1f36;
 }
@@ -470,15 +468,15 @@ color: #0c1f36;
   }
 .yogaclass-card {
   display: flex;
-  /* margin: 5px; */
-      }
+        }
 .f4w-wrapper {
   display: flex;
   background-color: #64A4D0;
+  padding: 30px;
 }
 .yogaclass-text {
   text-align: justify;
-  padding: 45px;
+  padding: 40px;
   margin-top: 250px;
 }
 .yoga-wrapper img {
@@ -504,12 +502,9 @@ color: #0c1f36;
   font-size: 13vw;
   /* justify-self: anchor-center; */
 }
-/* .yogacard-wrapper {
-  background-color: #5a94ba;
-} */
 .card-text {
   text-align: justify;
-  padding: 0px 40px;
+  padding: 10px;
 }
 
 .yogaclassoffer-wrapper {
@@ -533,6 +528,18 @@ color: #0c1f36;
   .yogaclass-text {
     margin-top: 0;
   }
+}
+
+/* group-personal-trainin-sessions */
+.groupclass-text {
+  text-align: justify;
+  padding: 50px;
+  margin-top: 450px;
+}
+.groupcard-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 50px;
 }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
@@ -576,39 +583,4 @@ footer {
   background-color: #1B405E;
   text-align: center;
   padding: 10px;
-}
-
-.flex-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-.bronze {
-  flex: 1;
-  background-color: #d2a071;
-  padding: 20px;
-  max-width: 400px;
-}
-.silver {
-  flex: 1;
-  background-color: #bababc;
-  padding: 20px;
-  max-width: 400px;
-}
-.gold {
-  flex: 1;
-  background-color: #e1b868;
-  padding: 20px;
-  max-width: 400px;
-}
-
-#main {
-  border-radius: 12px;
-  height: 100px;
-  width: 250px;
-  padding: 40px;
-  margin: 10px;
-  background-color: #c4a668;
-  font-family: "caption", sans-serif;
 }
