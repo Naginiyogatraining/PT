@@ -541,6 +541,15 @@ color: #0c1f36;
   gap: 20px;
   padding: 50px;
 }
+@media (max-width: 1000px) {
+  .groupclass-text {
+    margin-top: 0;
+  }
+  .groupcard-wrapper{
+    flex-direction: column;
+  }
+}
+
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
