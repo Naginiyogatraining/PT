@@ -548,6 +548,9 @@ color: #0c1f36;
   .groupcard-wrapper{
     flex-direction: column;
   }
+  .golditem-card-wrapper {
+    flex-direction: column;
+  }
 }
 
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
