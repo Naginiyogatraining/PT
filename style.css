@@ -461,18 +461,32 @@ color: #0c1f36;
 }
 
 /* --------------YOGA CLASS-------------- */
-.yoga-wrapper {
+/* .yoga-wrapper {
   display: flex;
     flex-direction: column;
-  /* width: fit-content; */
-  }
+  width: fit-content;
+  } */
 .yogaclass-card {
   display: flex;
+  gap: 10px;
         }
 .f4w-wrapper {
   display: flex;
   background-color: #64A4D0;
-  padding: 30px;
+  text-align: justify;
+  padding: 0px 40px 40px 40px;
+  gap: 40px;
+  }
+.mixgroupstudioclass-wrapper {
+  display: flex;
+  background-color:#7faecb;
+  text-align: justify;
+  padding: 0px 40px 40px 40px;
+  gap: 40px; 
+    }
+.pure-wrapper {
+  text-align: justify;
+  padding: 0px 40px 40px 40px;
 }
 .yogaclass-text {
   text-align: justify;
@@ -481,14 +495,11 @@ color: #0c1f36;
 }
 .yoga-wrapper img {
   height: 650px;
+  /* width: 750px; */
 }
 .xl-text {
-  /* justify-items: center;
-  text-align: justify; */
   color: #5a94ba;
   text-shadow: 3px 3px 4px rgb(5, 5, 5);
-  /* padding: 50px; */
-  /* padding-top: 0; */
 }
 .xl-text > div{
   position: absolute;
@@ -496,37 +507,35 @@ color: #0c1f36;
   justify-self: anchor-center;
 }
 .xl-text h2{
-  /* position: absolute;
-  z-index: 1; */
-  /* padding: 25px; */
-  font-size: 13vw;
-  /* justify-self: anchor-center; */
-}
+  font-size: 10vw;
+  }
 .card-text {
-  text-align: justify;
-  padding: 10px;
+  width: 50%;
 }
 
-.yogaclassoffer-wrapper {
+.matimg-wrapper {
   background-image: url("./pic/blue_mat.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   display: flex;
   height: 600px;
 }
 
 @media (max-width: 1000px) {
-  .yogaclass-card {
+  .yogaclass-card, .f4w-wrapper, .mixgroupstudioclass-wrapper {
     flex-direction: column;
   }
-  .f4w-wrapper{
-    flex-direction: column;
+  .mixgroupstudioclass-wrapper {
+    gap: 0;
   }
   .xl-text > div {
     position: relative;
   }
   .yogaclass-text {
     margin-top: 0;
+  }
+  .matimg-wrapper {
+    height: 500px;
   }
 }
 
@@ -550,6 +559,9 @@ color: #0c1f36;
   }
   .golditem-card-wrapper {
     flex-direction: column;
+  }
+  .card-text {
+    width: unset;
   }
 }
 
