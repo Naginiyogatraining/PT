@@ -47,6 +47,12 @@ li {
   font-style: normal;
   font-size: 16px;
 }
+.oblique-text {
+  font-weight: 500;
+  /* text-align: center; */
+  font-style: oblique;
+  font-family: "Roboto Condensed", sans-serif;
+}
 footer {
   font-size: 16px;
 }
@@ -99,26 +105,28 @@ footer {
 
 .golditem-card-wrapper {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   padding: 50px; 
-}
-.golditem-card-wrapper img {
-  width: 450px;
-  height: 400px; 
-  object-fit: cover;
-  text-align: center;
 }
 .golditem-card {
   background-color: #c79e52;
     border-radius: 20px;
-       overflow: hidden;
     border: 2px solid transparent;
-    text-align: center; 
-    width: min-content;  
+    overflow: hidden;
+    }
+.goldcard-text {
+  padding: 10px;
+}
+.golditem-card img {
+ width: 700px;
+}
+.golditem-card .recipeimg {
+ width: 400px;
 }
 .golditem-card a {
 text-decoration: none;
 color: #0c1f36;
+text-align: center;
 }
 .logo-wrapper {
   display: block;
@@ -147,9 +155,6 @@ color: #0c1f36;
 .coach-text > div {
   margin: 0px;
 }
-/* .coachimg-div {
-  display: flex;
-} */
 .coach-wrapper img {
   height: 500px;
 }
@@ -190,12 +195,6 @@ color: #0c1f36;
   text-align: center;
   color: #0c1f36;
 }
-.oblique-text {
-  font-weight: 500;
-  text-align: center;
-  font-style: oblique;
-  font-family: "Roboto Condensed", sans-serif;
-}
 .highliht {
   color: white;
   background-color: #0c1f36;
@@ -204,7 +203,6 @@ color: #0c1f36;
   border-radius: 30px;
   padding: 5px 20px;
 }
-
 .getstartedbuttonbody {
   font-family: "Hanuman", serif;
   font-size: 25px;
@@ -242,8 +240,7 @@ color: #0c1f36;
   display: flex;
   justify-content: center;
   align-self: center;
-  /* margin-top: 50px; */
-}
+ }
 .yogabio-wrapper img {
   width: 500px;
   height: 310px;
@@ -254,8 +251,7 @@ color: #0c1f36;
   z-index: 1;
   margin-top: 260px;
   margin-left: -240px;
-  /* margin-bottom: 50px; */
-}
+ }
 .yogabio-text {
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 30px;
@@ -371,7 +367,7 @@ color: #0c1f36;
         color: white;
       }
 }
-/* ///////////////////YogaHoliday */
+/* //////////////////////////////////////////////YogaHoliday */
 .yogaholiday-wrapper {
   background-image: url("./pic/blueback.jpg");
   display: flex;
@@ -461,11 +457,6 @@ color: #0c1f36;
 }
 
 /* --------------YOGA CLASS-------------- */
-/* .yoga-wrapper {
-  display: flex;
-    flex-direction: column;
-  width: fit-content;
-  } */
 .yogaclass-card {
   display: flex;
   gap: 10px;
@@ -512,7 +503,6 @@ color: #0c1f36;
 .card-text {
   width: 50%;
 }
-
 .matimg-wrapper {
   background-image: url("./pic/blue_mat.jpg");
   background-repeat: no-repeat;
@@ -537,6 +527,9 @@ color: #0c1f36;
   .matimg-wrapper {
     height: 500px;
   }
+  .card-text {
+    width: unset;
+  }
 }
 
 /* group-personal-trainin-sessions */
@@ -547,8 +540,8 @@ color: #0c1f36;
 }
 .groupcard-wrapper {
   display: flex;
-  gap: 20px;
-  padding: 50px;
+  gap: 40px;
+  padding: 40px;
 }
 @media (max-width: 1000px) {
   .groupclass-text {
@@ -559,11 +552,10 @@ color: #0c1f36;
   }
   .golditem-card-wrapper {
     flex-direction: column;
+    justify-self: center;
+    }
   }
-  .card-text {
-    width: unset;
-  }
-}
+ }
 
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
