@@ -8,6 +8,17 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+.blue {
+  background-color:#7faecb;
+}
+.flex {
+  display: flex;
+  flex: 1 1;
+  }
+  .card-text {
+  padding: 40px;
+  text-align: justify;
+  }
 .dates-button-wrapper {
   display: flex;
   gap: 20px;
@@ -98,10 +109,10 @@ footer {
     padding-top: 210px;
   }
 }
-.food-wrapper img {
+/* .food-wrapper img {
   width: 400px;
   height: 400px;
-}
+} */
 
 .golditem-card-wrapper {
   display: flex;
@@ -109,19 +120,20 @@ footer {
   padding: 50px; 
 }
 .golditem-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
   background-color: #c79e52;
+  border: 2px solid transparent;
     border-radius: 20px;
-    border: 2px solid transparent;
     overflow: hidden;
     }
 .goldcard-text {
-  padding: 10px;
-}
+  padding: 20px;
+  }
 .golditem-card img {
- width: 700px;
-}
-.golditem-card .recipeimg {
- width: 400px;
+ width: 100%;
+
 }
 .golditem-card a {
 text-decoration: none;
@@ -142,9 +154,6 @@ text-align: center;
 .coach-wrapper {
   display: flex;
   background-color: #f9f7ea;
-}
-.coach-content {
-  display: flex;
 }
 .coach-text {
   z-index: 1;
@@ -426,9 +435,7 @@ text-align: center;
 .training-wrapper {
   background-color: #5a94ba;
   display: flex;
-  /* text-align: center;
-  padding: 50px; */
-}
+  }
 .training-wrapper img {
   width: 473px;
   height: 100%;
@@ -457,10 +464,6 @@ text-align: center;
 }
 
 /* --------------YOGA CLASS-------------- */
-.yogaclass-card {
-  display: flex;
-  gap: 10px;
-        }
 .f4w-wrapper {
   display: flex;
   background-color: #64A4D0;
@@ -468,25 +471,14 @@ text-align: center;
   padding: 0px 40px 40px 40px;
   gap: 40px;
   }
-.mixgroupstudioclass-wrapper {
-  display: flex;
-  background-color:#7faecb;
-  text-align: justify;
-  padding: 0px 40px 40px 40px;
-  gap: 40px; 
-    }
 .pure-wrapper {
   text-align: justify;
   padding: 0px 40px 40px 40px;
 }
-.yogaclass-text {
+.class-discription-text {
   text-align: justify;
   padding: 40px;
   margin-top: 250px;
-}
-.yoga-wrapper img {
-  height: 650px;
-  /* width: 750px; */
 }
 .xl-text {
   color: #5a94ba;
@@ -500,48 +492,37 @@ text-align: center;
 .xl-text h2{
   font-size: 10vw;
   }
-.card-text {
-  width: 50%;
-}
 .matimg-wrapper {
+  display: flex;
   background-image: url("./pic/blue_mat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   height: 600px;
 }
 
 @media (max-width: 1000px) {
-  .yogaclass-card, .f4w-wrapper, .mixgroupstudioclass-wrapper {
+  .flex, .f4w-wrapper {
     flex-direction: column;
   }
-  .mixgroupstudioclass-wrapper {
+  /* .mixgroupstudioclass-wrapper {
     gap: 0;
-  }
+  } */
   .xl-text > div {
     position: relative;
   }
-  .yogaclass-text {
+  .class-discription-text {
     margin-top: 0;
   }
   .matimg-wrapper {
     height: 500px;
   }
-  .card-text {
-    width: unset;
-  }
-}
+ }
 
 /* group-personal-trainin-sessions */
 .groupclass-text {
   text-align: justify;
-  padding: 50px;
-  margin-top: 450px;
-}
-.groupcard-wrapper {
-  display: flex;
-  gap: 40px;
   padding: 40px;
+  margin-top: 250px;
 }
 @media (max-width: 1000px) {
   .groupclass-text {
