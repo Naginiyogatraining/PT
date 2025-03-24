@@ -11,6 +11,10 @@ body {
 .blue {
   background-color:#7faecb;
 }
+.imgsize {
+  width: 500px;
+  padding: 40px;
+  }
 .flex {
   display: flex;
   flex: 1 1;
@@ -85,35 +89,18 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   color: white;
-  text-align: left;
   padding: 20px;
   background-image: url("./pic/blueback.jpg");
   background-repeat: no-repeat;
 }
-.food-wrapper > div {
-  flex-grow: 0.3;
-}
-.eb-img {
+.food-wrapper img {
   padding-top: 30px;
+  width: 400px;
 }
 .food-wrapper li {
   list-style: square;
-  /* margin-left: 0px;
-    padding: 5px; */
+  margin: 5px;
 }
-.eb-text {
-  padding: 50px;
-}
-@media (max-width: 1000px) {
-  .eb-img {
-    padding-top: 210px;
-  }
-}
-/* .food-wrapper img {
-  width: 400px;
-  height: 400px;
-} */
-
 .golditem-card-wrapper {
   display: flex;
   gap: 20px;
@@ -432,49 +419,22 @@ text-align: center;
   justify-items: center;
   text-align: justify;
 }
-.training-wrapper {
-  background-color: #5a94ba;
-  display: flex;
-  }
-.training-wrapper img {
-  width: 473px;
-  height: 100%;
-}
 .training-card {
   display: flex;
+  width:33%;
   flex-direction: column;
-  
 }
-#backgroundcolor {
-  background-color: #64A4D0;
-}
-.training-text {
-  padding: 50px;
-  text-align: justify;
+.training-card img {
+  width:100%
 }
 @media (max-width: 1000px) {
-  .training-wrapper {
-    flex-direction: column;
-    text-align: center;
-    padding: 0px;
+  .training-card {
+    width: 100%; 
   }
-  .training-wrapper img {
-    padding-top: 50px;
-  }
+ 
 }
 
 /* --------------YOGA CLASS-------------- */
-.f4w-wrapper {
-  display: flex;
-  background-color: #64A4D0;
-  text-align: justify;
-  padding: 0px 40px 40px 40px;
-  gap: 40px;
-  }
-.pure-wrapper {
-  text-align: justify;
-  padding: 0px 40px 40px 40px;
-}
 .class-discription-text {
   text-align: justify;
   padding: 40px;
