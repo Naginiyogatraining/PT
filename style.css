@@ -448,9 +448,9 @@ text-align: center;
 }
 
 @media (max-width: 1000px) {
-  /* .flex, .f4w-wrapper {
+  .flex, .f4w-wrapper {
     flex-direction: column;
-  } */
+  }
    .xl-text > div {
     position: relative;
   }
