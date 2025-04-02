@@ -16,8 +16,15 @@ body {
   justify-content: center;
 }
 .imgsize {
-  width: 580px;
-  padding: 20px;
+    width: 500px;
+    justify-content: center;
+  /* padding: 20px; */
+    }
+    @media (max-width: 1000px) {
+      .imgsize {
+      width: 300px;
+      height: fit-content;
+      }
     }
 .flex {
   display: flex;
@@ -43,6 +50,7 @@ body {
 }
 .blue-bg {
   background-image: url("./pic/blueback.jpg");
+  color: white;
 }
 h2 {
   font-family: "Libre Baskerville", serif;
@@ -71,15 +79,13 @@ li {
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
+  list-style: square;
+  margin: 5px;
 }
 .oblique-text {
   font-weight: 500;
-  /* text-align: center; */
   font-style: oblique;
   font-family: "Roboto Condensed", sans-serif;
-}
-footer {
-  font-size: 16px;
 }
 .index-wrapper {
   background-image: url("./pic/blueback.jpg");
@@ -94,22 +100,10 @@ footer {
   width: 500px;
   margin: 40px;
 }
-.food-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  /* justify-content: space-around; */
-  color: white;
-  padding: 20px;
-  background-image: url("./pic/blueback.jpg");
+.wrapper {
+  padding: 40px;
+  justify-content: space-around;
   }
-.food-wrapper img {
-  padding-top: 30px;
-  width: 400px;
-}
-.food-wrapper li {
-  list-style: square;
-  margin: 5px;
-}
 .golditem-card-wrapper {
   display: flex;
   gap: 20px;
@@ -287,10 +281,6 @@ text-align: center;
   text-align: center;
   padding: 20px;
 }
-/* .class-textcard {
-  padding: 50px 100px;
-  text-align: center;
-  } */
 .classicon-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -383,15 +373,9 @@ text-align: center;
 .yogaholiday-wrapper img {
   width: 800px;
 }
-.yogaholiday-card1 {
-  display: flex;
-}
 .yogaholidaytext1 {
   padding: 50px;
   margin-top: 100px;
-}
-.yogaholiday-card2 {
-  display: flex;
 }
 .yogaholidaytext2 {
   background-color: #a6a6a6;
@@ -464,13 +448,10 @@ text-align: center;
 }
 
 @media (max-width: 1000px) {
-  .flex, .f4w-wrapper {
+  /* .flex, .f4w-wrapper {
     flex-direction: column;
-  }
-  /* .mixgroupstudioclass-wrapper {
-    gap: 0;
   } */
-  .xl-text > div {
+   .xl-text > div {
     position: relative;
   }
   .class-discription-text {
@@ -512,7 +493,7 @@ text-align: center;
   color: white;
 }
 .legalcard {
-  width: 300px;
+  width: 30%;
 }
 .legalcard a {
   color: white;
@@ -542,4 +523,5 @@ footer {
   background-color: #1B405E;
   text-align: center;
   padding: 10px;
+  color: white;
 }
