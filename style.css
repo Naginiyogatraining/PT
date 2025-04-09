@@ -30,7 +30,11 @@ body {
   display: flex;
   flex: 1 1;
   }
-  /* trainingmethods */
+  @media (max-width: 1000px) {
+    .flex {
+      flex-direction: column;
+    }
+  }
   .introtext {
   padding: 50px;
    justify-items: center;
@@ -117,6 +121,7 @@ li {
   border: 2px solid transparent;
     border-radius: 20px;
     overflow: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
     }
 .goldcard-text {
   padding: 20px;
@@ -244,7 +249,7 @@ text-align: center;
   width: 500px;
   height: 310px;
   border-radius: 30px;
-  filter: drop-shadow(white 2rem 2rem 15px);
+  filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
 .floating-img {
   z-index: 1;
@@ -448,10 +453,7 @@ text-align: center;
 }
 
 @media (max-width: 1000px) {
-  .flex, .f4w-wrapper {
-    flex-direction: column;
-  }
-   .xl-text > div {
+  .xl-text > div {
     position: relative;
   }
   .class-discription-text {
