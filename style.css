@@ -16,16 +16,13 @@ body {
   justify-content: center;
 }
 .imgsize {
-    width: 500px;
+    height: 400px;
     justify-content: center;
   /* padding: 20px; */
     }
     @media (max-width: 1000px) {
-      .imgsize {
-      width: 300px;
-      height: fit-content;
+      
       }
-    }
 .flex {
   display: flex;
   flex: 1 1;
@@ -110,7 +107,7 @@ li {
   }
 .golditem-card-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   padding: 50px; 
 }
 .golditem-card {
