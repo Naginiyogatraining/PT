@@ -11,6 +11,9 @@ body {
 .blue {
   background-color:#7faecb;
 }
+.margintopsize {
+  margin-top: 60px;
+}
 .image-wrapper {
   display: flex;
   justify-content: center;
@@ -21,8 +24,7 @@ body {
   /* padding: 20px; */
     }
     @media (max-width: 1000px) {
-      
-      }
+            }
 .flex {
   display: flex;
   flex: 1 1;
@@ -43,7 +45,8 @@ body {
   }
 .dates-button-wrapper {
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
+  justify-content: space-around;
   }
 .offer {
   justify-content: end;
@@ -81,7 +84,7 @@ li {
   font-style: normal;
   font-size: 16px;
   list-style: square;
-  margin: 5px;
+  /* margin: 5px; */
 }
 .oblique-text {
   font-weight: 500;
@@ -205,9 +208,14 @@ text-align: center;
   padding: 5px 20px;
 }
 .getstartedbuttonbody {
+  display: flex;
+  justify-content: center;
   font-family: "Hanuman", serif;
   font-size: 25px;
-  padding: 20px;
+  }
+.getstarted-button {
+  align-content: center;
+  /* padding-top: 20px; */
 }
 .getstarted-button a {
   padding: 5px 20px;
