@@ -11,9 +11,7 @@ body {
 .blue {
   background-color:#7faecb;
 }
-.margintopsize {
-  margin-top: 60px;
-}
+
 .image-wrapper {
   display: flex;
   justify-content: center;
@@ -27,7 +25,8 @@ body {
             }
 .flex {
   display: flex;
-  flex: 1 1;
+  text-align: center;
+  /* flex: 1 1; */
   }
   @media (max-width: 1000px) {
     .flex {
@@ -185,6 +184,14 @@ text-align: center;
     padding-right: 150px;
   }
 }
+.new {
+  background-color: grey;
+  /* background-image: url("./pic/b&wbackground_150.jpg"); */
+  background-size: cover;
+  padding: 50px 20px;
+  text-align: center;
+  color: black;
+}
 .background {
   background-image: url("./pic/background1366_150.jpg");
   background-size: cover;
@@ -209,14 +216,15 @@ text-align: center;
 }
 .getstartedbuttonbody {
   display: flex;
-  justify-content: center;
+  justify-self: center;
+  text-align: center;
   font-family: "Hanuman", serif;
   font-size: 25px;
   }
 .getstarted-button {
   align-content: center;
-  /* padding-top: 20px; */
-}
+  width: 310px;
+  }
 .getstarted-button a {
   padding: 5px 20px;
   background-color: #0c1f36;
@@ -435,7 +443,7 @@ text-align: center;
 .class-discription-text {
   text-align: justify;
   padding: 40px;
-  margin-top: 250px;
+  margin-top: 160px;
 }
 .xl-text {
   color: #5a94ba;
@@ -488,6 +496,17 @@ text-align: center;
     }
   }
 
+  
+/* .backbandimgsize {
+  display: flex;
+  justify-content: center;
+  } */
+
+  @media (max-width: 1000px) {
+    .backbandimgsize {
+      order: 2;
+  }
+  }
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 
 .legal-conact-wrapper {
