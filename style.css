@@ -5,15 +5,35 @@ body {
   text-size-adjust: 180%;
   height: 100vh;
 }
-.background {
-  background-image: url("./pic/background1366_150.jpg");
-  background-size: cover;
-  padding: 50px 20px;
-  text-align: center;
-  color: white;
+h1 {
+  font-family: "Poppins", serif;
+  font-style: normal;
 }
-.blue {
-  background-color:#7faecb;
+h2 {
+  font-family: "Libre Baskerville", serif;
+  margin: 0px;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 25px;
+}
+h3 {
+  font-family: "Hanuman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+h4 {
+  font-family: "Sedan", system-ui;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration: solid underline white 1.5px;
+  text-underline-offset: 20px;
+}
+.oblique-text {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: oblique;
+  font-weight: 500;
 }
 p,
 li {
@@ -24,6 +44,17 @@ li {
   list-style: square;
   /* margin: 5px; */
 }
+.background {
+  background-image: url("./pic/background1366_150.jpg");
+  background-size: cover;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+.blue {
+  background-color:#7faecb;
+}
+
 .arrow-class {
   transform: rotate(180deg);
  }
@@ -75,36 +106,7 @@ li {
   background-image: url("./pic/blueback.jpg");
   color: white;
 }
-h1 {
-  font-family: "Poppins", serif;
-  font-style: normal;
-}
-h2 {
-  font-family: "Libre Baskerville", serif;
-  margin: 0px;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 25px;
-}
-h3 {
-  font-family: "Hanuman", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-}
-h4 {
-  font-family: "Sedan", system-ui;
-  font-size: 25px;
-  font-weight: 400;
-  text-decoration: underline;
-  text-decoration: solid underline white 1.5px;
-  text-underline-offset: 20px;
-}
-.oblique-text {
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: oblique;
-  font-weight: 500;
-}
+
 .index-wrapper {
   background-image: url("./pic/blueback.jpg");
   display: flex;
