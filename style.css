@@ -1,17 +1,41 @@
 @import url("./menu.css");
 @import url("./formcarry-container.css");
 body {
-  /* background-size: cover;
-    background-image: url("./pic/blueback.jpg") ;
-    background-repeat:no-repeat; */
-  text-size-adjust: 180%;
   margin: 0;
-  height: 100vh;
+  /* text-size-adjust: 180%;
+    height: 100vh; */
+}
+.background {
+  background-image: url("./pic/background1366_150.jpg");
+  background-size: cover;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
 }
 .blue {
   background-color:#7faecb;
 }
-
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+li {
+  font-family: "Poppins", serif;
+  font-style: normal;
+  list-style: square;
+  }
+.arrow-class {
+  transform: rotate(180deg);
+ }
+.arrowStyle {
+  background: none;
+  border: 0;
+ width: 50px;
+  height: 50px;
+  margin-right: 100px;
+}
 .image-wrapper {
   display: flex;
   justify-content: center;
@@ -19,14 +43,12 @@ body {
 .imgsize {
     height: 400px;
     justify-content: center;
-  /* padding: 20px; */
-    }
+      }
     @media (max-width: 1000px) {
             }
 .flex {
   display: flex;
   text-align: center;
-  /* flex: 1 1; */
   }
   @media (max-width: 1000px) {
     .flex {
@@ -55,18 +77,19 @@ body {
   background-image: url("./pic/blueback.jpg");
   color: white;
 }
+h1 {
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
 h2 {
   font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: italic;
-  margin: 30px;
-  font-size: 25px;
+  margin: 0px;
 }
 h3 {
   font-family: "Hanuman", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  /* font-size: 25px; */
 }
 h4 {
   font-family: "Sedan", system-ui;
@@ -74,16 +97,7 @@ h4 {
   font-weight: 400;
   text-decoration: underline;
   text-decoration: solid underline white 1.5px;
-  text-underline-offset: 30px;
-}
-p,
-li {
-  font-family: "Poppins", serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 16px;
-  list-style: square;
-  /* margin: 5px; */
+  text-underline-offset: 20px;
 }
 .oblique-text {
   font-weight: 500;
@@ -109,15 +123,18 @@ li {
   }
 .golditem-card-wrapper {
   display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   gap: 50px;
   padding: 50px; 
+  
 }
 .golditem-card {
   display: flex;
   flex-direction: column;
-  flex: 1 1;
+ width: 45%;
   background-color: #c79e52;
-  border: 2px solid transparent;
+  border: 4px solid transparent;
     border-radius: 20px;
     overflow: hidden;
     filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
@@ -133,6 +150,14 @@ li {
 text-decoration: none;
 color: #0c1f36;
 text-align: center;
+}
+@media (max-width: 1000px) {
+.golditem-card-wrapper {
+        width: 880px;
+}
+.golditem-card {
+  width: 100%;
+}
 }
 .logo-wrapper {
   display: block;
@@ -184,16 +209,7 @@ text-align: center;
     padding-right: 150px;
   }
 }
-.grey {
-  background-color: #a6a6a6;
-   }
-.background {
-  background-image: url("./pic/background1366_150.jpg");
-  background-size: cover;
-  padding: 50px 20px;
-  text-align: center;
-  color: white;
-}
+
 /* /////////////// consultation-container ////////////////// */
 .consultation-container {
   background-color: #c79e52;
@@ -533,11 +549,6 @@ text-align: center;
 .contacticonlinks img {
   width: 50px;
   height: 50px;
-}
-.contactinfo {
-  font-weight: 500;
-  font-style: oblique;
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* ////////////////////////////////////////FOOTER/////////////////// */
