@@ -1,6 +1,7 @@
 @import url("./menu.css");
 @import url("./formcarry-container.css");
 body {
+  line-height: 1.4;
   margin: 0;
   text-size-adjust: 180%;
   height: 100vh;
@@ -35,14 +36,14 @@ h4 {
   font-style: oblique;
   font-weight: 500;
 }
-p,
 li {
+  list-style: square;
+}
+p {
   font-family: "Poppins", serif;
   font-weight: 300;
   font-style: normal;
   font-size: 16px;
-  list-style: square;
-  /* margin: 5px; */
 }
 .background {
   background-image: url("./pic/background1366_150.jpg");
