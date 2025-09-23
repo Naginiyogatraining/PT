@@ -175,42 +175,39 @@ text-align: center;
 
 /* //////////////Meet your coach///////////////// */
 .coach-wrapper {
+  background-color: #f9f7ea; 
   display: flex;
-  background-color: #f9f7ea;
 }
-.coach-text {
-  z-index: 1;
-  margin-right: -60px;
-  padding: 50px;
+.coachtext {
+  margin: 50px -150px 0px 50px;
   text-align: justify;
+  z-index: 1;
 }
-.coach-text > div {
-  margin: 0px;
+.coachphoto-wrapper {
+margin-bottom: -6px;
 }
-.coach-wrapper img {
+.coachphoto {
   height: 500px;
 }
-.coachimg-div {
-  display: flex;
-  justify-content: end;
-}
-
 @media (max-width: 1000px) {
-  .coach-content {
+  .coach-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: end;
   }
-  .coach-wrapper img {
+  .coachphoto-wrapper {
+    display: flex;
+    float: right;
+    margin-top: -250px;
+  }
+  .coachphoto {
     height: 350px;
   }
-  .coach-text {
-    margin-right: 0;
-    margin-bottom: -100px;
-    padding: 20px 100px;
+  .coachtext {
+    margin: 0px 100px 0px 100px;
   }
-  .coach-text > div {
-    padding-right: 150px;
+  .coachtext > div {
+    padding-right: 200px;
   }
 }
 
