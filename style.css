@@ -48,14 +48,17 @@ p {
 }
 .background {
   background-image: url("./pic/background1366_150.jpg");
-  background-size: cover;
-  padding: 50px 20px;
-  text-align: center;
   color: white;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
 }
 .blue-bg {
   background-image: url("./pic/blueback.jpg");
   color: white;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
 }
 .darkbluebackground {
   background-image: url("./pic/darkblueback.jpg");
@@ -68,7 +71,7 @@ p {
   background-color:#7faecb;
 }
 .border {
-  border: 1px solid black;
+border: 1px solid black;
 }
 .arrow-class {
   transform: rotate(180deg);
@@ -80,20 +83,20 @@ p {
   height: 50px;
   margin-right: 100px;
 }
-.image-wrapper {
+/* .image-wrapper {
   display: flex;
   justify-content: center;
-}
-.imgsize {
+} */
+.squareimg {
     height: 400px;
-    justify-content: center;
-      }
-    @media (max-width: 1000px) {
-            }
+    margin: 20px;
+}
 .flex {
   display: flex;
-  text-align: center;
   gap: 10px;
+  text-align: center;
+  min-width: 250px;
+  flex-direction: row;
   }
   @media (max-width: 1000px) {
     .flex {
@@ -225,7 +228,7 @@ margin-bottom: -6px;
 /* /////////////// consultation-container ////////////////// */
 .consultation-container {
   background-color: #c79e52;
-  padding: 50px 20px;
+  padding: 20px;
   text-align: center;
   color: #0c1f36;
 }
@@ -243,11 +246,12 @@ margin-bottom: -6px;
   text-align: center;
   font-family: "Hanuman", serif;
   font-size: 25px;
+  padding: 20px;
   }
-.getstarted-button {
+/* .getstarted-button {
   align-content: center;
   height: 50px;
-  }
+  } */
 .getstarted-button a {
   padding: 5px 20px;
   background-color: #0c1f36;
@@ -310,7 +314,7 @@ margin-bottom: -6px;
   }
   .yogabio-text {
     border-radius: 0px;
-    padding: 50px 100px;
+    padding: 20px 100px;
     margin: 0;
   }
 }
@@ -321,6 +325,9 @@ margin-bottom: -6px;
   color: white;
   text-align: center;
   padding-top: 20px;
+}
+.class-text {
+  padding: 0px 100px;
 }
 .classicon-wrapper {
   display: flex;
@@ -349,15 +356,15 @@ margin-bottom: -6px;
 .pt-wrapper {
   display: flex;
   background-color: #000000;
+  padding-bottom: 50px;
  }
   .pt-content {
      display: flex;
-     padding-bottom: 50px;
+     
   }
   .pt-content1 {
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 50px;
   }
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
@@ -367,16 +374,13 @@ margin-bottom: -6px;
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
   margin-left: 50px;
+  background-size: cover;
 }
 .pt-text {
   background-color: rgba(255, 255, 255, 0.51);
   text-align: justify;
   padding: 20px;
   }
-/* .pt-buttons {
-  display: flex;
-  justify-content: space-evenly;
-} */
 .pt-wrapper img,
 .pt-wrapper1 img {
   height: 650px;
@@ -465,7 +469,7 @@ margin-bottom: -6px;
 /* --------------YOGA CLASS-------------- */
 .class-discription-text {
   text-align: justify;
-  padding: 40px;
+  padding: 30px;
   margin-top: 160px;
 }
 .xl-text {
