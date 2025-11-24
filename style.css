@@ -9,6 +9,7 @@ body {
 h1 {
   font-family: "Poppins", serif;
   font-style: normal;
+  margin: 0px;
 }
 h2 {
   font-family: "Libre Baskerville", serif;
@@ -50,6 +51,10 @@ p {
   background-size: cover;
   padding: 50px 20px;
   text-align: center;
+  color: white;
+}
+.blue-bg {
+  background-image: url("./pic/blueback.jpg");
   color: white;
 }
 .darkbluebackground {
@@ -114,11 +119,6 @@ p {
   justify-content: end;
   z-index: 1;
 }
-.blue-bg {
-  background-image: url("./pic/blueback.jpg");
-  color: white;
-}
-
 .index-wrapper {
   background-image: url("./pic/blueback.jpg");
   display: flex;
@@ -317,10 +317,10 @@ margin-bottom: -6px;
 /* ////////////////////////////////////////CLASS-container//////// */
 .class-wrapper {
   background-color: black;
-  display: block;
+  /* display: block; */
   color: white;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
 }
 .classicon-wrapper {
   display: flex;
@@ -369,9 +369,9 @@ margin-bottom: -6px;
   margin-left: 50px;
 }
 .pt-text {
+  background-color: rgba(255, 255, 255, 0.51);
   text-align: justify;
   padding: 20px;
-   background-color: rgba(255, 255, 255, 0.51);
   }
 /* .pt-buttons {
   display: flex;
