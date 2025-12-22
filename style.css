@@ -95,6 +95,7 @@ border: 1px solid black;
   display: flex;
   gap: 10px;
   text-align: center;
+  justify-self: center;
   min-width: 250px;
   flex-direction: row;
   }
