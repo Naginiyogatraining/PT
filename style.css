@@ -3,7 +3,7 @@
 body {
   line-height: 1.4;
   margin: 0;
-  text-size-adjust: 180%;
+  /* text-size-adjust: 180%; */
   height: 100vh;
 }
 h1 {
@@ -106,13 +106,13 @@ border: 1px solid black;
   }
   .introtext {
    padding: 50px;
-   justify-items: center;
+   /* justify-items: center; */
    text-align: justify;
  }
   .card-text {
   padding: 20px;
   text-align: justify;
-  flex-basis: 100%;
+  /* flex-basis: 100%; */
     }
 .dates-button-wrapper {
   display: flex;
@@ -123,31 +123,22 @@ border: 1px solid black;
   justify-content: end;
   z-index: 1;
 }
-.index-wrapper {
-  background-image: url("./pic/blueback.jpg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  padding: 50px;
-}
-.index-wrapper img {
-  border-radius: 5%;
-  width: 500px;
+.index-img {
+  border: 10px solid #c4a668;
+  border-radius: 20px;
+  width: 50%;
   margin: 40px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
-.wrapper {
-  padding: 40px;
-  justify-content: space-around;
-  }
+.index-text{
+  margin: 200px 50px;
+}
 .golditem-card-wrapper {
   display: flex;
-  /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 50px;
   padding: 50px; 
-  
-}
+ }
 .golditem-card {
   display: flex;
   flex-direction: column;
@@ -158,12 +149,8 @@ border: 1px solid black;
     overflow: hidden;
     filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
     }
-.goldcard-text {
-  padding: 20px;
-  }
 .golditem-card img {
  width: 100%;
-
 }
 .golditem-card a {
 text-decoration: none;
@@ -179,13 +166,7 @@ text-align: center;
 }
 }
 .logo-wrapper {
-  display: block;
-  text-align: center;
-  background-color: #f9f7ea;
-}
-.logo-wrapper img {
-  height: 200px;
-  padding-top: 20px;
+ background-color: #f9f7ea;
 }
 
 /* //////////////Meet your coach///////////////// */
@@ -199,7 +180,7 @@ text-align: center;
   z-index: 1;
 }
 .coachphoto-wrapper {
-margin-bottom: -6px;
+margin-bottom: -5px;
 }
 .coachphoto {
   height: 500px;
@@ -259,7 +240,6 @@ margin-bottom: -6px;
   color: white;
   text-decoration: none;
   border: 2px solid white;
-  /* box-shadow: 3px 3px #556272;   */
   border-radius: 30px;
 }
 .getstarted-button a:hover {
