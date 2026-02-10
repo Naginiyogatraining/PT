@@ -3,7 +3,7 @@
 body {
   line-height: 1.4;
   margin: 0;
-  /* text-size-adjust: 180%; */
+  text-size-adjust: 200%;
   height: 100vh;
 }
 h1 {
@@ -57,7 +57,6 @@ p {
   background-image: url("./pic/blueback.jpg");
   color: white;
   background-size: cover;
-  padding: 20px;
   text-align: center;
 }
 .darkbluebackground {
@@ -72,6 +71,7 @@ p {
 }
 .border {
 border: 1px solid black;
+margin: 10px;
 }
 .arrow-class {
   transform: rotate(180deg);
@@ -81,7 +81,6 @@ border: 1px solid black;
   border: 0;
  width: 50px;
   height: 50px;
-  margin-right: 100px;
 }
 /* .image-wrapper {
   display: flex;
@@ -91,9 +90,12 @@ border: 1px solid black;
     height: 400px;
     margin: 20px;
 }
+.align-center {
+  height: 100%;
+  align-items: center;
+}
 .flex {
   display: flex;
-  gap: 10px;
   text-align: center;
   justify-self: center;
   min-width: 250px;
@@ -104,15 +106,16 @@ border: 1px solid black;
       flex-direction: column;
     }
   }
+  /*
   .introtext {
    padding: 50px;
-   /* justify-items: center; */
+   justify-items: center;
    text-align: justify;
- }
+ } */
   .card-text {
   padding: 20px;
-  text-align: justify;
-  /* flex-basis: 100%; */
+  /* text-align: justify; */
+  flex-basis: 100%;
     }
 .dates-button-wrapper {
   display: flex;
@@ -129,9 +132,6 @@ border: 1px solid black;
   width: 50%;
   margin: 40px;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
-}
-.index-text{
-  margin: 200px 50px;
 }
 .golditem-card-wrapper {
   display: flex;
@@ -222,18 +222,12 @@ margin-bottom: -5px;
   border-radius: 30px;
   padding: 5px 20px;
 }
-.getstartedbuttonbody {
-  display: flex;
-  justify-self: center;
-  text-align: center;
+.getstarted-button {
   font-family: "Hanuman", serif;
   font-size: 25px;
-  /* padding: 20px; */
+  margin: 20px;
+  min-width: fit-content;
   }
-/* .getstarted-button {
-  align-content: center;
-  height: 50px;
-  } */
 .getstarted-button a {
   padding: 5px 20px;
   background-color: #0c1f36;
