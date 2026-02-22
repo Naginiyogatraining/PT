@@ -54,6 +54,10 @@ p {
   font-family: "inter", sans-serif;
   height: 100vh;
 }
+.text-base {
+margin: 20px;
+  text-align: justify;
+}
 .card-text {
  padding: 20px;
 }
@@ -68,7 +72,7 @@ p {
   flex-basis: 100%;
 }
 .textandbtn {
-  display: flex;
+display: flex;
 flex-wrap: wrap;
 }
 .oblique-text {
@@ -76,13 +80,42 @@ flex-wrap: wrap;
   font-style: oblique;
   font-weight: 500;
 }
-.index-img {
+.flex {
+  display: flex;
+  justify-self: center;
+  min-width: 250px;
+}
+.boundle {
+  display: flex;
+}
+/* INDEX  */
+.index {
+  display: flex;
+  align-items: center;
+  }
+.index-text{
+  margin: 20px;
+align-items: center;
+
+  
+}
+.index-text >p {
+  margin: 20px;
+  text-align: justify;
+}
+ .index-img {
+display: flex;
+margin: 20px;
+ }
+.index >.index-img>img {
   border: 5px solid #c4a668;
   border-radius: 20px;
-  height: 500px;
-  margin: 20px;
+  width: 100%;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
+/* INDEX END */
+
+
 .tiny {
   width: 50px;
   height: 50px;
@@ -206,14 +239,7 @@ text-align: center;
   width: 50px;
   height: 50px;
 }
-.flex {
-  display: flex;
-  justify-self: center;
-  min-width: 250px;
-}
-.boundle {
-  display: flex;
-}
+
 .offer {
   justify-content: end;
   z-index: 1;
@@ -254,37 +280,48 @@ text-align: center;
   padding: 5px 20px;
 }
 /* /////////////// yogabio-container /////javitva///////////// */
-.yogabio-wrapper {
-  display: flex;
+.bluemandala {
   background-image: url("./pic/mandala-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px;
-  gap: 40px;
+  padding: 50px;
+  
 }
-.ybioimg-wrapper {
+.yb-wrapper {
   display: flex;
-  justify-content: center;
-  align-self: center;
+  gap: 20px;
+  
+  }
+.ybimg-wrapper {
+ width: 100%;
+ align-items: center;
 }
-.yogabio-wrapper img {
-  width: 500px;
-  height: 310px;
+.yp1 {
+      width: 100%;
+    padding-left: 25%;
+ 
+}
+.yp2 {
+  width: 100%;
+    margin-top: -25%;
+    padding-right: 25%;
+    margin-right: 25%;
+ 
+}
+.yp {
+  width: 100%;
   border-radius: 30px;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
+  
+  
 }
-.floating-img {
-  z-index: 1;
-  margin-top: 260px;
-  margin-left: -240px;
-}
-.yogabio-text {
+.ybtextdecoration {
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 30px;
-  text-align: justify;
-  text-wrap: pretty;
-  padding: 20px;
-  margin: 200px 50px;
+  color: black;
+  margin: 20px;
+  padding: 50px;
+  
 }
 /* ////////////////////////////////////////CLASS-container//////// */
 .blackcontainer {
@@ -444,24 +481,19 @@ footer {
     padding: 25px 0;
     row-gap: 18px;
   }
-  .index-img {
-    align-items: center;
+  .index {
+    flex-direction: column;
   }
-
-  .golditem-card {
+     .golditem-card {
     width: 100%;
   }
-  .yogabio-wrapper {
+  .yb-wrapper {
     flex-direction: column;
     padding: 0px;
   }
-  .ybioimg-wrapper {
-    padding-top: 50px;
-  }
-  .yogabio-text {
+    .ybtextdecoration {
     border-radius: 0px;
-    padding: 20px 100px;
-    margin: 0;
+    margin: -50px;
   }
   .pt-content,
   .pt-content1 {
