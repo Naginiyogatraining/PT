@@ -7,8 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-size-adjust: 200%;
-}
+   
+ }
 li {
   list-style: none;
   padding: 5px 20px;
@@ -54,16 +54,20 @@ p {
   font-family: "inter", sans-serif;
   height: 100vh;
 }
+.highliht {
+  color: white;
+  background-color: #0c1f36;
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: oblique;
+  border-radius: 30px;
+  padding: 5px 20px;
+}
 .text-base {
 margin: 20px;
-  text-align: justify;
+text-align: justify;
 }
 .card-text {
  padding: 20px;
-}
-.fl-text {
- padding: 20px;
- flex-basis: 100%;
 }
 .center-text {
   justify-items: center;
@@ -179,8 +183,12 @@ margin: 20px;
 .btn:hover {
   transform: scale(1.1);
 }
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
 .button {
-  min-width: 250px;
+  min-width: fit-content;
   margin: 20px;
   text-align: center;
 }
@@ -271,14 +279,7 @@ text-align: center;
   padding: 50px;
 }
 /* /////////////// consultation-container ////////////////// */
-.highliht {
-  color: white;
-  background-color: #0c1f36;
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: oblique;
-  border-radius: 30px;
-  padding: 5px 20px;
-}
+
 /* /////////////// yogabio-container /////javitva///////////// */
 .bluemandala {
   background-image: url("./pic/mandala-1.jpg");
@@ -289,12 +290,13 @@ text-align: center;
 }
 .yb-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   
   }
 .ybimg-wrapper {
  width: 100%;
  align-items: center;
+ 
 }
 .yp1 {
       width: 100%;
@@ -319,7 +321,6 @@ text-align: center;
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 30px;
   color: black;
-  margin: 20px;
   padding: 50px;
   
 }
@@ -352,20 +353,24 @@ text-align: center;
 }
 /* /////////////////////////////////////////Prsonal training in the gym */
 .pt-wrapper {
-  display: flex;
+  
   background-color: #000000;
   padding-bottom: 50px;
 }
-.pt-content {
+.company-group {
   display: flex;
+}
+.pt-content {
+ display: flex;
 }
 .pt-content1 {
   display: flex;
   flex-direction: row-reverse;
+  
 }
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
-  margin-right: 50px;
+    margin-right: 50px;
   background-size: cover;
 }
 .pt-text-background1 {
@@ -472,7 +477,8 @@ footer {
   color: white;
 }
 /* MEDIA QUERIES */
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
+  
   .flex {
     flex-direction: column;
   }
@@ -484,20 +490,29 @@ footer {
   .index {
     flex-direction: column;
   }
+  
      .golditem-card {
     width: 100%;
   }
+  .bluemandala {
+    padding: 0;
+  }
   .yb-wrapper {
     flex-direction: column;
-    padding: 0px;
+    gap: 0px;
+  }
+  .ybimg-wrapper {
+    padding: 50px;
   }
     .ybtextdecoration {
     border-radius: 0px;
-    margin: -50px;
-  }
+      }
+      .company-group {
+        flex-direction: column;
+      }
   .pt-content,
   .pt-content1 {
-    flex-direction: column;
+   flex-direction: column;
   }
   .pt-content1 img {
     float: right;
