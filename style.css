@@ -91,7 +91,7 @@ flex-wrap: wrap;
 }
 .boundle {
   display: flex;
-}
+ }
 /* INDEX  */
 .index {
   display: flex;
@@ -234,10 +234,6 @@ text-align: center;
   padding: 20px;
   text-align: center;
 }
-.border {
-  border: 1px solid black;
-  margin: 10px;
-}
 .arrow-class {
   transform: rotate(180deg);
 }
@@ -322,7 +318,7 @@ text-align: center;
   border-radius: 30px;
   color: black;
   padding: 50px;
-  
+  max-height: 280px;
 }
 /* ////////////////////////////////////////CLASS-container//////// */
 .blackcontainer {
@@ -359,29 +355,39 @@ text-align: center;
 }
 .company-group {
   display: flex;
+  gap: 10px;
+  }
+.company {
+  border: 1px solid black;
+  margin-top: 20px;
+  flex: 1 1;
 }
 .pt-content {
  display: flex;
+
 }
 .pt-content1 {
   display: flex;
   flex-direction: row-reverse;
-  
-}
+}     
 .pt-text-background {
   background-image: url("./pic/b&w.jpg");
     margin-right: 50px;
   background-size: cover;
+  display: flex;
 }
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
   margin-left: 50px;
   background-size: cover;
+  margin-bottom: 50px;
 }
 .pt-text {
   background-color: rgba(255, 255, 255, 0.51);
   text-align: justify;
   padding: 20px;
+  margin: 20px;
+  height: stretch;
 }
 .pt-wrapper img,
 .pt-wrapper1 img {
@@ -425,6 +431,10 @@ text-align: center;
   text-align: justify;
   padding: 20px;
   margin-top: 200px;
+  width: 50%;
+}
+.class-discription-text >ul {
+  padding: 20px;
 }
 .xl-text {
   color: #5a94ba;
@@ -523,6 +533,7 @@ footer {
   }
   .pt-img-wrapper {
     display: flex;
+    height: 460px;
   }
   .media-pttext {
     display: block;
@@ -557,6 +568,7 @@ footer {
   }
   .class-discription-text {
     margin-top: 0;
+    width: auto;
   }
   .groupclass-text {
     margin-top: 0;
