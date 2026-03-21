@@ -62,7 +62,7 @@
               <div>
                 <img class="img" src="./pic/ewp1.jpg" alt="everfitapp"/>
               </div>
-              <div class="card-text" id="shrinkthisdiv">
+              <div class="textstyle" id="shrinkthisdiv">
                 <div class="textandbtn">
                 <div>
                 <h3>7-Day Gym Workout Plan: Full Body Tone</h3>
@@ -74,7 +74,7 @@
               </div>
               <div>
 </div>
-    <div class="flex">          
+    <div class="textandbtn">          
       <p>WHAT THIS PACKAGE CONTAINS</p>
       <div id="arrow-id" >
         <button onclick="showMore()" class="arrowStyle">
@@ -87,7 +87,7 @@ Designed by your favourite personal trainer and delivered at a fraction of the c
 Perfect for strength training enthusiasts who want to improve their physique and performance. This program provides a complete approach to muscle development and toning.
 </p>
 
-<ul>
+<ul class="textstyle">
   <li><b>Mobile Fitness App</b> - Log your workouts and more while on the move (Apple, Android or website browser) through the best training platform on the Everfit App</li>
   <li><b>Exercise Library</b> - Step-by-step video guidance for every exercise so you train with confidence</li>
   <li><b>Progress Tracker</b> - To keep you motivated and on top of your results</li>
@@ -98,7 +98,7 @@ Perfect for strength training enthusiasts who want to improve their physique and
 </p>
   <p>Instructions for a full week of advanced training are listed below. The programme is designed to be completed at a pace that works for you. Five are lifting days and two are rest days. As indicated, you should stay active on rest days.
 </p>
-<ul>
+<ul class="textstyle">
   <li>Day 1: Chest</li>
   <li>Day 2: Back and core</li>
   <li>Day 3: Rest</li>
@@ -120,7 +120,7 @@ Perfect for strength training enthusiasts who want to improve their physique and
               <div>
                 <img class="img" src="./pic/strength1.jpg" alt="dumbellrow"/>
               </div>
-              <div class="card-text">
+              <div class="textstyle" >
                 <div class="textandbtn">
                 <h3>Kettlebell Workout</h3>
                    
@@ -214,10 +214,15 @@ Perfect for strength training enthusiasts who want to improve their physique and
 
   <style>
     #shrinkthisdiv{
-      height:500px;
+      height:300px;
     }
     #shrinkthisdiv.expand-div {
       height: 100%;
+    }
+    @media (max-width: 1000px) {
+      #shrinkthisdiv{
+      height:250px;
+    }
     }
   </style>
 </html>

@@ -79,8 +79,8 @@
     justify-content: center;
     position: absolute;
     padding: 200px 0px;
-    right: -35px;
-    top: -55px;
+    right: -5px;
+    top: -50px;
     background-color: rgb(25 31 52 / 96%);
     font-weight: 300;
     width: 100vw;
@@ -98,6 +98,7 @@
     line-height: normal;
     font-size: 20px;
     cursor: pointer;
+    text-transform: uppercase
   }
 
 .menu-list a:link,
