@@ -40,9 +40,9 @@ h4 {
   text-underline-offset: 20px;
 }
 p {
-  font-family: "Poppins", serif;
-  font-weight: 300;
+  font-family: "Open Sans" sans-serif;
   font-style: normal;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -188,6 +188,22 @@ p {
   font-size: 20px;
   overflow: hidden;
  }
+ .review-button {
+  border-radius: 4px;
+    line-height: 18px;
+        padding: 8px 20px;
+    font-family: sans-serif;
+    font-style: normal;
+    background-color:yellow;
+     
+    text-transform: none;
+    border-width: 2px;
+ }
+ .review-button a {
+  color: #000000;
+  text-decoration: none;
+ }
+ 
  /* .button a:hover {
   color: white;
   transform: scale(1.1);
@@ -247,8 +263,8 @@ p {
 .golditem-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
+  gap: 20px;
   padding: 50px;
 }
 .golditem-card {
@@ -471,6 +487,7 @@ p {
 /* ////////////////////////////////////////legal-conact-wrapper/////////////////// */
 .icons {
   display: flex;
+  /* line-height: 1; */
 }
 .legal {
   display: flex;
@@ -479,7 +496,7 @@ p {
   background-image: url("./pic/blueback.jpg");
   color: white;
 }
-.legal a {
+.item a {
   color: white;
   text-decoration: none;
 }
@@ -487,6 +504,32 @@ p {
   flex: 1 0 40%;
 }
 /* ////////////////////////////////////////FOOTER/////////////////// */
+.review-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 24px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    }
+    .review-element {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+          }
+    .review-element p {
+  font-weight: bold;
+  font-size: 20px;
+    font-family: sans-serif;
+}
 footer {
   background-color: #1b405e;
   text-align: center;
