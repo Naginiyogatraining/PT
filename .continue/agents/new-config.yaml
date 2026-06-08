@@ -1,0 +1,34 @@
+name: Local Lab
+version: 0.0.1
+schema: v1
+
+models:
+  - name: Main Code Model
+    provider: ollama
+    model: qwen2.5-coder:1.5b-base
+    apiBase: http://192.168.1.129:11434
+    roles:
+     - chat
+     - edit
+     - autocomplete
+
+  - name: Autocomplete
+    provider: ollama
+    model: qwen2.5-coder:1.5b-base
+    apiBase: http://192.168.1.129:11434
+
+  - name: Local Tools Model
+    provider: ollama
+    model: qwen2.5-coder:1.5b-base
+    apiBase: http://192.168.1.129:11434
+    capabilities:
+      - tool_use
+
+  - name: Local Embeddings
+    provider: ollama
+    model: nomic-embed-text
+    apiBase: http://192.168.1.129:11434
+
+  # - name: ollama/qwen2.5-coder
+  #   provider: ollama
+  #   apiBase: http://192.168.1.129:11434
