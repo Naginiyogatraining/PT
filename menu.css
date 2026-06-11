@@ -104,9 +104,8 @@
 .menu-list a:link,
 .menu-list a:visited,
 .menu-list a:focus {
-  /* background:rgb(146, 185, 210); */
   color: white;
-  padding: 40px 150px;
+  padding: 40px;
 }
 .menu-list a:hover {
     /* background: rgb(208, 206, 185); */
