@@ -22,13 +22,39 @@
   
   </head>
   <body>
-    <div class="xl-text">
-      <div>
-        <h2>Services</h2>
+    <div class="mobile-menu-button">
+      <div class="lines-button" onclick="buttonToggle(this)">
+        <span class="lines"><span></span> </span>
+
+        <div>
+          <div id="menu">
+            <div class="menu-list">
+              <ul>
+                <li class="menu-item">
+                  <a href="./home.html">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./training.html">Training Types</a>
+                </li>
+                <li class="menu-item">
+                  <a href="recipes.html">Recipes</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./retreat.html">Yoga Retreart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+   
+    <div class="xl-text">
+      <h2>Services</h2>
+    </div>
+
   <div class="discription">
-    <div class="discription-text">
+    <div class="textstyle">
       <h3>The Perfect Blend of Motivation and Personalization</h3>
       <p>At Nagini Fitness Training, we believe that fitness is about more than just individual effort — it's about building a supportive community that drives you to achieve your goals. 
         Our Group Personal Training Sessions combine the best aspects of group workouts with the personalized touch of one-on-one training, offering an experience that is both motivating and tailored to your needs.</p>
@@ -48,8 +74,7 @@
           <img alt="ClassPass Partner" src="https://partners-new.classpass.com/hubfs/ClassPass/badges/ClassPass-CPpartner-black.png"" width="200px" />
         </a>
         </div>
-      </div>
-       <img src="./pic/s11.jpg" alt="puregymcoach" />
+    </div>
   </div>
 
   <div class="background">
@@ -262,7 +287,11 @@ This challenge gradually increases in intensity, keeping you motivated and pushi
             </p>
             </div>
           </div>  
-
+    <script>
+    function buttonToggle(x) {
+      x.classList.toggle("toggle");
+    }
+    </script>
   </body>
   <footer>@2024 by Nagini Yoga Training, Reading, UK</footer>
 

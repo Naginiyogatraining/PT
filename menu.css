@@ -8,7 +8,11 @@
     padding: 5px 35px;
     cursor: pointer;
     float: right;
-        }
+    
+    position: absolute;
+    right: 5px;
+
+}
 .lines-button {
     height: 60px;
     width: 60px; 

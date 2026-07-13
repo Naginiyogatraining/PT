@@ -16,13 +16,37 @@
   </head>
  
   <body>
-    <div class="xl-text">
-      
-        <h2>Own Your Movement</h2>
-      
+    <div class="mobile-menu-button">
+      <div class="lines-button" onclick="buttonToggle(this)">
+        <span class="lines"><span></span> </span>
+
+        <div>
+          <div id="menu">
+            <div class="menu-list">
+              <ul>
+                <li class="menu-item">
+                  <a href="./home.html">Home</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./training.html">Training Types</a>
+                </li>
+                <li class="menu-item">
+                  <a href="recipes.html">Recipes</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./retreat.html">Yoga Retreart</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
+
+    <div class="xl-text">
+              <h2>Own Your Movement</h2>
+          </div>  
     <div class="discription  ">
       <div class="textstyle">
         <p>
@@ -33,8 +57,7 @@
           and more comfortable in your body and mind. Whether you are a beginner
           or have been practising yoga for years, my classes suit every level,
           and flexible pricing options to suit every budget.
-        </p>
-        
+        </p>       
         
         <h3>Why Choose Us?</h3>
         <ul>
@@ -119,5 +142,10 @@
     <div class="footercontainer">
       <footer>@2024 by Nagini Yoga Training, Reading, UK</footer>
     </div>
+    <script>
+    function buttonToggle(x) {
+      x.classList.toggle("toggle");
+    }
+  </script>
   </body>
 </html>
