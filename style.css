@@ -279,9 +279,15 @@ p {
   padding: 20px;
   text-align: center;
 }
+.arrow-height {
+  height: 50px;
+  width: 100%;
+}
 .arrow-class {
   transform: rotate(180deg);
   width: 50px;
+  height: 50px;
+  float: right;
 }
 .arrowStyle {
   background: none;
@@ -289,6 +295,7 @@ p {
   border: 0;
   width: 50px;
   height: 50px;
+  float: right;
 }
 
 .offer {
