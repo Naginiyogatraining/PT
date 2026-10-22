@@ -8,6 +8,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   }
 a {
   color:#0c1f36;
@@ -18,8 +20,9 @@ li {
   padding-left: 0px;
 }
 h1 {
-  font-family: "Poppins", serif;
-  /* font-family: "Lora", serif; */
+  /* font-family: "Poppins", serif; */
+  font-family: "Lora", serif;
+  
   font-size: 30px;
   padding-bottom: 5px;
 }
@@ -54,8 +57,6 @@ p {
 
 /* BASE STYLE */
 .body {
-  background-color: #a8f0f7;
-  /* font-family: "inter", sans-serif; */
   height: 100vh;
 }
 .textandbtn {
