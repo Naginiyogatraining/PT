@@ -10,7 +10,7 @@
   font-family: sans-serif;
   }
 a {
-  color:#627c9f;
+  color:#0c1f36;
   text-decoration: none;
 }
 li {
@@ -248,6 +248,7 @@ p {
   background-size: cover;
   padding: 20px;
   text-align: center;
+  text-shadow: 2px 2px black;
 }
 
 .black {
@@ -272,6 +273,9 @@ p {
 .blue {
   background-color: #7faecb;
 }
+.blue-transparent {
+  background-color: #7faecbda;
+}
 .seca-wrapper {
   
   padding: 20px 50px 10px 50px;
@@ -282,7 +286,7 @@ p {
   color: rgb(0, 29, 109);
   font-weight: bolder;
 }
-.seca-wrapper li {
+.seca-wrapper li, .discription li {
   font-weight: bolder;
   color: rgb(0, 29, 109);
   list-style: square;
@@ -514,9 +518,10 @@ p {
   width: 50%;
 }
 .xl-text {
-  color: #5a94ba;
+  color: rgb(0, 29, 109);
+  /* color: #5a94ba; */
   text-shadow: 3px 3px 4px rgb(5, 5, 5);
-      margin-left: 50px;
+  margin-left: 50px;
 }
 .xl-text > div {
   position: absolute;
@@ -612,19 +617,12 @@ p {
     padding: 25px 0;
     row-gap: 18px;
   }
-  .index {
-    flex-direction: column;
-  }
   .index-img {
     width: 50%;
   }
-.yogalates-wrapper {
-  flex-direction: column;
-}
   .golditem-card {
     width: 100%;
   }
-  
   .bluemandala {
     padding: 0;
   }
@@ -638,12 +636,14 @@ p {
   .transparenttextdecoration {
     border-radius: 0px;
   }
-  .company-group {
-    flex-direction: column;
-  }
+  .index,
+  .yogalates-wrapper,
+  .company-group,
   .pt-content,
   .pt-content1,
-  .food-text {
+  .food-text,
+  .discription,
+  .groupcard-wrapper {
     flex-direction: column;
   }
   .pt-content1 img {
@@ -688,17 +688,9 @@ p {
   .xl-text > div {
     position: relative;
   }
-  .discription  {
-
-    flex-direction: column;
-  }
-  
   .discription-text {
     margin-top: 0;
     width: auto;
-  }
-    .groupcard-wrapper {
-    flex-direction: column;
   }
   .bbimg {
     order: 2;
