@@ -599,7 +599,7 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
   * {
-    font-size: 20px;
+    font-size: 30px;
   }
   .flex {
     flex-direction: column;
