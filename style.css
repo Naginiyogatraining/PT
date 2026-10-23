@@ -3,27 +3,37 @@
 
 /* RESET */
 * {
-  line-height: 1.4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  }
+}
+h1 {
+  font-size: 30px;
+}
+h4 {
+  padding-bottom: 20px;
+  font-size: 28px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration: solid underline white 1.5px;
+  text-underline-offset: 15px;
+}
 a {
-  color:#0c1f36;
+  color: #0c1f36;
   text-decoration: none;
 }
 li {
   list-style: none;
   padding-left: 0px;
 }
-h1 {
-  /* font-family: "Poppins", serif; */
+/* h1 {
+ 
   font-family: "Lora", serif;
   
-  font-size: 30px;
+  
   padding-bottom: 5px;
 }
 h2 {
@@ -39,21 +49,13 @@ h3 {
   font-style: normal;
   font-size: 20px;
   }
-h4 {
-  padding-bottom: 20px;
-  font-family: "Sedan", system-ui;
-  font-size: 28px;
-  font-weight: 400;
-  text-decoration: underline;
-  text-decoration: solid underline white 1.5px;
-  text-underline-offset: 15px;
-}
+
 p {
   font-family: "Open Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   
-}
+} */
 
 /* BASE STYLE */
 .body {
@@ -91,13 +93,13 @@ p {
   color: white;
   background-color: #0c1f36;
   font-size: 20px;
-    border-radius: 30px;
+  border-radius: 30px;
   padding: 5px 20px;
-  }
+}
 .textstyle {
   text-align: justify;
   padding: 20px;
-  }
+}
 .center-text {
   /* justify-items: center; */
   margin: 20px;
@@ -134,7 +136,7 @@ p {
   display: flex;
   margin: 20px;
   width: 50%;
-  }
+}
 .frame {
   border: 5px solid #c4a668;
   border-radius: 20px;
@@ -148,8 +150,8 @@ p {
   margin: 5px;
 }
 .squareimg {
-    width: 70%;
-    margin: 50px;
+  width: 70%;
+  margin: 50px;
 }
 .align-center {
   height: 100%;
@@ -205,30 +207,31 @@ p {
   border-radius: 30px;
   max-width: fit-content;
   margin: 10px;
-    text-align: center;
+  text-align: center;
   justify-self: center;
-    font-weight: 600;
+  font-weight: 600;
   overflow: hidden;
   text-transform: uppercase;
- }
- .review-button {
-   border-width: 2px;
+}
+.review-button {
+  border-width: 2px;
   border-radius: 4px;
-    line-height: 18px;
-        padding: 8px 20px;
-        font-style: normal;
-        font-weight: 700;
-        text-transform: none;
-        background-color:yellow;
-        transform: scale(1.1);
-        text-align: center;
-        justify-self: center;
-        justify-content: center;
- }
- .review-button a, .foodcardbtn a {
+  line-height: 18px;
+  padding: 8px 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: none;
+  background-color: yellow;
+  transform: scale(1.1);
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+}
+.review-button a,
+.foodcardbtn a {
   color: #000000;
   text-decoration: none;
-   }
+}
 .cpp {
   margin: 5px;
 }
@@ -253,10 +256,9 @@ p {
 .black {
   background-color: black;
   color: white;
-  
-  }
-  .gray {
-    background-image: url("./pic/b&w.jpg");
+}
+.gray {
+  background-image: url("./pic/b&w.jpg");
 }
 .blue-bg {
   padding: 20px;
@@ -276,7 +278,6 @@ p {
   background-color: #7faecbda;
 }
 .seca-wrapper {
-  
   padding: 20px 50px 10px 50px;
   width: 100%;
   height: 100%;
@@ -285,17 +286,17 @@ p {
   color: rgb(0, 29, 109);
   font-weight: bolder;
 }
-.seca-wrapper li, .discription li {
+.seca-wrapper li,
+.discription li {
   font-weight: bolder;
   color: rgb(0, 29, 109);
   list-style: square;
   margin-left: 20px;
 }
 .seca-poster {
-   
-   background-image: url("./pic/secaposter.jpg");
-   background-size: cover;
-   width: 100%;
+  background-image: url("./pic/secaposter.jpg");
+  background-size: cover;
+  width: 100%;
 }
 .goldplate {
   background-color: #c79e52;
@@ -332,7 +333,6 @@ p {
   justify-content: space-around;
   padding: 20px;
   gap: 20px;
-  
 }
 .golditem-card {
   display: flex;
@@ -340,15 +340,14 @@ p {
   background-color: #c79e52;
   color: #000000;
   width: 47%;
-  
+
   border: 4px solid transparent;
   border-radius: 20px;
   overflow: hidden;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
-.golditemtext{
+.golditemtext {
   padding: 20px;
-  
 }
 .golditem-card img {
   width: 100%;
@@ -361,7 +360,7 @@ p {
   background-color: rgba(246, 251, 252, 0.811);
   padding: 0px 50px 10px 50px;
 }
-.coach__wrapper img{
+.coach__wrapper img {
   height: 300px;
   width: 300px;
 }
@@ -447,15 +446,12 @@ p {
   margin-right: 50px;
   background-size: cover;
   display: flex;
-  
 }
 .pt-text-background1 {
   background-image: url("./pic/b&w.jpg");
   margin-left: 50px;
   background-size: cover;
   margin-bottom: 50px;
-  
-  
 }
 .pt-text {
   background-color: rgba(255, 255, 255, 0.51);
@@ -464,8 +460,8 @@ p {
   margin: 20px;
   height: stretch;
   color: black;
-  }
- .pt-wrapper img,
+}
+.pt-wrapper img,
 .pt-wrapper1 img {
   height: 650px;
 }
@@ -527,7 +523,7 @@ p {
   z-index: 1;
 }
 .xl-text h2 {
-  font-size: 5vw; 
+  font-size: 5vw;
 }
 .yogalates-wrapper {
   display: flex;
@@ -562,16 +558,13 @@ p {
   padding: 50px;
   background-image: url("./pic/blue01.jpg");
   color: white;
- 
 }
 .item a {
   color: white;
   text-decoration: none;
-   
 }
 .item {
   flex: 1 0 40%;
-  
 }
 /* ////////////////////////////////////////FOOTER/////////////////// */
 .review-wrapper {
@@ -581,22 +574,22 @@ p {
 }
 
 .review {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-        background-color: black;
-    padding: 24px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-    font-weight: bold;
-    }
-    .review-element {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-          }
-  footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 24px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.review-element {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+footer {
   background-color: #1b405e;
   text-align: center;
   padding: 10px;
@@ -605,7 +598,7 @@ p {
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
-  .p {
+  * {
     font-size: 20px;
   }
   .flex {
