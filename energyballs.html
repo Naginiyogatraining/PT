@@ -8,8 +8,34 @@
   </head>
 
   <body>
+    <div class="mobile-menu-button">
+      <div class="lines-button" onclick="buttonToggle(this)">
+        <span class="lines">
+          <span></span>
+        </span>
+        <div id="menu">
+          <div class="menu-list">
+            <ul>
+              <li class="menu-item">
+                <a href="./home.html">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="./training.html">Training Types</a>
+              </li>
+              <li class="menu-item">
+                <a href="recipes.html">Recipes</a>
+              </li>
+              <li class="menu-item">
+                <a href="./retreat.html">Yoga Retreart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="blue-bg">
-      <h1 class="card-text">Energy Balls</h1>
+      <h2 class="card-text">Energy Balls</h2>
       <div class="food-text">
         <div>
           <h4>Ingredients:</h4>
@@ -53,5 +79,10 @@
     <div class="footercontainer">
       <footer>@2024 by Nagini Yoga Training, Reading, UK</footer>
     </div>
+    <script>
+      function buttonToggle(x) {
+        x.classList.toggle("toggle");
+      }
+    </script>
   </body>
 </html>
