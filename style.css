@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.5;
 }
 h1 {
@@ -99,7 +99,7 @@ p {
 .highliht {
   color: white;
   background-color: #0c1f36;
-  font-size: 20px;
+  font-size: 1.5rem;
   border-radius: 30px;
   padding: 5px 20px;
 }
@@ -247,7 +247,7 @@ p {
   padding: 5px 20px;
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .button a:hover {
   background-color: #000000;
@@ -606,6 +606,12 @@ footer {
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
+  * {
+    font-size: 1.2rem;
+  }
+  .button a {
+    font-size: 1.2rem;
+  }
   .flex {
     flex-direction: column;
   }
