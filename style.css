@@ -11,7 +11,7 @@
   line-height: 1.5;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 h2 {
   font-size: 1.5rem;
@@ -31,7 +31,6 @@ h4 {
 a {
   color: #0c1f36;
   text-decoration: none;
-  font-size: 1.5rem;
 }
 li {
   list-style: none;
@@ -248,7 +247,7 @@ p {
   padding: 5px 20px;
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .button a:hover {
   background-color: #000000;
@@ -367,8 +366,7 @@ p {
 }
 /* //////////////Meet your coach///////////////// */
 .coach__wrapper {
-  background-color: rgba(246, 251, 252, 0.811);
-  padding: 0px 50px 10px 50px;
+  padding: 0px 50px 20px 50px;
 }
 .coach__wrapper img {
   height: 300px;
@@ -608,9 +606,6 @@ footer {
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
-  * {
-    font-size: 30px;
-  }
   .flex {
     flex-direction: column;
   }
