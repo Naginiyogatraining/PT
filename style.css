@@ -607,10 +607,10 @@ footer {
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
   * {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .button a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .flex {
     flex-direction: column;
