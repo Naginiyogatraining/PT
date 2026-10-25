@@ -2,20 +2,149 @@
 @import url("./formcarry-container.css");
 
 /* RESET */
-* {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.5;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
-  line-height: 1.5;
-}
+  
+} */
 h1 {
   font-size: 2.5rem;
 }
 h2 {
   font-size: 1.5rem;
-  padding-left: 20px;
+  padding: 20px;
 }
 h3 {
   font-size: 1.2rem;
@@ -270,12 +399,12 @@ p {
 }
 .blue-bg {
   padding: 20px;
-  width: 100%;
   min-height: max(100vh, 100%);
   background-image:
     linear-gradient(rgba(8, 28, 41, 0.4), rgba(8, 28, 41, 0.4)),
     url("./pic/blue02.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   color: white;
 }
@@ -285,9 +414,13 @@ p {
 .blue-transparent {
   background-color: #7faecbda;
 }
-.seca-wrapper {
-  padding: 20px 50px 10px 50px;
+.seca-wrapper-wrapper {
   width: 100%;
+  height: 500px;
+}
+.seca-wrapper {
+  flex-basis: fit-content;
+  padding: 20px 50px 10px 50px;
   height: 100%;
 }
 .seca-wrapper span {
@@ -306,6 +439,7 @@ p {
   background-image: url("./pic/secaposter.jpg");
   background-size: cover;
   width: 100%;
+  height: 100%;
 }
 .goldplate {
   background-color: #c79e52;
@@ -387,11 +521,9 @@ p {
   gap: 50px;
 }
 .ybimg-wrapper {
-  width: 100%;
   align-items: center;
 }
 .yp1 {
-  width: 100%;
   padding-left: 25%;
 }
 .yp2 {
@@ -527,9 +659,7 @@ p {
   position: absolute;
   z-index: 1;
 }
-.xl-text h2 {
-  font-size: 5vw;
-}
+
 .yogalates-wrapper {
   display: flex;
   padding: 20px;
@@ -606,14 +736,19 @@ footer {
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
-  * {
-    font-size: 1.5rem;
+  .flex,
+  .index,
+  .yogalates-wrapper,
+  .company-group,
+  .pt-content,
+  .pt-content1,
+  .food-text,
+  .discription,
+  .groupcard-wrapper {
+    flex-direction: column;
   }
   .button a {
     font-size: 1.5rem;
-  }
-  .flex {
-    flex-direction: column;
   }
   .header__content {
     flex-direction: column;
@@ -639,19 +774,13 @@ footer {
   .transparenttextdecoration {
     border-radius: 0px;
   }
-  .index,
-  .yogalates-wrapper,
-  .company-group,
-  .pt-content,
-  .pt-content1,
-  .food-text,
-  .discription,
-  .groupcard-wrapper {
-    flex-direction: column;
+
+  .seca-wrapper {
+    width: 100%;
   }
   .seca-poster {
-    background-size: cover;
-    height: 1140px;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
   .pt-content1 img {
     float: right;
@@ -689,9 +818,11 @@ footer {
     padding: 0px;
     margin: 20px 20px;
   }
-  .training-card,
+  .training-card {
+    width: 100%;
+  }
   .yoga-page-intro {
-      width: 100%;
+    width: unset;
   }
   .xl-text > div {
     position: relative;
