@@ -131,14 +131,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  
-} */
+
 h1 {
   font-size: 2.5rem;
 }
@@ -267,6 +260,7 @@ p {
 }
 .boundle {
   display: flex;
+  padding: 20px;
 }
 .index-img {
   display: flex;
@@ -693,7 +687,7 @@ p {
 .legal {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 40px;
   background-image: url("./pic/blue01.jpg");
   color: white;
 }
@@ -705,11 +699,11 @@ p {
   flex: 1 0 40%;
 }
 /* ////////////////////////////////////////FOOTER/////////////////// */
-.review-wrapper {
+/* .review-wrapper {
   width: 100%;
   text-align: center;
   padding: 30px;
-}
+} */
 
 .review {
   display: flex;
