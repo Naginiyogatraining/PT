@@ -131,20 +131,14 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-h1 {
-  font-size: 2.5rem;
-}
-h2 {
-  font-size: 1.5rem;
-  padding: 20px;
-}
+h1, h2 {
+  font-size: 4rem;
+ }
 h3 {
-  font-size: 1.2rem;
-  padding-left: 40px;
-}
+  font-size: 2rem;
+  }
 h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 15px;
   text-decoration: underline;
   text-decoration: solid underline white 1.5px;
@@ -370,8 +364,7 @@ p {
   padding: 5px 20px;
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
-}
+  }
 .button a:hover {
   background-color: #000000;
 }
@@ -389,7 +382,9 @@ p {
   color: white;
 }
 .gray {
+  
   background-image: url("./pic/b&w.jpg");
+  
 }
 .blue-bg {
   padding: 20px;
@@ -413,8 +408,7 @@ p {
   height: 500px;
 }
 .seca-wrapper {
-  flex-basis: fit-content;
-  padding: 20px 50px 10px 50px;
+    flex-basis: fit-content;
   height: 100%;
 }
 .seca-wrapper span {
@@ -494,9 +488,11 @@ p {
 }
 /* //////////////Meet your coach///////////////// */
 .coach__wrapper {
+  
   padding: 20px;
 }
 .coach__wrapper img {
+  margin: 10px;
   height: 300px;
   width: 300px;
 }
@@ -712,7 +708,7 @@ p {
   align-items: center;
   background-color: black;
   padding: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 20px;
   font-weight: bold;
 }
@@ -730,6 +726,19 @@ footer {
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
+h1, h2 {
+  font-size: 2rem;
+ }
+h3 {
+  font-size: 1rem;
+  }
+h4 {
+  font-size: 1rem;
+  padding-bottom: 15px;
+  text-decoration: underline;
+  text-decoration: solid underline white 1.5px;
+  text-underline-offset: 10px;
+}
   .flex,
   .index,
   .yogalates-wrapper,
@@ -741,10 +750,7 @@ footer {
   .groupcard-wrapper {
     flex-direction: column;
   }
-  .button a {
-    font-size: 1.5rem;
-  }
-  .header__content {
+    .header__content {
     flex-direction: column;
     padding: 25px 0;
     row-gap: 18px;
@@ -768,11 +774,11 @@ footer {
   .transparenttextdecoration {
     border-radius: 0px;
   }
-
-  .seca-wrapper {
-    width: 100%;
-  }
-  .seca-poster {
+.seca-wrapper-wrapper {
+  height: 230px;
+}
+   .seca-poster {
+    background-image: url("./pic/secapostermobile.jpg");
     background-size: contain;
     background-repeat: no-repeat;
   }
