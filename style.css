@@ -131,8 +131,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1, h2 {
+h1 {
   font-size: 4rem;
+ }
+ h2 {
+  font-size: 2.5rem;
  }
 h3 {
   font-size: 2rem;
@@ -199,7 +202,7 @@ p {
   padding: 10 0 10 0px;
 }
 
-/* TEXT DECORATION */
+/* TEXTDECORATION */
 #centered {
   text-align: center;
 }
@@ -208,6 +211,11 @@ p {
   text-align: center;
 }
 .transparenttextdecoration {
+  background-color: rgba(255, 255, 255, 0.466);
+  padding: 0px 50px 0px 50px;
+  text-align: justify;
+}
+.transparentbordertextdecoration {
   background-color: rgba(246, 251, 252, 0.811);
   border-radius: 20px;
   align-self: anchor-center;
@@ -238,8 +246,7 @@ p {
   font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
   font-weight: 500;
-  margin: 10px 0px;
-}
+ }
 /* INDEX  */
 .index {
   display: flex;
@@ -488,9 +495,9 @@ p {
 }
 /* //////////////Meet your coach///////////////// */
 .coach__wrapper {
-  
-  padding: 20px;
-}
+  background-image: url("./pic/b&w.jpg");
+  background-repeat: no-repeat;
+    }
 .coach__wrapper img {
   margin: 10px;
   height: 300px;
@@ -557,12 +564,13 @@ p {
 .company-group {
   display: flex;
   gap: 10px;
+  margin-top: 10px;
 }
 .company {
   border: 1px solid black;
-  margin-top: 20px;
+  
   flex: 1 1;
-  padding: 20px;
+  padding: 10px;
 }
 .pt-content {
   display: flex;
@@ -572,23 +580,19 @@ p {
   flex-direction: row-reverse;
 }
 .pt-text-background {
-  background-image: url("./pic/b&w.jpg");
-  margin-right: 50px;
-  background-size: cover;
   display: flex;
-}
+  margin-right: 50px;
+  }
 .pt-text-background1 {
-  background-image: url("./pic/b&w.jpg");
+  
   margin-left: 50px;
-  background-size: cover;
+ 
   margin-bottom: 50px;
 }
 .pt-text {
   background-color: rgba(255, 255, 255, 0.51);
-  text-align: justify;
   padding: 20px;
   margin: 20px;
-  height: stretch;
   color: black;
 }
 .pt-wrapper img,
@@ -730,7 +734,7 @@ h1, h2 {
   font-size: 2rem;
  }
 h3 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   }
 h4 {
   font-size: 1rem;
@@ -771,7 +775,7 @@ h4 {
   .ybimg-wrapper {
     padding: 50px;
   }
-  .transparenttextdecoration {
+  .transparentbordertextdecoration {
     border-radius: 0px;
   }
 .seca-wrapper-wrapper {
