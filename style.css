@@ -133,7 +133,17 @@ table {
 }
 h1 {
   font-size: 4rem;
+   font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
  }
+ .inter-textfamily {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  }
  h2 {
   font-size: 2.5rem;
  }
@@ -155,33 +165,14 @@ li {
   list-style: none;
   padding-left: 0px;
 }
-/* h1 {
- 
-  font-family: "Lora", serif;
-  
-  
-  padding-bottom: 5px;
-}
-h2 {
-  font-family: "Libre Baskerville", serif;
-  padding: 10px 0px;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 25px;
-}
-h3 {
-  font-family: "Hanuman", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  }
+
 
 p {
   font-family: "Open Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   
-} */
+} 
 
 /* BASE STYLE */
 .body {
@@ -228,13 +219,12 @@ p {
   padding: 5px 20px;
 }
 .textstyle {
-  text-align: justify;
   padding: 20px;
+  text-align: justify;
 }
 .center-text {
   /* justify-items: center; */
-  margin: 20px;
-  text-align: justify;
+  
   flex-basis: 100%;
 }
 .card-text {
@@ -250,9 +240,10 @@ p {
 /* INDEX  */
 .index {
   display: flex;
+  gap: 20px;
   justify-content: space-around;
   align-items: center;
-  text-align: center;
+  /* text-align: left; */
 }
 .flex {
   display: flex;
@@ -261,10 +252,11 @@ p {
 }
 .boundle {
   display: flex;
+  gap: 5px;
   padding: 20px;
 }
 .index-img {
-  display: flex;
+  /* display: flex; */
   margin: 20px;
   width: 50%;
 }
@@ -297,11 +289,6 @@ p {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
-}
-.nagini {
-  color: #fff;
-  font-size: 28px;
-  text-transform: uppercase;
 }
 .links {
   display: flex;
@@ -415,7 +402,7 @@ p {
   height: 500px;
 }
 .seca-wrapper {
-    flex-basis: fit-content;
+  display: flex;
   height: 100%;
 }
 .seca-wrapper span {
@@ -484,9 +471,9 @@ p {
   overflow: hidden;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
-.golditemtext {
+/* .golditemtext {
   padding: 20px;
-}
+} */
 .golditem-card img {
   width: 100%;
   /* height: 100%; */
@@ -542,7 +529,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-  padding-bottom: 20px;
 }
 .classicon-wrapper a {
   text-decoration: none;
@@ -699,19 +685,13 @@ p {
   flex: 1 0 40%;
 }
 /* ////////////////////////////////////////FOOTER/////////////////// */
-/* .review-wrapper {
-  width: 100%;
-  text-align: center;
-  padding: 30px;
-} */
-
 .review {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  padding: 24px;
+  padding: 0px 25px 0px 25px;
   margin-bottom: 20px;
   border-radius: 20px;
   font-weight: bold;
@@ -726,7 +706,7 @@ footer {
   text-align: center;
   padding: 10px;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1000px) {
@@ -759,9 +739,9 @@ h4 {
     padding: 25px 0;
     row-gap: 18px;
   }
-  .index-img {
+  /* .index-img {
     width: 50%;
-  }
+  } */
   .golditem-card {
     width: 100%;
   }
@@ -800,9 +780,7 @@ h4 {
   .media-pttext {
     display: block;
     padding-top: 200px;
-    text-align: center;
-    color: white;
-  }
+      }
   .yogaholiday-card1 {
     flex-direction: column;
     text-align: center;
@@ -838,5 +816,9 @@ h4 {
   .bbimg {
     order: 2;
     width: 100%;
+  }
+  .review {
+    display: block;
+    padding: 20px;
   }
 }
