@@ -109,7 +109,7 @@ section {
   display: block;
 }
 body {
-   line-height: 1.5;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -135,25 +135,25 @@ table {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  }
+}
 h1 {
   font-size: 4rem;
-   font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
- }
- 
- h2 {
+}
+
+h2 {
   font-size: 2.5rem;
- }
+}
 h3 {
   font-size: 2rem;
-  }
+}
 h4 {
   font-size: 2rem;
   padding-bottom: 15px;
-    text-decoration: solid underline 1.5px;
+  text-decoration: solid underline 1.5px;
   text-underline-offset: 10px;
 }
 a {
@@ -165,17 +165,18 @@ li {
   padding-left: 0px;
 }
 /* INDEX html */
+.indexbasedecoration {
+  padding: 40px;
+}
 .index {
   display: flex;
   gap: 20px;
   justify-content: space-around;
   align-items: center; /* Vertically centers */
-  
 }
 .index img {
   margin: 20px;
   width: 100%; /* makes the image as wide as its container, and will scale up and down */
-  
   height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
 }
 #desktopwidth {
@@ -183,9 +184,20 @@ li {
 }
 /* INDEX END */
 .basedecoration {
-  padding: 40px;
+  padding: 10px;
 }
-
+.blackaddvert {
+  display: flex;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center; /* Vertically centers */
+  }
+.blackaddvert img {
+  display: none;
+}
 
 .textandbtn {
   display: flex;
@@ -197,9 +209,7 @@ li {
 .btn-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 10 0 10 0px;
+  justify-content: space-around;
 }
 
 /* TEXTDECORATION */
@@ -234,7 +244,7 @@ li {
 }
 .center-text {
   /* justify-items: center; */
-  
+
   flex-basis: 100%;
 }
 .card-text {
@@ -246,8 +256,7 @@ li {
   font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
   font-weight: 500;
- }
-
+}
 
 .flex {
   display: flex;
@@ -322,11 +331,13 @@ li {
   background-color: #0c1f36;
   border: 2px solid white;
   border-radius: 30px;
+  min-height: fit-content;
   max-width: fit-content;
+  padding: 0px 10px 0px 10px;
   margin: 10px;
   text-align: center;
   justify-self: center;
-    font-weight: 600;
+  font-weight: 600;
   overflow: hidden;
   text-transform: uppercase;
 }
@@ -350,15 +361,10 @@ li {
   color: #000000;
   text-decoration: none;
 }
-.cpp {
-  margin: 5px;
-  text-align: center;
-}
 .button a {
-  padding: 5px 20px;
   color: white;
   text-decoration: none;
-  }
+}
 .button a:hover {
   background-color: #000000;
 }
@@ -376,9 +382,10 @@ li {
   color: white;
 }
 .gray {
-  
   background-image: url("./pic/b&w.jpg");
-  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .blue-bg {
   background-image:
@@ -407,7 +414,7 @@ li {
 .secatextandimg {
   width: 80%;
   float: right;
-  }
+}
 .seca-wrapper img {
   max-width: 700px; /* makes the image scale down if it has to, but never scale up to be larger than its real size. use: px, fit-content, % */
 }
@@ -485,7 +492,7 @@ li {
 .coach__wrapper {
   background-image: url("./pic/b&w.jpg");
   background-repeat: no-repeat;
-    }
+}
 .coach__wrapper img {
   margin: 10px;
   height: 300px;
@@ -555,7 +562,7 @@ li {
 }
 .company {
   border: 1px solid black;
-  
+
   flex: 1 1;
   padding: 10px;
 }
@@ -569,25 +576,37 @@ li {
 .pt-text-background {
   display: flex;
   margin-right: 50px;
-  }
+}
 .pt-text-background1 {
-  
   margin-left: 50px;
- 
+
   margin-bottom: 50px;
 }
 .pt-text {
   background-color: rgba(255, 255, 255, 0.51);
-  padding: 20px;
-  margin: 20px;
+  padding: 10px;
+  margin: 10px;
   color: black;
 }
+
 .pt-wrapper img,
 .pt-wrapper1 img {
   height: 650px;
 }
 .media-pttext {
   display: none;
+}
+.graywrapper {
+  display: flex;
+}
+.graywrapper img {
+  width: 30%; /* makes the image as wide as its container, and will scale up and down */
+  height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
+}
+.pttextdecoration {
+  background-color: rgba(255, 255, 255, 0.51);
+  padding: 10px;
+  margin: 10px;
 }
 /* //////////////////////////////////////////////YogaHoliday */
 .yogaholiday-wrapper {
@@ -718,17 +737,20 @@ footer {
   .seca-wrapper img {
     max-width: 400px;
   }
-  }
+}
 @media (max-width: 1000px) {
-h1, h2 {
-  font-size: 2rem;
- }
-h3, h4 {
-  font-size: 1.5rem;
-  text-align: left;
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  h3,
+  h4 {
+    font-size: 1.5rem;
+    text-align: left;
   }
   .flex,
   .index,
+  .graywrapper,
   .yogalates-wrapper,
   .company-group,
   .pt-content,
@@ -737,17 +759,16 @@ h3, h4 {
   .discription,
   .groupcard-wrapper {
     flex-direction: column;
-    
   }
-.strech100vh {
-height: 100vh; /*index htm strech to full screen */
-}
-    .header__content {
+  .strech100vh {
+    height: 100vh; /*index htm strech to full screen */
+  }
+  .header__content {
     flex-direction: column;
     padding: 25px 0;
     row-gap: 18px;
   }
-    .golditem-card {
+  .golditem-card {
     width: 100%;
   }
   .bluemandala {
@@ -763,8 +784,10 @@ height: 100vh; /*index htm strech to full screen */
   .transparentbordertextdecoration {
     border-radius: 0px;
   }
+  .graywrapper img {
+    display: none;
+  }
 
-   
   .pt-content1 img {
     float: right;
   }
@@ -779,7 +802,7 @@ height: 100vh; /*index htm strech to full screen */
   .media-pttext {
     display: block;
     padding-top: 200px;
-      }
+  }
   .yogaholiday-card1 {
     flex-direction: column;
     text-align: center;
@@ -819,5 +842,9 @@ height: 100vh; /*index htm strech to full screen */
   .review {
     display: block;
     padding: 20px;
+  }
+  .blackaddvert img {
+    display: block;
+    width: 50%;
   }
 }
