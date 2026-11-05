@@ -109,7 +109,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1.5;
+   line-height: 1.5;
 }
 ol,
 ul {
@@ -130,6 +130,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.inter-textfamily {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  }
 h1 {
   font-size: 4rem;
    font-family: "Oswald", sans-serif;
@@ -137,12 +143,7 @@ h1 {
   font-weight: bold;
   font-style: normal;
  }
- .inter-textfamily {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  }
+ 
  h2 {
   font-size: 2.5rem;
  }
@@ -163,10 +164,29 @@ li {
   list-style: none;
   padding-left: 0px;
 }
-/* BASE STYLE */
-.body {
-  height: 100vh;
+/* INDEX html */
+.index {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center; /* Vertically centers */
+  
 }
+.index img {
+  margin: 20px;
+  width: 100%; /* makes the image as wide as its container, and will scale up and down */
+  
+  height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
+}
+#desktopwidth {
+  max-width: 50%;
+}
+/* INDEX END */
+.basedecoration {
+  padding: 40px;
+}
+
+
 .textandbtn {
   display: flex;
   flex-wrap: wrap;
@@ -183,9 +203,9 @@ li {
 }
 
 /* TEXTDECORATION */
+
 #centered {
   text-align: center;
-  
 }
 .topic-text {
   padding: 20px;
@@ -227,14 +247,8 @@ li {
   font-style: oblique;
   font-weight: 500;
  }
-/* INDEX  */
-.index {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  align-items: center;
-  /* text-align: left; */
-}
+
+
 .flex {
   display: flex;
   justify-self: center;
@@ -245,18 +259,13 @@ li {
   gap: 5px;
   padding: 20px;
 }
-.index-img {
-  /* display: flex; */
-  margin: 20px;
-  width: 50%;
-}
-.frame {
+
+.goldframeforimg {
   border: 5px solid #c4a668;
   border-radius: 20px;
-  width: 100%;
+  /* width: 100%; */
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
-/* INDEX END */
 .tiny {
   width: 50px;
   height: 50px;
@@ -372,8 +381,6 @@ li {
   
 }
 .blue-bg {
-  padding: 20px;
-  min-height: max(100vh, 100%);
   background-image:
     linear-gradient(rgba(8, 28, 41, 0.4), rgba(8, 28, 41, 0.4)),
     url("./pic/blue02.jpg");
@@ -402,7 +409,7 @@ li {
   float: right;
   }
 .seca-wrapper img {
-  max-width: 700px;
+  max-width: 700px; /* makes the image scale down if it has to, but never scale up to be larger than its real size. use: px, fit-content, % */
 }
 .seca-wrapper span {
   color: rgb(0, 29, 109);
@@ -697,11 +704,10 @@ li {
   gap: 5px;
 }
 footer {
-  background-color: #1b405e;
   text-align: center;
+  background-color: #1b405e;
   padding: 10px;
   color: white;
-  font-size: 14px;
 }
 /* MEDIA QUERIES */
 @media (max-width: 1260px) {
@@ -721,7 +727,6 @@ h3, h4 {
   font-size: 1.5rem;
   text-align: left;
   }
-
   .flex,
   .index,
   .yogalates-wrapper,
@@ -732,16 +737,17 @@ h3, h4 {
   .discription,
   .groupcard-wrapper {
     flex-direction: column;
+    
   }
+.strech100vh {
+height: 100vh; /*index htm strech to full screen */
+}
     .header__content {
     flex-direction: column;
     padding: 25px 0;
     row-gap: 18px;
   }
-  /* .index-img {
-    width: 50%;
-  } */
-  .golditem-card {
+    .golditem-card {
     width: 100%;
   }
   .bluemandala {
