@@ -108,6 +108,10 @@ nav,
 section {
   display: block;
 }
+.header {
+  height: 100px;
+  row-gap: 18px;
+}
 body {
   line-height: 1.5;
 }
@@ -168,19 +172,18 @@ li {
 .indexbasedecoration {
   padding: 40px;
 }
-.index {
+.index,
+.home-coachoffer
+ {
   display: flex;
   gap: 20px;
   justify-content: space-around;
   align-items: center; /* Vertically centers */
 }
 .index img {
-  margin: 20px;
-  width: 100%; /* makes the image as wide as its container, and will scale up and down */
+    margin: 20px;
+  width: 50%; /* makes the image as wide as its container, and will scale up and down */
   height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
-}
-#desktopwidth {
-  max-width: 50%;
 }
 /* INDEX END */
 .basedecoration {
@@ -213,24 +216,56 @@ li {
 }
 
 /* TEXTDECORATION */
+.xl-text {
+  color: rgb(0, 29, 109);
+  /* color: #5a94ba; */
+  text-shadow: 3px 3px 4px rgb(5, 5, 5);
+  padding: 20px;
+  
+   }
+.xl-text > div {
+  position: absolute;
+  z-index: 1;
+  }
+  .xl-text h2 {
+     font-size: 3.5rem;
+  }
 
-#centered {
+.texaligncenter {
   text-align: center;
+}
+/* #centered {
+  text-align: center;
+} */
+.textstyle {
+  padding: 20px;
+  text-align: justify;
+  flex: 1 1;
+}
+.card-text {
+  padding: 20px;
+  text-align: left;
 }
 .topic-text {
   padding: 20px;
   text-align: center;
 }
+.transparenttextdecoration-margin {
+  background-color: rgba(255, 255, 255, 0.50);
+  padding: 10px;
+  margin: 10px;
+}
 .transparenttextdecoration {
-  background-color: rgba(255, 255, 255, 0.466);
+  background-color: rgba(255, 255, 255, 0.50);
   padding: 0px 50px 0px 50px;
   text-align: justify;
 }
 .transparentbordertextdecoration {
-  background-color: rgba(246, 251, 252, 0.811);
+  background-color: rgba(255, 255, 255, 0.50);
   border-radius: 20px;
-  align-self: anchor-center;
-}
+  padding: 20px;
+  text-align: justify;
+  }
 .highliht {
   color: white;
   background-color: #0c1f36;
@@ -238,19 +273,13 @@ li {
   border-radius: 30px;
   padding: 5px 20px;
 }
-.textstyle {
-  padding: 20px;
-  text-align: justify;
-}
+
 .center-text {
-  /* justify-items: center; */
+  
 
   flex-basis: 100%;
 }
-.card-text {
-  padding: 20px;
-  text-align: left;
-}
+
 
 .oblique-text {
   font-family: "Roboto Condensed", sans-serif;
@@ -260,26 +289,26 @@ li {
 
 .flex {
   display: flex;
-  justify-self: center;
-  /* min-width: 250px; */
+  /* justify-self: center; */
+ 
 }
-.boundle {
+.smallicons {
   display: flex;
   gap: 5px;
-  padding: 20px;
+  padding: 20px 0;
 }
-
+.tiny {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
 .goldframeforimg {
   border: 5px solid #c4a668;
   border-radius: 20px;
   /* width: 100%; */
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
-.tiny {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-}
+
 .squareimg {
   width: 70%;
   margin: 50px;
@@ -321,25 +350,23 @@ li {
   margin: 10px;
   border-radius: 30px;
   font-weight: bold;
+  
   transition: 0.4s;
   cursor: pointer;
-}
-.btn:hover {
-  transform: scale(1.1);
 }
 .button {
   background-color: #0c1f36;
   border: 2px solid white;
-  border-radius: 30px;
-  min-height: fit-content;
-  max-width: fit-content;
-  padding: 0px 10px 0px 10px;
-  margin: 10px;
-  text-align: center;
-  justify-self: center;
+  border-radius: 15px;
+ 
+    text-transform: uppercase;
   font-weight: 600;
+  margin: 10px;
+  padding: 2px 15px 2px 15px;
+    /* min-height: fit-content;
+  max-width: fit-content; */
+ justify-self: center;
   overflow: hidden;
-  text-transform: uppercase;
 }
 .review-button {
   border-width: 2px;
@@ -359,15 +386,16 @@ li {
 .review-button a,
 .foodcardbtn a {
   color: #000000;
-  text-decoration: none;
+   
 }
 .button a {
   color: white;
-  text-decoration: none;
+    
 }
 .button a:hover {
+ 
   background-color: #000000;
-}
+  }
 .background {
   background-image: url("./pic/blue000.jpg");
   color: white;
@@ -377,9 +405,11 @@ li {
   text-shadow: 2px 2px black;
 }
 
-.black {
+.services_wrapper {
   background-color: black;
   color: white;
+  padding: 0px 20px;
+  text-align: center;
 }
 .gray {
   background-image: url("./pic/b&w.jpg");
@@ -413,8 +443,7 @@ li {
 }
 .secatextandimg {
   width: 80%;
-  float: right;
-}
+  }
 .seca-wrapper img {
   max-width: 700px; /* makes the image scale down if it has to, but never scale up to be larger than its real size. use: px, fit-content, % */
 }
@@ -424,7 +453,8 @@ li {
 }
 .seca-wrapper li,
 .discription li,
-.yoga-page-intro li {
+.yoga-page-intro li,
+.backband-wrapper li {
   font-weight: bolder;
   color: rgb(0, 29, 109);
   list-style: square;
@@ -490,8 +520,7 @@ li {
 }
 /* //////////////Meet your coach///////////////// */
 .coach__wrapper {
-  background-image: url("./pic/b&w.jpg");
-  background-repeat: no-repeat;
+  
 }
 .coach__wrapper img {
   margin: 10px;
@@ -537,7 +566,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
-}
+  }
 .classicon-wrapper a {
   text-decoration: none;
   color: white;
@@ -553,8 +582,12 @@ li {
 .classicon-wrapper img:hover {
   transform: scale(1.1);
 }
-/* /////////////////////////////////////////Prsonal training in the gym */
+/* /////////////////////////////////////////Prsonal training html */
 
+.graywrapper img {
+  width: 30%; /* makes the image as wide as its container, and will scale up and down */
+  height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
+}
 .company-group {
   display: flex;
   gap: 10px;
@@ -564,52 +597,13 @@ li {
 }
 .company {
   border: 1px solid black;
-
   flex: 1 1;
   padding: 10px;
 }
-.pt-content {
-  display: flex;
-}
-.pt-content1 {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.pt-text-background {
-  display: flex;
-  margin-right: 50px;
-}
-.pt-text-background1 {
-  margin-left: 50px;
 
-  margin-bottom: 50px;
-}
-.pt-text {
-  background-color: rgba(255, 255, 255, 0.51);
-  padding: 10px;
-  margin: 10px;
-  color: black;
-}
 
-.pt-wrapper img,
-.pt-wrapper1 img {
-  height: 650px;
-}
-.media-pttext {
-  display: none;
-}
-.graywrapper {
-  display: flex;
-}
-.graywrapper img {
-  width: 30%; /* makes the image as wide as its container, and will scale up and down */
-  height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
-}
-.pttextdecoration {
-  background-color: rgba(255, 255, 255, 0.51);
-  padding: 10px;
-  margin: 10px;
-}
+
+
 /* //////////////////////////////////////////////YogaHoliday */
 .yogaholiday-wrapper {
   display: flex;
@@ -640,27 +634,6 @@ li {
   width: 100%;
 }
 /* --------------YOGA CLASS-------------- */
-.discription {
-  display: flex;
-  justify-content: space-between;
-}
-
-.discription-text {
-  text-align: justify;
-  padding: 20px;
-  margin-top: 200px;
-  width: 50%;
-}
-.xl-text {
-  color: rgb(0, 29, 109);
-  /* color: #5a94ba; */
-  text-shadow: 3px 3px 4px rgb(5, 5, 5);
-  padding: 20px;
-}
-.xl-text > div {
-  position: absolute;
-  z-index: 1;
-}
 
 .yogalates-wrapper {
   display: flex;
@@ -668,21 +641,12 @@ li {
   gap: 20px;
   text-align: center;
 }
-.yoga-page-intro {
+.yoga-page-intro,
+.backband-wrapper {
   width: 50%;
 }
 .yogalates {
   flex: 1 1;
-}
-.bbimg {
-  width: 55%;
-}
-.matimg-wrapper {
-  display: flex;
-  background-image: url("./pic/blue_mat.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 400px;
 }
 .groupclass-text {
   text-align: justify;
@@ -752,28 +716,26 @@ footer {
   }
   .flex,
   .index,
+  .home-coachoffer,
   .graywrapper,
   .yogalates-wrapper,
   .company-group,
-  .pt-content,
-  .pt-content1,
   .food-text,
-  .discription,
-  .groupcard-wrapper {
+    .groupcard-wrapper {
     flex-direction: column;
+  }
+  .index img {
+    width: 100%;
   }
   .strech100vh {
     height: 100vh; /*index htm strech to full screen */
   }
-  .header__content {
-    flex-direction: column;
-    padding: 25px 0;
-    row-gap: 18px;
-  }
+    
   .golditem-card {
     width: 100%;
   }
-  .bluemandala {
+  .bluemandala,
+  .services_wrapper {
     padding: 0;
   }
   .yb-wrapper {
@@ -783,6 +745,9 @@ footer {
   .ybimg-wrapper {
     padding: 50px;
   }
+  .transparenttextdecoration {
+    padding: 20px;
+  }
   .transparentbordertextdecoration {
     border-radius: 0px;
   }
@@ -790,17 +755,7 @@ footer {
     display: none;
   }
 
-  .pt-content1 img {
-    float: right;
-  }
-  .pt-text-background,
-  .pt-text-background1 {
-    margin: 0;
-  }
-  .pt-img-wrapper {
-    display: flex;
-    height: 460px;
-  }
+ 
   .media-pttext {
     display: block;
     padding-top: 200px;
@@ -827,7 +782,8 @@ footer {
   .training-card {
     width: 100%;
   }
-  .yoga-page-intro {
+  .yoga-page-intro,
+  .backband-wrapper {
     width: unset;
   }
   .xl-text > div {
