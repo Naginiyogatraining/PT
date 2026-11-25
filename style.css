@@ -134,6 +134,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.float-r {
+  float: right;
+}
 .inter-textfamily {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -173,8 +176,7 @@ li {
   padding: 40px;
 }
 .index,
-.home-coachoffer
- {
+.home-coachoffer {
   display: flex;
   gap: 20px;
   justify-content: space-around;
@@ -201,6 +203,16 @@ li {
 .blackaddvert img {
   display: none;
 }
+.recipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+.recipe img {
+  width: 20%;
+  text-align: center;
+}
 
 .textandbtn {
   display: flex;
@@ -220,8 +232,7 @@ li {
   color: rgb(0, 29, 109);
   /* color: #5a94ba; */
   text-shadow: 3px 3px 4px rgb(5, 5, 5);
-  padding: 20px;
-  
+    padding-left: 20px;
    }
 .xl-text > div {
   position: absolute;
@@ -234,13 +245,10 @@ li {
 .texaligncenter {
   text-align: center;
 }
-/* #centered {
-  text-align: center;
-} */
 .textstyle {
   padding: 20px;
   text-align: justify;
-  flex: 1 1;
+  /* flex: 1 1; */
 }
 .card-text {
   padding: 20px;
@@ -254,6 +262,7 @@ li {
   background-color: rgba(255, 255, 255, 0.50);
   padding: 10px;
   margin: 10px;
+      align-content: center;
 }
 .transparenttextdecoration {
   background-color: rgba(255, 255, 255, 0.50);
@@ -310,24 +319,12 @@ li {
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
 }
 
-.squareimg {
-  width: 70%;
-  margin: 50px;
-}
 .align-center {
   height: 100%;
   align-items: center;
 }
 
-.food-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 60px;
-  max-width: 1200px;
-  padding: 0 30px;
-  margin: 0 auto;
-}
+
 .links {
   display: flex;
   column-gap: 40px;
@@ -359,7 +356,7 @@ li {
   background-color: #0c1f36;
   border: 2px solid white;
   border-radius: 15px;
- 
+  filter: drop-shadow(rgba(0, 0, 0, 0.781) 0.5rem 0.5rem 3px);
     text-transform: uppercase;
   font-weight: 600;
   margin: 10px;
@@ -384,11 +381,6 @@ li {
   justify-content: center; /* Horizontally centers */
   align-items: center; /* Vertically centers */
 }
-.review-button a,
-.foodcardbtn a {
-  color: #000000;
-   
-}
 .button a {
   color: white;
     
@@ -397,14 +389,7 @@ li {
  
   background-color: #000000;
   }
-.background {
-  background-image: url("./pic/blue000.jpg");
-  color: white;
-  background-size: cover;
-  padding: 20px;
-  text-align: center;
-  text-shadow: 2px 2px black;
-}
+
 
 .services_wrapper {
   background-color: black;
@@ -427,9 +412,21 @@ li {
   background-position: center;
   color: white;
 }
+.bluebgmotivationtext {
+  background-image: url("./pic/blue000.jpg");
+  color: white;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
 .blue {
   background-color: #7faecb;
 }
+.gold {
+  background-color: #c79e52;
+  color: #0c1f36;
+  }
 .blue-transparent {
   background-color: #7faecbda;
 }
@@ -437,9 +434,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
-  padding-left: 20px;
-  text-align: justify;
   min-height: 100vh;
 }
 .secatextandimg {
@@ -461,12 +455,7 @@ li {
   list-style: square;
   margin-left: 20px;
 }
-.goldplate {
-  background-color: #c79e52;
-  color: #0c1f36;
-  padding: 20px;
-  text-align: center;
-}
+
 .arrow-height {
   height: 50px;
   width: 100%;
@@ -501,10 +490,10 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #c79e52;
-  color: #000000;
-  width: 47%;
+  
+  width: 40%;
 
-  border: 4px solid transparent;
+  border: 5px solid transparent;
   border-radius: 20px;
   overflow: hidden;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 1rem 1rem 10px);
@@ -567,6 +556,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  padding-bottom: 20px;
   }
 .classicon-wrapper a {
   text-decoration: none;
@@ -601,9 +591,10 @@ li {
   flex: 1 1;
   padding: 10px;
 }
-
-
-
+/* ///////////////////////////////////////////////workshop */
+.backband-wrapper{
+  padding: 0px 20px 0px 20px;
+}   
 
 /* //////////////////////////////////////////////YogaHoliday */
 .yogaholiday-wrapper {
@@ -642,9 +633,9 @@ li {
   gap: 20px;
   text-align: center;
 }
-.yoga-page-intro,
-.backband-wrapper {
+.yoga-page-intro {
   width: 50%;
+  padding-right: 20px;
 }
 .yogalates {
   flex: 1 1;
@@ -671,6 +662,18 @@ li {
 .item {
   flex: 1 0 40%;
 }
+.cpp,
+.cpp_yoga {
+  display: flex;
+  float: right;
+  padding: 25px;
+    }
+  .cpp_yoga {
+padding-top: 50px;
+  }
+  .cpp_group {
+    padding-top: 10px;
+  }
 /* ////////////////////////////////////////FOOTER/////////////////// */
 .review {
   display: flex;
@@ -720,8 +723,7 @@ footer {
   .home-coachoffer,
   .graywrapper,
   .yogalates-wrapper,
-  .company-group,
-  .food-text,
+  .company-group
     .groupcard-wrapper {
     flex-direction: column;
   }
@@ -731,7 +733,13 @@ footer {
   .strech100vh {
     height: 100vh; /*index htm strech to full screen */
   }
-    
+  .cpp_yoga {
+padding-top: 20px;
+  }
+  .cpp_yoga img {
+width: 120px;
+
+  }  
   .golditem-card {
     width: 100%;
   }
@@ -755,6 +763,10 @@ footer {
   .graywrapper img {
     display: none;
   }
+.recipe img {
+    width: 50%;
+}
+  
 
  
   .media-pttext {
@@ -783,18 +795,11 @@ footer {
   .training-card {
     width: 100%;
   }
-  .yoga-page-intro,
-  .backband-wrapper {
+  .yoga-page-intro {
     width: unset;
+    padding-right: unset;
   }
-  .xl-text > div {
-    position: relative;
-  }
-  .discription-text {
-    margin-top: 0;
-    width: auto;
-  }
-  .bbimg {
+   .bbimg {
     order: 2;
     width: 100%;
   }
