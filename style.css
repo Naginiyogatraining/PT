@@ -183,7 +183,7 @@ li {
   align-items: center; /* Vertically centers */
 }
 .index img {
-    margin: 20px;
+  margin: 20px;
   width: 50%; /* makes the image as wide as its container, and will scale up and down */
   height: auto; /* keeps the height in proportion, so the image never looks stretched or squashed */
 }
@@ -199,21 +199,17 @@ li {
   text-align: center;
   justify-content: space-around;
   align-items: center; /* Vertically centers */
-  }
+}
 .blackaddvert img {
   display: none;
 }
-.recipe {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 20px;
-}
 .recipe img {
   width: 20%;
-  text-align: center;
+  }
+.foodimgsize img {
+  height: 300px;
+  width: auto;
 }
-
 .textandbtn {
   display: flex;
   flex-wrap: wrap;
@@ -232,23 +228,24 @@ li {
   color: rgb(0, 29, 109);
   /* color: #5a94ba; */
   text-shadow: 3px 3px 4px rgb(5, 5, 5);
-    padding-left: 20px;
-   }
+  padding-left: 20px;
+}
 .xl-text > div {
   position: absolute;
   z-index: 1;
-  }
-  .xl-text h2 {
-     font-size: 3.5rem;
-  }
-
+}
+.xl-text h2 {
+  font-size: 3.5rem;
+}
+.page100vh {
+  height: 100vh; /*energyballs.htm strech to full screen */
+}
 .texaligncenter {
   text-align: center;
 }
 .textstyle {
   padding: 20px;
   text-align: justify;
-  /* flex: 1 1; */
 }
 .card-text {
   padding: 20px;
@@ -259,23 +256,23 @@ li {
   text-align: center;
 }
 .transparenttextdecoration-margin {
-  background-color: rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   margin: 10px;
-      align-content: center;
+  align-content: center;
 }
 .transparenttextdecoration {
-  background-color: rgba(255, 255, 255, 0.50);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 0px 50px 0px 50px;
   text-align: justify;
 }
 .transparentbordertextdecoration {
-  background-color: rgba(255, 255, 255, 0.800);
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 20px;
   text-align: center;
   align-content: center;
-  }
+}
 .highliht {
   color: white;
   background-color: #0c1f36;
@@ -285,11 +282,8 @@ li {
 }
 
 .center-text {
-  
-
   flex-basis: 100%;
 }
-
 
 .oblique-text {
   font-family: "Roboto Condensed", sans-serif;
@@ -300,7 +294,6 @@ li {
 .flex {
   display: flex;
   /* justify-self: center; */
- 
 }
 .smallicons {
   display: flex;
@@ -323,7 +316,6 @@ li {
   height: 100%;
   align-items: center;
 }
-
 
 .links {
   display: flex;
@@ -348,7 +340,7 @@ li {
   margin: 10px;
   border-radius: 30px;
   font-weight: bold;
-  
+
   transition: 0.4s;
   cursor: pointer;
 }
@@ -357,13 +349,13 @@ li {
   border: 2px solid white;
   border-radius: 15px;
   filter: drop-shadow(rgba(0, 0, 0, 0.781) 0.5rem 0.5rem 3px);
-    text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 600;
   margin: 10px;
   padding: 2px 15px 2px 15px;
-    /* min-height: fit-content;
+  /* min-height: fit-content;
   max-width: fit-content; */
- justify-self: center;
+  justify-self: center;
   overflow: hidden;
 }
 .review-button {
@@ -383,13 +375,10 @@ li {
 }
 .button a {
   color: white;
-    
 }
 .button a:hover {
- 
   background-color: #000000;
-  }
-
+}
 
 .services_wrapper {
   background-color: black;
@@ -404,8 +393,7 @@ li {
   background-position: center;
 }
 .blue-bg {
-  background-image:
-    linear-gradient(rgba(8, 28, 41, 0.4), rgba(8, 28, 41, 0.4)),
+  background-image:  linear-gradient(rgba(8, 28, 41, 0.4), rgba(8, 28, 41, 0.4)),
     url("./pic/blue02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -426,7 +414,7 @@ li {
 .gold {
   background-color: #c79e52;
   color: #0c1f36;
-  }
+}
 .blue-transparent {
   background-color: #7faecbda;
 }
@@ -438,7 +426,7 @@ li {
 }
 .secatextandimg {
   width: 80%;
-  }
+}
 .seca-wrapper img {
   max-width: 700px; /* makes the image scale down if it has to, but never scale up to be larger than its real size. use: px, fit-content, % */
 }
@@ -479,7 +467,8 @@ li {
   justify-content: end;
   z-index: 1;
 }
-.golditem-card-wrapper {
+.golditem-card-wrapper,
+.recipe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -490,9 +479,8 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #c79e52;
-  
-  width: 40%;
-
+   /*width: fit-content;    if img size changed the frame width changes too */
+width: 40%;
   border: 5px solid transparent;
   border-radius: 20px;
   overflow: hidden;
@@ -510,7 +498,6 @@ li {
 }
 /* //////////////Meet your coach///////////////// */
 .coach__wrapper {
-  
 }
 .coach__wrapper img {
   margin: 10px;
@@ -557,7 +544,7 @@ li {
   justify-content: space-around;
   text-align: center;
   padding-bottom: 20px;
-  }
+}
 .classicon-wrapper a {
   text-decoration: none;
   color: white;
@@ -583,8 +570,7 @@ li {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  padding: 0px 50px 0px 50px;
-    text-align: center;
+  text-align: center;
 }
 .company {
   border: 1px solid black;
@@ -592,9 +578,9 @@ li {
   padding: 10px;
 }
 /* ///////////////////////////////////////////////workshop */
-.backband-wrapper{
+.backband-wrapper {
   padding: 0px 20px 0px 20px;
-}   
+}
 
 /* //////////////////////////////////////////////YogaHoliday */
 .yogaholiday-wrapper {
@@ -633,7 +619,8 @@ li {
   gap: 20px;
   text-align: center;
 }
-.yoga-page-intro {
+.yoga-page-intro,
+.foodprep {
   width: 50%;
   padding-right: 20px;
 }
@@ -667,13 +654,13 @@ li {
   display: flex;
   float: right;
   padding: 25px;
-    }
-  .cpp_yoga {
-padding-top: 50px;
-  }
-  .cpp_group {
-    padding-top: 10px;
-  }
+}
+.cpp_yoga {
+  padding-top: 50px;
+}
+.cpp_group {
+  padding-top: 10px;
+}
 /* ////////////////////////////////////////FOOTER/////////////////// */
 .review {
   display: flex;
@@ -716,15 +703,13 @@ footer {
   h3,
   h4 {
     font-size: 1.5rem;
-    text-align: left;
   }
   .flex,
   .index,
   .home-coachoffer,
   .graywrapper,
   .yogalates-wrapper,
-  .company-group
-    .groupcard-wrapper {
+  .company-group .groupcard-wrapper {
     flex-direction: column;
   }
   .index img {
@@ -734,12 +719,11 @@ footer {
     height: 100vh; /*index htm strech to full screen */
   }
   .cpp_yoga {
-padding-top: 20px;
+    padding-top: 20px;
   }
   .cpp_yoga img {
-width: 120px;
-
-  }  
+    width: 120px;
+  }
   .golditem-card {
     width: 100%;
   }
@@ -763,12 +747,10 @@ width: 120px;
   .graywrapper img {
     display: none;
   }
-.recipe img {
+  .recipe img {
     width: 50%;
-}
-  
+  }
 
- 
   .media-pttext {
     display: block;
     padding-top: 200px;
@@ -799,7 +781,7 @@ width: 120px;
     width: unset;
     padding-right: unset;
   }
-   .bbimg {
+  .bbimg {
     order: 2;
     width: 100%;
   }
